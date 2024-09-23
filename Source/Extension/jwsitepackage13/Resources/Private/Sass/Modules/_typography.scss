@@ -1,0 +1,236 @@
+//Definition for html base
+html {
+  font-size: var(--base-html-size-small);
+}
+
+@media (min-width: $mediaquery-medium-min) {
+  html {
+    font-size: var(--base-html-size-medium);
+  }
+}
+
+@media (min-width: $mediaquery-xlarge-min) {
+  html {
+    font-size: var(--base-html-size-large);
+  }
+}
+
+body,
+input,
+textarea,
+select {
+  font-size: var(--body-font-size, 1rem);
+  line-height: var(--base-size);
+  font-family: var(--font-family-normal);
+  color: var(--font-color);
+  font-weight:var(--font-weight-normal);
+  font-variation-settings: var(--font-variation-settings);
+}
+#main {
+  text-wrap: balance;
+}
+header * {
+  @include wordbreak();
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+  font-family: var(--header-font-family);
+  font-weight: var(--header-font-weight);
+  font-variation-settings: var(--header-font-variation-settings);
+  color: var(--header-font-color);
+  margin-top: 0;
+  margin-bottom: var(--base-size);
+}
+
+h1,
+.h1,
+.fontsize1 {
+  font-size: var(--font-size1);
+  line-height: var(--line-height1);
+}
+
+h2,
+.h2,
+.fontsize2 {
+  font-size: var(--font-size2);
+  line-height: var(--line-height2);
+}
+
+h3,
+.h3,
+.fontsize3,
+.ce-uploads-fileName {
+  font-size: var(--font-size3);
+  line-height: var(--line-height3);
+}
+
+h4,
+.h4,
+.fontsize4 {
+  font-size: var(--font-size4);
+}
+
+h5,
+.h5,
+.fontsize5 {
+  font-size: var(--font-size5);
+}
+
+.header-group {
+  *:first-child {
+    margin-bottom: var(--base-size-half);
+  }
+}
+
+p + p,
+pre,
+table {
+  margin-top: var(--base-size);
+}
+
+p,
+ul,
+ol,
+dl,
+pre,
+table {
+  margin-bottom: var(--base-size);
+}
+
+.small,
+small {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+b,
+strong,
+.bold {
+  @include fontbold();
+}
+
+a {
+  color: var(--body-link-color);
+  text-decoration: var(--body-link-text-decoration) var(--body-link-text-decoration-color);
+  -webkit-text-decoration-line:  var(--body-link-text-decoration);
+  -webkit-text-decoration-color: var(--body-link-text-decoration-color);
+  -webkit-text-decoration-thickness: var(--body-link-text-decoration-thickness);
+  text-underline-offset: var(--body-link-underline-offset);
+  @include transition(all);
+
+  &:focus,
+  &:hover {
+    color: var(--body-link-hover-color);
+    text-decoration-color: var(--body-link-hover-color);
+    -webkit-text-decoration-color: var(--body-link-hover-color);
+  }
+
+  &.invers {
+    color: var(--body-link-invers-color);
+
+    &:focus,
+    &:hover {
+      color: var(--body-link-invers-hover-color);
+    }
+  }
+  &.btn {
+    text-decoration: none;
+    text-underline-offset: unset;
+  }
+}
+
+.content-header a {
+  color: var(--header-link-color);
+
+  &:focus,
+  &:hover {
+    color: var(--header-link-hover-color);
+  }
+
+  &.btn-secondary {
+    &:focus,
+    &:hover {
+      color: var(--button2-hover-color);
+    }
+  }
+}
+
+.content-footer a {
+  color: var(--footer-link-color);
+
+  &:focus,
+  &:hover {
+    color: var(--footer-link-hover-color);
+    text-decoration-color: var(--footer-link-hover-color);
+  }
+}
+
+.content-footer2 a {
+  color: var(--footer2-link-color);
+
+  &:focus,
+  &:hover {
+    color: var(--footer2-link-hover-color);
+    text-decoration-color: var(--footer2-link-hover-color);
+  }
+}
+
+sup,
+sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+
+sub {
+  top: 0.4em;
+}
+
+.invers {
+  color: var(--white, #fff);
+}
+
+.font-color-light {
+  color: var(--font-color-light);
+}
+
+blockquote {
+  position: relative;
+  text-align: center;
+  width: 80%;
+  padding: var(--base-size) var(--gutter);
+  margin: var(--base-size-double) auto;
+
+  &:before,
+  &:after {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    color: var(--gray3);
+    font-size: 48px;
+  }
+
+  &:before {
+    content: "\f10e";
+    margin-right: calc(var(--gutter) * -1);
+    bottom: 0;
+    right: 100%;
+  }
+
+  &:after {
+    content: "\f10d";
+    margin-left: calc(var(--gutter) * -1);
+    left: 100%;
+    top: 0;
+    bottom: auto;
+  }
+}

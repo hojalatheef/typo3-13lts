@@ -1,0 +1,33 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<div class="flex-container margin-bottom">
+	<f:for each="{menu}" as="page">
+		<f:if condition="{page.files} && {page.data.doktype} == 3">
+			<div>
+				<f:link.external uri="{page.link}" title="{page.title}" target="_blank" rel="noreferrer nofollow, noopener">
+					<f:for each="{page.files}" as="file" iteration="iterator">
+						<f:if condition="{iterator.isFirst}">
+							<figure>
+								<f:media class="image-embed-item" file="{file}" width="41" alt="{file.alternative}"
+												 title="{file.title}" cropVariant="desktop" loading="{settings.media.lazyLoading}"/>
+							</figure>
+						</f:if>
+					</f:for>
+				</f:link.external>
+			</div>
+		</f:if>
+	</f:for>
+	<f:if condition="{settings.rssIcon} && {settings.useRss}">
+		<div>
+			<f:link.page title="{settings.rssTitle}" pageUid="{settings.rootId}" pageType="9818" target="_blank"
+											 additionalAttributes="{rel:'nofollow, noopener'}">
+				<f:image src="EXT:jwsitepackage12/Resources/Public/Icons/SocialMediaIcons/rss.svg" width="41"
+								 alt="RSS Feed Icon"/>
+			</f:link.page>
+		</div>
+	</f:if>
+</div>
+
+</html>
+
+

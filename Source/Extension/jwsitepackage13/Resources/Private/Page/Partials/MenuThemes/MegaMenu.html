@@ -1,0 +1,51 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<ul id="main-menu" class="sm sm-clean">
+	<f:if condition="{menuMeta}">
+		<f:for each="{menuMeta}" as="Item">
+			<li class="has-mega-menu">
+				<f:render partial="MenuItemLink" arguments="{item: Item}"/>
+				<f:if condition="{Item.children}">
+					<f:render section="submenu1" arguments="{submenu: Item.children}"/>
+				</f:if>
+			</li>
+		</f:for>
+	</f:if>
+</ul>
+</html>
+
+
+<f:section name="submenu1">
+	<f:comment>JW: max image width depending on amount of submenu items</f:comment>
+	<f:variable name="submenuItems" value="{submenu -> f:count()}"/>
+	<f:variable name="navImageWidth" value="{settings.imgMaxWidth / submenuItems}"/>
+
+	<ul class="mega-menu">
+		<li class="mega-flex">
+			<f:for each="{submenu}" as="subItem1">
+				<div style="width:{100 / submenuItems}%;">
+					<a href="{subItem1.link}" title="{subItem1.title}">{subItem1.title}
+						<f:if condition="{subItem1.files.0}">
+							<figure class="subitem-image">
+								<f:image image="{subItem1.files.0}" cropVariant="desktop" width="{navImageWidth}"/>
+							</figure>
+						</f:if>
+					</a>
+					<f:if condition="{subItem1.children}">
+						<f:render section="submenu2" arguments="{submenu: subItem1.children}"/>
+					</f:if>
+
+				</div>
+			</f:for>
+		</li>
+	</ul>
+</f:section>
+
+<f:section name="submenu2">
+	<ul>
+		<f:for each="{submenu}" as="subItem2">
+			<li>
+				<a href="{subItem2.link}" title="{subItem2.title}">{subItem2.title}</a>
+			</li>
+		</f:for>
+	</ul>
+</f:section>

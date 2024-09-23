@@ -1,0 +1,72 @@
+#################### heroimage in header #################
+TCEFORM {
+  tt_content {
+    space_before_class.types.heroimage.disabled = 1
+    space_after_class.types.heroimage.disabled = 1
+    linkToTop.types.heroimage.disabled = 1
+    date.types.heroimage.disabled = 1
+    header_position.types.heroimage.disabled = 1
+    header_layout.types.heroimage {
+      removeItems = 1,3,4,5
+    }
+    layout {
+      types {
+        heroimage {
+          altLabels {
+            0 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.heroimage.layout.0
+          }
+          addItems {
+            400 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.layout.400
+            401 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.layout.401
+            402 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.layout.402
+          }
+        }
+      }
+    }
+
+    frame_class {
+      types {
+        heroimage {
+          removeItems = indent,indent-left,indent-right,none,ruler-before,ruler-after,collapsemobile,collapse
+          altLabels {
+            default = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.frameclass.heroimage.default
+          }
+          addItems {
+            center = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.frameclass.center
+            right = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.frameclass.right
+          }
+        }
+      }
+    }
+  }
+}
+TCAdefaults {
+  tt_content {
+    imagecols = 1
+  }
+
+}
+mod {
+  #################### default value for new content element #################
+  wizards.newContentElement.wizardItems.common.elements {
+    heroimage.tt_content_defValues {
+      sectionIndex = 0
+      imagecols = 1
+    }
+  }
+}
+
+## new content element for hero image with text ##
+mod.wizards.newContentElement.wizardItems.common {
+  elements {
+    heroimage {
+      iconIdentifier = ext-jwsitepackage12-hero
+      title = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:ctype.heroimage.title
+      description = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:ctype.heroimage.decription
+      tt_content_defValues {
+        CType = heroimage
+      }
+    }
+  }
+  show := addToList(heroimage)
+}

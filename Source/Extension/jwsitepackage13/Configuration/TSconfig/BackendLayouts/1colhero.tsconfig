@@ -1,0 +1,36 @@
+mod.web_layout.BackendLayouts {
+  1colhero {
+    title = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:belayout-1colhero
+    icon = EXT:jwsitepackage12/Resources/Public/Icons/Backendlayouts/onecolhero.png
+    config {
+      backend_layout {
+        colCount = 1
+        rowCount = 2
+        rows {
+          1 {
+            columns {
+              1 {
+                name = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:col-content-headermedia
+                colPos = 5
+                allowed {
+                  CType = image,textmedia,heroimage
+                }
+              }
+            }
+          }
+          2 {
+            columns {
+              1 {
+                name = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:col-content-main
+                colPos = 0
+                disallowed {
+                  CType = heroimage
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

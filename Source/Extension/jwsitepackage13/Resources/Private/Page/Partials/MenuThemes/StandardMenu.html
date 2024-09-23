@@ -1,0 +1,34 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<ul id="main-menu" class="sm sm-clean">
+	<f:if condition="{menuMain}">
+		<f:for each="{menuMain}" as="Item">
+			<f:if condition="{Item.spacer}">
+				<f:then>
+				</f:then>
+				<f:else>
+					<li>
+						<f:render partial="MenuItemLink" arguments="{item: Item}"/>
+						<f:if condition="{Item.children}">
+							<f:render section="submenu" arguments="{submenu: Item.children}"/>
+						</f:if>
+					</li>
+				</f:else>
+			</f:if>
+		</f:for>
+	</f:if>
+</ul>
+</html>
+
+<f:section name="submenu">
+	<ul>
+		<f:for each="{submenu}" as="subItem">
+			<li>
+				<f:render partial="MenuItemLink" arguments="{item: subItem}"/>
+				<f:if condition="{subItem.children}">
+					<f:render section="submenu" arguments="{submenu: subItem.children}"/>
+				</f:if>
+			</li>
+		</f:for>
+	</ul>
+</f:section>
+

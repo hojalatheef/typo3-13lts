@@ -1,0 +1,11 @@
+lib.copyright = COA
+lib.copyright {
+  wrap = &copy;&nbsp;|
+  20 = TEXT
+  20.data = date:U
+  20.strftime = %Y
+  30 = TEXT
+  30 {
+    value = &nbsp;{$jwsitepackage12.companyName}
+  }
+}

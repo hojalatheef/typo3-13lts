@@ -1,0 +1,49 @@
+//flex boxes
+.flex-nowrap {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.flex-row-reverse {
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+//same height inside flex item
+.height-100 {
+  @include flex-container(wrap);
+
+  > div {
+    margin-bottom: var(--base-size);
+  }
+
+  > .frame {
+    @include flex(100%);
+  }
+}
+
+.wrapper-card {
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-text {
+  padding: var(--base-size-half) 0 0 0;
+
+   p {
+    color: var(--font-color);
+    margin: 0;
+  }
+}

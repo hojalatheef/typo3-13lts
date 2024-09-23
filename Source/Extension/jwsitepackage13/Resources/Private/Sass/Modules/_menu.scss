@@ -1,0 +1,68 @@
+ul.horizontal {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+
+  li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+
+    a,
+    > span {
+      padding: var(--base-size-half) var(--gutter-half);
+      display: inline-block;
+    }
+  }
+}
+
+nav ul.horizontal li {
+  &:after {
+    content: "|";
+  }
+
+  &:first-child:before {
+    content: "|";
+  }
+}
+
+.rootline {
+  color: var(--font-color-light);
+  font-size: var(--font-size-small);
+  padding-left: var(--gutter);
+  @media (min-width: $content-max-with-gutter) {
+    padding-left: 0;
+  }
+}
+
+ul.horizontal.languagemenu {
+  .text-muted span {
+    color: var(--font-color-light);
+  }
+
+  .text-muted,
+  .active {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $desktop-menu-min) {
+  ul.horizontal.languagemenu {
+    margin-right: var(--gutter);
+
+    .active,
+    .text-muted {
+      display: inline-block;
+    }
+  }
+}
+
+// if vertical and horizontal menu is used
+@media screen and (min-width: $mediaquery-medium-min) {
+  .onelevel-mdup ul#main-menu ul,
+  .onelevel-mdup ul#main-menu .sub-arrow {
+    display: none !important;
+    visibility: hidden;
+  }
+}

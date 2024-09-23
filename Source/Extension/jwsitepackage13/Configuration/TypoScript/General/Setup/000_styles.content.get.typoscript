@@ -1,0 +1,210 @@
+plugin.tx_frontend._CSS_DEFAULT_STYLE >
+lib.parseFunc_RTE.externalBlocks.table.stdWrap.wrap = <div class="table-responsive">|</div>
+
+lib.contentElement.settings {
+  imageSizeSmall = {$jwsitepackage12.mediaQuerySmallMax}
+  imageSizeMedium = {$jwsitepackage12.mediaQueryMediumMax}
+  imageSizeLarge = {$jwsitepackage12.mediaQueryLargeMax}
+  imageSizeHeader = {$jwsitepackage12.imgMaxHeaderWidth}
+  ##info for container templates
+  menuType = {$jwsitepackage12.menuType}
+  fadeInContent = {$jwsitepackage12.fadeInContent}
+  useRss = {$jwsitepackage12.useRss}
+  rssTitle = {$jwsitepackage12.rssTitle}
+  rootId = {$jwsitepackage12.rootId}
+  rssIcon = {$jwsitepackage12.rssIcon}
+}
+
+
+/*
+styles.content.get = CONTENT
+styles.content.get {
+  table = tt_content
+  select.orderBy = sorting
+  select.where = colPos=0
+}
+*/
+
+############## Image processing begin #################
+### Image widths for each column
+# Wird nicht direkt verwendet. Ist nur dafuer da, um diese Arbeit wiederzuverwenden.
+lib.columnCalculator = CASE
+lib.columnCalculator {
+  key.field = colPos
+  default = TEXT
+  default.value = 100
+  ##Hauptinhalt
+  0 = CASE
+  0 {
+    key.data = pagelayout
+    default = TEXT
+    default.value = 100
+    pagets__1colhero = TEXT
+    pagets__1colhero.value = 100
+    pagets__1col = TEXT
+    pagets__1col.value = 100
+
+    #pagets__standard = TEXT
+    #pagets__standard.value = 66
+    #pagets__2col = TEXT
+    #pagets__2col.value = 50
+    #pagets__3col = TEXT
+    #pagets__3col.value = 33
+  }
+  ## Inhalt hero image
+  5 = TEXT
+  5.value = 100
+
+  ##Extention Container
+  ## Container 50:50
+  201 = TEXT
+  201.value = 50
+  202 < .201
+
+  # Container 33:33:33
+  301 = TEXT
+  301.value = 33
+  302 < .301
+  303 < .301
+
+  ## Container 25:25:25:25
+  401 = TEXT
+  401.value = 25
+  402 < .401
+  403 < .401
+  404 < .401
+}
+
+tt_content.image.dataProcessing.20 {
+  maxGalleryWidth >
+  maxGalleryWidth.cObject < lib.columnCalculator
+  maxGalleryWidth.cObject {
+    default.value = {$jwsitepackage12.imgMaxWidth}
+    0.default.value = {$jwsitepackage12.imgMaxWidth}
+    0.pagets__1colhero.value = {$jwsitepackage12.imgMaxWidth}
+    0.pagets__1col.value = {$jwsitepackage12.imgMaxWidth}
+
+    ## deprecated, only for updated projects
+    #0.pagets__standard.value = {$jwsitepackage12.imgWidth66}
+    #0.pagets__2col.value = {$jwsitepackage12.imgWidth50}
+    #0.pagets__3col.value = {$jwsitepackage12.imgWidth33}
+    #1.value = {$jwsitepackage12.imgMaxWidth}
+    #2.pagets__standard.value = {$jwsitepackage12.imgMaxWidth}
+    #2.pagets__2col.value = {$jwsitepackage12.imgWidth50}
+    #2.pagets__3col.value = {$jwsitepackage12.imgWidth33}
+    #3.value = {$jwsitepackage12.imgMaxWidth}
+    #4.value = {$jwsitepackage12.imgWidth33}
+
+    ## Hero image
+    5.value = {$jwsitepackage12.imgMaxHeaderWidth}
+    ## Container 50:50
+    201.value = {$jwsitepackage12.imgWidth50}
+    202 < .201
+
+    # Container 33:33:33
+    301.value = {$jwsitepackage12.imgWidth50}
+    302 < .301
+    303 < .301
+
+    ## Container 25:25:25:25
+    401.value = {$jwsitepackage12.imgWidth25}
+    402 < .401
+    403 < .401
+    404 < .401
+  }
+
+  maxGalleryWidthInText >
+  maxGalleryWidthInText.cObject < lib.columnCalculator
+  maxGalleryWidthInText.cObject {
+    default.value = {$jwsitepackage12.imgTextMaxWidth}
+    0.default.value = {$jwsitepackage12.imgTextMaxWidth}
+    0.pagets__1colhero.value = {$jwsitepackage12.imgTextMaxWidth}
+    0.pagets__1col.value = {$jwsitepackage12.imgTextMaxWidth}
+    ## deprecated, only for updated projects
+    #0.pagets__standard.value = {$jwsitepackage12.imgTextWidth66}
+    #0.pagets__2col.value = {$jwsitepackage12.imgTextWidth50}
+    #0.pagets__3col.value = {$jwsitepackage12.imgTextWidth33}
+    ## deprecated, only for updated projects
+    #1.value = {$jwsitepackage12.imgTextMaxWidth}
+    #2.pagets__standard.value = {$jwsitepackage12.imgTextMaxWidth}
+    #2.pagets__2col.value = {$jwsitepackage12.imgWidth50}
+    #2.pagets__3col.value = {$jwsitepackage12.imgWidth33}
+    #3.value = {$jwsitepackage12.imgMaxWidth}
+    #4.value = {$jwsitepackage12.imgTextWidth33}
+
+    ## Hero image
+    5.value = {$jwsitepackage12.imgMaxHeaderWidth}
+    ## Container 50:50
+    201.value = {$jwsitepackage12.imgTextWidth50}
+    202 < .201
+
+    # Container 33:33:33
+    301.value = {$jwsitepackage12.imgTextWidth50}
+    302 < .301
+    303 < .301
+
+    ## Container 25:25:25:25
+    401.value = {$jwsitepackage12.imgTextWidth25}
+    402 < .401
+    403 < .401
+    404 < .401
+  }
+}
+
+tt_content {
+  textpic.dataProcessing.20 < tt_content.image.dataProcessing.20
+  textmedia.dataProcessing.20 < tt_content.image.dataProcessing.20
+}
+
+# Prozentualer Anteil der colPos in Relation zu PageLayout
+lib.contentElement.variables {
+  usedColPosPercentage < lib.columnCalculator
+  usedColPosPercentage {
+    default.value = 1
+    0.default.value = 1
+    0.pagets__1colhero.value = 1
+    0.pagets__1col.value = 1
+
+    ## deprecated, only for updated projects
+    #0.pagets__standard.value = 1
+    #0.pagets__2col.value = 0.5
+    #0.pagets__3col.value = 0.33
+    #1.value = 1
+    #2.pagets__standard.value = 1
+    #2.pagets__2col.value = 0.5
+    #2.pagets__3col.value = 0.33
+    #3.value = 1
+    #4.value = 0.33
+
+    5.value = 1
+    ## Container 50:50
+    201.value = 0.50
+    202 < .201
+    ## Container 33:66
+    301.value = 0.50
+    302 < .301
+    303 < .301
+    ## Container 25:25:25:25
+    401.value = 0.25
+    402 < .401
+    403 < .401
+    404 < .401
+  }
+}
+
+## Images for ctype menus, inserted inside page properties
+tt_content {
+  menu_pages.dataProcessing.10.dataProcessing.10.references.fieldName = nav_image
+  menu_subpages.dataProcessing.10.dataProcessing.10.references.fieldName = nav_image
+  menu_abstract.dataProcessing.10.dataProcessing.10.references.fieldName = nav_image
+}
+
+## Add data attributes to click enlarge images for fancybox
+## The data attributes are used by default from the fancybox script, https://fancyapps.com/fancybox/3/docs/#usage
+## If you use another lightbox script, you may have to adapt these settings
+lib.contentElement.settings.media.popup {
+  linkParams.ATagParams.dataWrap =  data-fancybox="gallery[{file:current:uid_foreign}]" data-caption="{file:current:title}" class="{$styles.content.textmedia.linkWrap.lightboxCssClass}" rel="{$styles.content.textmedia.linkWrap.lightboxRelAttribute}"
+}
+
+############## Image processing end #################
+

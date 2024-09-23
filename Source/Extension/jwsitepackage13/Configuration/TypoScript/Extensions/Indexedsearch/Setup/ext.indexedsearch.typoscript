@@ -1,0 +1,44 @@
+################################################
+## search results only in the actual language
+## german
+plugin.tx_indexedsearch.settings.defaultOptions.languageUid = 0
+
+[siteLanguage("title") == "English"]
+  plugin.tx_indexedsearch.settings.defaultOptions.languageUid = 1
+[END]
+
+/*
+[siteLanguage("title") == "Further Language"]
+  plugin.tx_indexedsearch.settings.defaultOptions.languageUid = 2
+[END]
+*/
+
+# Configuration for indexedsearch plugin
+plugin.tx_indexedsearch {
+  #templateFile = {$resourceDir}/Extensions/IndexedSearch/indexed_search.html
+
+  forwardSearchWordsInResultLink = 0
+  show {
+    rules = 0
+    advancedSearchLink = 0
+  }
+
+  search {
+    rootPidList = {$jwsitepackage12.rootId}
+    exactCount = 0
+    defaultFreeIndexUidList >
+  }
+
+  _CSS_DEFAULT_STYLE >
+  _DEFAULT_PI_VARS {
+    results = 10
+  }
+
+  ## Due to a bug in TYPO3 9.5.19 it is necessary to overwrite the language label for the number of search results
+  ## See https://forge.typo3.org/issues/91620
+  _LOCAL_LANG {
+    de {
+      displayResults = Anzeige der Ergebnisse <strong>%1$s bis %2$s</strong> von insgesamt <strong>%3$s</strong>
+    }
+  }
+}

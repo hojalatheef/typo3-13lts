@@ -1,0 +1,124 @@
+plugin.tx_news {
+  view {
+    templateRootPaths {
+      0 = EXT:news/Resources/Private/Templates/
+      1 = {$plugin.tx_news.view.templateRootPath}
+    }
+
+    partialRootPaths {
+      0 = EXT:news/Resources/Private/Partials/
+      1 = {$plugin.tx_news.view.partialRootPath}
+    }
+
+    layoutRootPaths {
+      0 = EXT:news/Resources/Private/Layouts/
+      1 = {$plugin.tx_news.view.layoutRootPath}
+    }
+  }
+}
+
+plugin.tx_news.settings {
+  cssFile = {$plugin.tx_news.settings.cssFile}
+  displayDummyIfNoMedia = 0
+  #dummyImage = EXT:news/Resources/Public/Images/dummy-preview-image.png
+  startingpoint = {$jwsitepackage12.newsStartingPoints}
+  recursive = 10
+  listPid = {$jwsitepackage12.newsListPid}
+  #defaultDetailPid = {$jwsitepackage12.newsDetailPid}
+  # Skip default controller/action to get shorter RealUrl path
+  link.skipControllerAndAction = 1
+}
+
+plugin.tx_news.settings.list {
+  rss.channel.typeNum = 9818
+  paginate {
+    insertAbove = 0
+  }
+
+  media.image {
+    maxWidth = 120
+    maxHeight =
+  }
+
+  mediacard.image {
+    maxWidth = 458
+    maxHeight = 305c
+  }
+}
+
+plugin.tx_news.settings.detail {
+  ## Width of images in detail view
+  media.image {
+    maxWidth = {$jwsitepackage12.imgTextMaxWidth}
+  }
+
+  showSocialShareButtons = 0
+  ## Behaviour of news, if no news-id is given in detail URL
+  ## In this case, redirect to the page with the list view
+  errorHandling = redirectToPage,{$jwsitepackage12.newsListPid}
+}
+
+
+## Default Language German
+plugin.tx_news.settings.facebookLocale = de_DE
+plugin.tx_news.settings.googlePlusLocale = de
+plugin.tx_news.settings.disqusLocale = de
+
+## English
+[siteLanguage("title") == "English"]
+  plugin.tx_news.settings.facebookLocale = en_EN
+  plugin.tx_news.settings.googlePlusLocale = en
+  plugin.tx_news.settings.disqusLocale = en
+[END]
+
+## change labels in frontend
+plugin.tx_news._LOCAL_LANG {
+  default {
+    dateFormat = Y-m-d
+    #more-link =
+    #list_nonewsfound =
+  }
+
+  de {
+    dateFormat = d.m.Y
+    #more-link =
+    #list_nonewsfound =
+  }
+}
+
+## RSS Feed
+pageNewsRSS = PAGE
+pageNewsRSS {
+  typeNum = 9818
+  config {
+    disableAllHeaderCode = 1
+    index_enable = 0
+    xhtml_cleaning = none
+    admPanel = 0
+    debug = 0
+    disablePrefixComment = 1
+    metaCharset = utf-8
+    additionalHeaders.10.header = Content-Type:application/rss+xml;charset=utf-8
+    absRefPrefix = {$plugin.tx_news.rss.channel.link}
+    linkVars >
+  }
+
+  10 < tt_content.news_pi1.20
+  10 {
+    settings < plugin.tx_news.settings
+    settings {
+      #categories = 9
+      #categoryConjunction = notor
+      limit = 30
+      detailPid = {$jwsitepackage12.newsDetailPid}
+      startingpoint = {$jwsitepackage12.newsStartingPoints}
+      format = xml
+    }
+  }
+}
+
+## Add news title as "fake" entry to the rootline menu
+page.10.dataProcessing {
+  900 = GeorgRinger\News\DataProcessing\AddNewsToMenuProcessor
+  900.menus = rootline
+}

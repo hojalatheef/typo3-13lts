@@ -1,0 +1,30 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  -moz-animation: fadeIn 1.5s;
+  -webkit-animation: fadeIn 1.5s;
+  -o-animation: fadeIn 1.5s;
+  @media (prefers-reduced-motion: reduce) {
+    -webkit-animation: none;
+    animation: none;
+    opacity: 1;
+  }
+  visibility: visible !important;
+}
+
+.fade {
+  visibility: hidden;
+  @media (prefers-reduced-motion: reduce) {
+    visibility: visible;
+  }
+}

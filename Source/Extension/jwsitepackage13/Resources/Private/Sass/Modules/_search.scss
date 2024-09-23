@@ -1,0 +1,113 @@
+/////////////////// search //////////////////
+//page header search
+.wrapper-search {
+  max-width: 100%;
+  background: var(--menu-bg);
+  height: var(--mobile-header-height);
+  z-index: 200;
+  position: absolute;
+  top: calc(var(--header-height) * -1);
+  left: 0;
+  right: var(--base-size-triple);
+  @include transition(all);
+
+  .input-group input {
+    display: inline-block;
+    width: 100%;
+  }
+
+  button {
+    width: var(--base-size-double);
+    height: var(--base-size-double);
+  }
+
+  &.visible {
+    top: 0;
+
+    > div {
+      padding: 0 0 0 var(--gutter);
+    }
+  }
+
+  fieldset > div {
+    padding-bottom: 0.5rem;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: $desktop-menu-min) {
+  .wrapper-search {
+    background: var(--header-bg-overlay);
+    align-items: center;
+    height: var(--header-service-height);
+    button {
+      background: var(--header-button-bg);
+      color: var(--header-button-color);
+      border-color:  var(--header-button-border);
+      &:hover,
+      &:focus {
+        background: var(--header-button-hover-bg);
+        color: var(--header-button-hover-color);
+        border-color: var(--header-button-hover-border);
+      }
+    }
+    &.visible {
+      > div {
+        width: calc(15 * var(--gutter));
+        padding: 0 0 0 var(--gutter);
+      }
+    }
+  }
+}
+
+.search-hide-btn {
+  padding: var(--base-size-quarter) 0;
+  width: var(--base-size-double);
+  display: inline-block;
+  cursor: pointer;
+  color: var(--header-link-color);
+  @include transition(all);
+
+  &.active .fa-search:before {
+    content: "\f00d";
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--header-link-hover-color);
+  }
+}
+
+.page-searchresult .search-hide-btn {
+  display: none;
+}
+
+//@media screen and (min-width: $mediaquery-medium-min) {
+//  .wrapper-search {
+//    left: auto;
+//  }
+//}
+
+.tx-indexedsearch-info > dt {
+  float: left;
+  clear: left;
+  width: 25%;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tx-indexedsearch-info > dd {
+  margin-left: 25%;
+}
+
+.tx-indexedsearch-res span {
+  display: inline-block;
+}
+
+.tx-indexedsearch-res {
+  border-bottom: var(--border-width, 1px) solid var(--border-color);
+  margin-bottom: var(--base-size);
+}

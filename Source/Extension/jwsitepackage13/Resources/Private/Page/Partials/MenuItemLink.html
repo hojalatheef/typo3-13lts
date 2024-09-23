@@ -1,0 +1,19 @@
+<f:if condition="{item.data.target}">
+	<f:then>
+		<a class="{f:if(condition: item.active, then: ' active')}{f:if(condition: item.current, then: ' current')}"
+			 href="{item.link}" target="{item.data.target}"
+			 title="{f:if(condition: '{item.data.subtitle}', then: '{item.data.subtitle}', else: '{item.title}')}">
+	</f:then>
+	<f:else if="{item.target}">
+		<a class="{f:if(condition: item.active, then: ' active')}{f:if(condition: item.current, then: ' current')}"
+			 href="{item.link}" target="{item.target}"
+			 title="{f:if(condition: '{item.data.subtitle}', then: '{item.data.subtitle}', else: '{item.title}')}">
+	</f:else>
+	<f:else>
+		<a class="{f:if(condition: item.active, then: ' active')}{f:if(condition: item.current, then: ' current')}"
+			 href="{item.link}"
+			 title="{f:if(condition: '{item.data.subtitle}', then: '{item.data.subtitle}', else: '{item.title}')}">
+	</f:else>
+</f:if>
+<span>{item.title}</span>
+</a>

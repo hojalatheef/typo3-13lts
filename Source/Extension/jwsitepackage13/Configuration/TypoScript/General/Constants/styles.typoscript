@@ -1,0 +1,42 @@
+styles.templates {
+  layoutRootPath = EXT:jwsitepackage12/Resources/Private/Extensions/FluidStyledContent/Layouts/
+  partialRootPath = EXT:jwsitepackage12/Resources/Private/Extensions/FluidStyledContent/Partials/
+  templateRootPath = EXT:jwsitepackage12/Resources/Private/Extensions/FluidStyledContent/Templates/
+}
+styles.content.defaultHeaderType = 1
+styles.content.textmedia {
+  linkWrap {
+    lightboxEnabled = 1
+    lightboxCssClass =
+    lightboxRelAttribute =
+    width = 1200m
+    height = 800m
+  }
+  columnSpacing = 0
+  rowSpacing = 0
+  textMargin = 0
+}
+
+##Image widths depending on column width
+jwsitepackage12 {
+  ##max content width
+  imgMaxHeaderWidth = 1600
+  imgMaxWidth = 1280
+  imgWidth66 = 844
+  imgWidth50 = 640
+  imgWidth33 = 640
+
+  imgTextMaxWidth = 640
+  imgTextWidth66 = 422
+  imgTextWidth50 = 400
+  imgTextWidth33 = 400
+}
+## Media Queries, see also TextMediaSrcSet.html and _variables.scss
+jwsitepackage12 {
+  mediaQuerySmallMax = 768
+  mediaQueryMediumMin = 769
+  mediaQueryMediumMax = 1024
+  mediaQueryLargeMin = 1025
+  mediaQueryLargeMax = 1280
+  mediaQueryXLargeMax = 1281
+}

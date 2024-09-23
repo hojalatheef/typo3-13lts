@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000842;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #999;
+      }
+
+      .cls-4 {
+        fill: #b9b9b9;
+      }
+
+      .cls-5 {
+        fill: #b1d0fc;
+      }
+
+      .cls-6 {
+        fill: #dceaff;
+      }
+
+      .cls-7 {
+        fill: #59f;
+      }
+    </style>
+  </defs>
+  <g id="weiss_bg" data-name="weiss bg">
+    <rect class="cls-2" width="64" height="64"/>
+  </g>
+  <g id="hintergrund">
+    <path class="cls-3" d="m4,4v56h56V4H4Zm4,4h48v48H8V8Z"/>
+  </g>
+  <g id="Ebene_6" data-name="Ebene 6">
+    <path class="cls-3" d="m3.88,3.9v56.2h56.2V3.9H3.88Zm4.01,4.01h48.17v48.17H7.9V7.92Z"/>
+    <path class="cls-4" d="m11.91,19.96h40.14v4.01H11.91v-4.01Z"/>
+    <path class="cls-7" d="m7.98,8h48.08v48.08H7.98V8Z"/>
+    <path class="cls-5" d="m54.84,52h-30.04l7.51-10.01,7.51-10.01,7.51,10.01,7.51,10.01Z"/>
+    <path class="cls-6" d="m40.65,52H13.95l6.68-6.68,6.68-6.67,6.67,6.67,6.68,6.68Z"/>
+    <circle class="cls-2" cx="48.5" cy="24.96" r="5"/>
+    <g id="Ebene_7" data-name="Ebene 7">
+      <rect class="cls-1" x="8" y="11" width="24" height="24"/>
+    </g>
+    <path class="cls-2" d="m10,13.56h20v6H10v-6Z"/>
+    <path class="cls-2" d="m10,22.24h20v4.09H10v-4.09Zm0,5.99h20v4.09H10v-4.09Z"/>
+  </g>
+</svg>

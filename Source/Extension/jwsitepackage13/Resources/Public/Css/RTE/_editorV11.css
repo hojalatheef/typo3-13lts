@@ -1,0 +1,227 @@
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../../../Public/Fonts/FontawesomeFree/fa-solid-900.eot");
+  src: url("../../../Public/Fonts/FontawesomeFree/fa-solid-900.eot?#iefix") format("embedded-opentype"),
+  url("../../../Public/Fonts/FontawesomeFree/fa-solid-900.woff2") format("woff2"),
+  url("../../../Public/Fonts/FontawesomeFree/fa-solid-900.woff") format("woff"),
+  url("../../../Public/Fonts/FontawesomeFree/fa-solid-900.ttf") format("truetype"),
+  url("../../../Public/Fonts/FontawesomeFree/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+
+body {
+  /* Font */
+  font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+  font-size: 14px;
+
+  /* Text color */
+  color: #333;
+
+  /* Remove the background color to make it transparent */
+  background-color: #fff;
+
+  margin: 20px;
+}
+
+.cke_editable {
+  font-size: 13px;
+  line-height: 1.6;
+
+  /* Fix for missing scrollbars with RTL texts. (#10488) */
+  word-wrap: break-word;
+}
+
+blockquote {
+  font-style: italic;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  padding: 2px 0;
+  border-style: solid;
+  border-color: #ccc;
+  border-width: 0;
+}
+
+.cke_contents_ltr blockquote {
+  padding-left: 20px;
+  padding-right: 8px;
+  border-left-width: 5px;
+}
+
+.cke_contents_rtl blockquote {
+  padding-left: 8px;
+  padding-right: 20px;
+  border-right-width: 5px;
+}
+
+a {
+  color: #0782C1;
+}
+
+ol, ul, dl {
+  /* IE7: reset rtl list margin. (#7334) */
+  *margin-right: 0px;
+  /* preserved spaces for list items with text direction other than the list. (#6249,#8049)*/
+  padding: 0 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1.4;
+}
+h1 {
+  font-size: 22px;
+}
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 15px;
+}
+
+hr {
+  border: 0px;
+  border-top: 1px solid #ccc;
+}
+
+pre {
+  white-space: pre-wrap; /* CSS 2.1 */
+  word-wrap: break-word; /* IE7 */
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: transparent;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  padding-left: 100px;
+}
+
+table th,
+table td {
+  padding: 0.25rem;
+  vertical-align: top;
+}
+
+table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #eceeef;
+}
+
+.marker {
+  background-color: Yellow;
+}
+
+span[lang] {
+  font-style: italic;
+}
+
+/* Widget Styles */
+.code-featured {
+  border: 5px solid red;
+}
+
+.math-featured {
+  padding: 20px;
+  box-shadow: 0 0 2px rgba(200, 0, 0, 1);
+  background-color: rgba(255, 0, 0, 0.05);
+  margin: 10px;
+}
+
+
+/** justify **/
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.indent-left {
+  margin-left: 24px;
+}
+
+a.btn {
+  background: #000842;
+  border: 1px solid #000842;
+  padding: 12px;
+  color: #fff;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+a.btn.btn-secondary {
+  background: #fff;
+  color: #000842;
+}
+
+p.fontsize3 {
+  font-size: 1.333rem;
+  line-height: 1.875rem;
+}
+
+p.rte-icon,
+a.rte-icon {
+  position: relative;
+  left: 2.25rem;
+  display: block;
+}
+
+p.rte-icon::before,
+a.rte-icon::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  text-align: center;
+  display: inline-block;
+  width: 2.25rem;
+  font-size: inherit;
+  line-height: inherit;
+  position: absolute;
+  left: -2.25rem;
+}
+
+a.rte-icon.fa-globe::before {
+  content: "\f0ac";
+}
+
+a.rte-icon.fa-envelope::before {
+  content:"\f0e0";
+}
+
+a.rte-icon.fa-download::before {
+  content: "\f019";
+}
+
+a.rte-icon.fa-phone::before {
+  content: "\f095";
+}
+
+a.rte-icon.fa-mobile-alt::before {
+  content: "\f3cd";
+}
+
+p.rte-icon.fa-map-marker-alt::before {
+  content: "\f3c5";
+}
+
+p.rte-icon.fa-user-alt::before {
+  content: "\f406";
+}

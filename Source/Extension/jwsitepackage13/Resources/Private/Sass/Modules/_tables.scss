@@ -1,0 +1,49 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 0 var(--base-size) 0;
+  border: var(--border-width) solid var(--table-border-color);
+  border-bottom-width: 0;
+}
+
+th,
+td {
+  padding: calc(var(--base-size-half) - var(--border-width)) var(--gutter-quarter) var(--base-size-half) var(--gutter-quarter);
+  border-bottom: var(--border-width) solid var(--table-border-color);
+  text-align: left;
+  vertical-align: top;
+  @include transition(all);
+}
+
+th {
+  padding-top: var(--base-size-half);
+  @include fontbold();
+}
+
+tr {
+  &:hover,
+  &:focus {
+    td {
+      background: var(--table-hover-bg);
+      color: var(--table-hover-color);
+    }
+  }
+}
+
+.table-responsive,
+.frame-type-table {
+  margin-bottom: var(--base-size);
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+th {
+  background: var(--table-header-bg);
+  color: var(--table-header-color);
+}
+
+table caption {
+  padding: var(--base-size-quarter);
+}

@@ -1,0 +1,32 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  JWeiland\Jwsitepackage13\:
+    resource: '../Classes/*'
+
+  dashboard.buttons.jwspinfo:
+    class: 'TYPO3\CMS\Dashboard\Widgets\Provider\ButtonProvider'
+    arguments:
+      $title: 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:widgets.jwspinfo.button.label'
+      $link: 'https://jweiland.net/musterprojekt.html'
+      $target: '_blank'
+
+  dashboard.widget.jwspinfo:
+    class: 'TYPO3\CMS\Dashboard\Widgets\CtaWidget'
+    arguments:
+      $view: '@dashboard.views.widget'
+      $buttonProvider: '@dashboard.buttons.jwspinfo'
+      $options:
+        text: 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:widgets.jwspinfo.longdesc'
+    tags:
+      - name: dashboard.widget
+        identifier: 'jwspinfo'
+        groupNames: 'general'
+        title: 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:widgets.jwspinfo.title'
+        description: 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:widgets.jwspinfo.shortdesc'
+        iconIdentifier: 'content-widget-text'
+        height: 'small'
+        width: 'medium'

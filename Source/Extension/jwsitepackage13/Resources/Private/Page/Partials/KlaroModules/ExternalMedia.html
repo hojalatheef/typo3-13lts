@@ -1,0 +1,17 @@
+klaroConfig.services.push(
+    {
+        // Only if EXT:video_shariff is installed and active!
+        name: 'youtubevimeo',
+        default: false,
+        title: 'YouTube / Vimeo Videos',
+        purposes: ['externalMedia'],
+        callback: function (consent) {
+            if (consent === true) {
+                var videos = document.getElementsByClassName('video-shariff-play'), l = videos.length, i = 0;
+      					for (i; i < l; i++) {
+        					videos[0].outerHTML = JSON.parse(videos[0].dataset.video);
+      					}
+            }
+        },
+    },
+);

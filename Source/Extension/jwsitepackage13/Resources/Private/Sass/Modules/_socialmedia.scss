@@ -1,0 +1,25 @@
+[class*=frame-type-menu_].frame-layout-261,
+.socialmedia {
+  a {
+    display: inline-block;
+    padding: var(--gutter-quarter);
+    margin: var(--base-size-quarter) var(--gutter-half) var(--base-size-quarter) 0;
+    background: var(--white, #fff);
+    color: var(--font-color);
+    border-radius: var(--border-radius);
+    width: calc(var(--gutter) * 1.5);
+    span {
+      color: var(--font-color);
+    }
+  }
+
+  a:hover span:before,
+  a:focus span:before {
+    color: var(--body-link-hover-color);
+  }
+}
+
+.socialmedia span {
+  text-align: center;
+  width: var(--base-size);
+}

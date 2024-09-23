@@ -1,0 +1,117 @@
+<f:asset.script identifier="klaroConfig" priority="1">
+var klaroConfig = {
+    elementID: 'klaro',
+    storageMethod: 'cookie',
+    cookieName: 'klaro',
+    cookieExpiresAfterDays: 365,
+		groupByPurpose: false,
+    // You can change to cookie domain for the consent manager itself.
+    // Use this if you want to get consent once for multiple matching domains.
+    // If undefined, Klaro will use the current domain.
+    //cookieDomain: '.domain.tld',
+    privacyPolicy: '<f:uri.page pageUid="{settings.privacyPolicy}"/>',
+    // Defines the default state for applications (true=enabled by default).
+    default: false,
+    mustConsent: {settings.mustConsent},
+    acceptAll: true,
+    hideDeclineAll: false,
+    translations: {
+        // If you erase the "consentModal" translations, Klaro will use the
+        // bundled translations.
+        de: {
+            consentModal: {
+                title: 'Informationen, die gespeichert werden',
+								description:
+                    'Hier können Sie einsehen und anpassen, welche Information gesammelt werden.',
+            },
+            adsense: {
+                description: 'Anzeigen von Werbeanzeigen (Beispiel)',
+            },
+            matomo: {
+                description: 'Sammeln von Besucherstatistiken',
+            },
+						facebookPixel: {
+								description: 'Cookie von Facebook, das für Website-Analysen, Ad-Targeting und Anzeigenmessung verwendet wird.',
+						},
+						googleAnalytics: {
+                description: 'Sammeln von Besucherstatistiken',
+            },
+            googleFonts: {
+                description: 'Web-Schriftarten von Google gehostet',
+            },
+						twitter: {
+							description: 'Auf dieser Website werden Services des Kurznachrichtendienstes Twitter eingebunden. Die Cookies sind zur korrekten Funktion notwendig.',
+						},
+						youtubevimeo: {
+							description: 'YouTube oder Vimeo Videos abspielen',
+						},
+            purposes: {
+                analytics: 'Besucher-Statistiken',
+                security: 'Sicherheit',
+                marketing: 'Marketing',
+                advertising: 'Anzeigen von Werbung',
+                styling: 'Styling',
+                socialmedia: 'Social Media',
+								externalMedia: 'Externe Medien',
+            },
+						acceptSelected: 'Auswahl speichern',
+        },
+        en: {
+            consentModal: {
+								title: 'Information that are collected',
+                description:
+                    'Here you can see and customize the information that are collected about you.',
+            },
+            adsense: {
+                description: 'Displaying of advertisements (just an example)',
+            },
+            matomo: {
+                description: 'Collecting of visitor statistics',
+            },
+						facebookPixel: {
+								description: 'Cookie from Facebook, which is used for website analysis, ad targeting and ad measurement',
+						},
+						googleAnalytics: {
+                description: 'Collecting of visitor statistics',
+            },
+            googleFonts: {
+                description: 'Web fonts hosted by Google',
+            },
+						twitter: {
+							description: 'Services of the short news service Twitter are integrated on this website. The cookies are necessary for correct functionality.',
+						},
+						youtubevimeo: {
+							description: 'Play YouTube or Vimeo Videos',
+						},
+            purposes: {
+                analytics: 'Analytics',
+                security: 'Security',
+                marketing: 'Marketing',
+                advertising: 'Advertising',
+                styling: 'Styling',
+                socialmedia: 'Social Media',
+								externalMedia: 'External Media',
+            },
+						acceptSelected: 'Accept selected',
+        },
+    },
+
+    // This is a list of third-party apps that Klaro will manage for you.
+    services: [],
+};
+	<f:if condition="{settings.externalMedia}">
+		<f:render partial="KlaroModules/ExternalMedia"/>
+	</f:if>
+	<f:if condition="{settings.useMatomo}">
+		<f:render partial="KlaroModules/Matomo"/>
+	</f:if>
+	<f:if condition="{settings.useGA}">
+		<f:render partial="KlaroModules/GoogleAnalytics"/>
+	</f:if>
+	<f:if condition="{settings.fbp}">
+		<f:render partial="KlaroModules/FacebookPixel"/>
+	</f:if>
+	<f:if condition="{settings.useTwitter}">
+		<f:render partial="KlaroModules/Twitter"/>
+	</f:if>
+</f:asset.script>

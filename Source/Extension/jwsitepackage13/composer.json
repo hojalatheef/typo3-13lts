@@ -1,0 +1,30 @@
+{
+	"name": "jweiland/jwsitepackage13",
+	"description": "Das jweiland.net Sitepackage ist eine Vorlage für neue TYPO3-Projekte und kann individuell angepasst werden.",
+	"type": "typo3-cms-extension",
+	"require": {
+		"typo3/cms-core": "^13.3",
+		"typo3/cms-rte-ckeditor": "^13.3"
+	},
+	"license": "GPL-2.0-or-later",
+	"authors": [
+		{
+			"name": "Stefan Froemken",
+			"email": "projects@jweiland.net"
+		},
+		{
+			"name": "Hoja Mustaffa Abdul Latheef",
+			"email": "projects@jweiland.net"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"JWeiland\\Jwsitepackage13\\": "Classes/"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "jwsitepackage13"
+		}
+	}
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2020-07-06T07:45:56Z" product-name="jwsitepackage12">
+		<header/>
+		<body>
+			<trans-unit id="jwsitepackage12.imagesizes">
+				<source>Width of images in relation to the respective column width</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.navimage">
+				<source>Navigation image</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

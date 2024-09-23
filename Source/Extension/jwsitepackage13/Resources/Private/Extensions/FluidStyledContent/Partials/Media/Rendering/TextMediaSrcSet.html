@@ -1,0 +1,40 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:variable name="small">{settings.imageSizeSmall}</f:variable>
+<f:variable name="medium">{settings.imageSizeMedium}</f:variable>
+<f:variable name="large">{settings.imageSizeLarge}</f:variable>
+<f:variable name="imagePercentage">{data.tx_jwsitepackage12_imagesizes / 100}</f:variable>
+
+<f:variable name="loading">{settings.media.lazyLoading}</f:variable>
+
+<f:variable name="cropVariantSmartphone">smartphone</f:variable>
+<f:variable name="cropVariantTablet">tablet</f:variable>
+<f:variable name="cropVariantDesktop">desktop</f:variable>
+
+<f:comment>jw: {data.CType}=='heroimage' has extra cropping values</f:comment>
+<f:if condition="{data.CType}=='heroimage'">
+	<f:variable name="cropVariantSmartphone">heroSmartphone</f:variable>
+	<f:variable name="cropVariantTablet">heroTablet</f:variable>
+	<f:variable name="cropVariantDesktop">hero</f:variable>
+    <f:variable name="loading">eager</f:variable>
+</f:if>
+
+<f:comment>jw: {data.colPos}==5 header over whole browser width</f:comment>
+<f:if condition="{data.colPos}==5">
+	<f:variable name="large">{settings.imageSizeHeader}</f:variable>
+</f:if>
+
+<f:comment>jw: {data.layout}:gallery with square thumbnails, no picture for svg</f:comment>
+<f:if condition="{data.layout}==200 || {file.extension}==svg">
+  <f:then>
+    <f:media class="image-embed-item" file="{file}" width="{dimensions.width}c" height="{dimensions.width}c" alt="{file.alternative}" title="{file.title}" cropVariant="{cropVariantDesktop}" loading="{settings.media.lazyLoading}"/>
+  </f:then>
+  <f:else>
+    <picture>
+      <source srcset="{f:uri.image(image: file, width: '{small * usedColPosPercentage / data.imagecols * imagePercentage}', cropVariant: '{cropVariantSmartphone}')}" media="(max-width: {settings.imageSizeSmall}px)">
+      <source srcset="{f:uri.image(image: file, width: '{medium * usedColPosPercentage / data.imagecols * imagePercentage}', cropVariant: '{cropVariantTablet}')}" media="(max-width: {settings.imageSizeMedium}px)">
+      <source srcset="{f:uri.image(image: file, width: '{large * usedColPosPercentage / data.imagecols * imagePercentage}', cropVariant: '{cropVariantDesktop}')}">
+      <f:media class="image-embed-item" file="{file}" width="{dimensions.width}" alt="{file.alternative}" title="{file.title}" cropVariant="{cropVariantDesktop}" loading="{loading}"/>
+    </picture>
+  </f:else>
+</f:if>
+</html>

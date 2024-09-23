@@ -1,0 +1,13 @@
+## Config for Linkhandler
+## Source: https://usetypo3.com/linkhandler.html
+
+
+## Linkhandler for news records
+config.recordLinks.tx_news {
+  typolink {
+    parameter = {$jwsitepackage12.newsDetailPid}
+    additionalParams.data = field:uid
+    additionalParams.wrap = &tx_news_pi1[news]=|
+    useCacheHash = 1
+  }
+}

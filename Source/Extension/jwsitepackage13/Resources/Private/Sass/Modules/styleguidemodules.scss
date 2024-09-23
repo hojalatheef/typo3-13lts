@@ -1,0 +1,50 @@
+//these ccs styles are only needed for the styleguide
+@import "../variables";
+
+////////name of all used color variables for styleguide ////////
+$website-colors: (
+  "color1":var(--color1),
+  "color2":var(--color2),
+  "color3":var(--color3),
+  "color4":var(--color4),
+  "black":var(--black),
+  "gray1":var(--gray1),
+  "gray2":var(--gray2),
+  "gray3":var(--gray3),
+  "gray4":var(--gray4),
+  "gray5":var(--gray5),
+  "white":var(--white),
+  "white-opacity":var(--white-opacity),
+  "error":var(--error),
+  "valid":var(--valid),
+  "warning":var(--warning),
+  "information":var(--information)
+);
+
+@each $color-name, $website-color in $website-colors {
+  .color-#{$color-name} {
+    background: #{$website-color};
+    border: var(--border-width, 1px) solid var(--border-color);
+  }
+}
+
+@each $color, $website-color in $website-colors {
+  .#{$color} {
+    color: #{$website-color};
+  }
+}
+
+//////// styleguide header- not for production ////////
+div.margin-top > h2 {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 48px;
+}
+
+div.margin-top > h2:after {
+  content: "";
+  position: absolute;
+  border-top: 4px solid #e1e1e1;
+  top: 50%;
+  width: 100%;
+}

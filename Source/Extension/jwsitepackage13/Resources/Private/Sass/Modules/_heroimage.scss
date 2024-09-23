@@ -1,0 +1,138 @@
+.frame-type-heroimage {
+  position: relative;
+
+  a.btn {
+    text-shadow: none;
+  }
+
+  .hero-text {
+    padding: var(--base-size-half) var(--gutter-half) var(--base-size) var(--gutter-half);
+
+    a:not(.btn) {
+      color: var(--hero-text-dark);
+
+      &:hover,
+      &:focus {
+        color: var(--hero-text-dark);
+      }
+    }
+  }
+  &.frame-layout-0 .hero-text {
+    text-shadow: var(--hero-text-shadow-light);
+    * {
+      color: var(--hero-text-dark);
+    }
+  }
+
+  &.frame-layout-400 .hero-text {
+    background: var(--hero-text-bg-light);
+  }
+
+  &.frame-layout-402 .hero-text {
+    background: var(--hero-text-bg-dark);
+    * {
+      color: var(--hero-text-light);
+    }
+
+    a:not(.btn) {
+      color: var(--hero-text-light);
+
+      &:hover,
+      &:focus {
+        color: var(--hero-text-light);
+      }
+    }
+  }
+
+  h1,
+  h2,
+  p {
+    margin-bottom: var(--base-size-half);
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: $mediaquery-small-min) {
+  .frame-type-heroimage {
+    .hero-text {
+      position: absolute;
+      z-index: 1;
+      top: var(--base-size-half);
+      left: 0;
+      max-width: 100%;
+      max-height: calc(100% - (var(--base-size-half)));
+      overflow: hidden;
+      padding: var(--base-size-eighth) var(--gutter-half) var(--base-size) var(--gutter-half);
+    }
+
+    &.frame-layout-401 .hero-text {
+      text-shadow: var(--hero-text-shadow-dark);
+      * {
+        color: var(--hero-text-light);
+      }
+      a:not(.btn) {
+        color: var(--hero-text-light);
+
+        &:hover,
+        &:focus {
+          color: var(--hero-text-light);
+        }
+      }
+
+    }
+
+    &.frame-center {
+      .hero-text {
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+
+    &.frame-right {
+      .hero-text {
+        right: var(--gutter);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $mediaquery-medium-min) {
+  .frame-type-heroimage {
+    .hero-text {
+      max-width: 80%;
+      width: auto;
+      left: var(--gutter);
+    }
+  }
+}
+
+@media screen and (min-width: $mediaquery-large-min) {
+  .frame-type-heroimage {
+    .hero-text {
+      max-height: 80%;
+      padding: var(--base-size-half) var(--gutter) var(--base-size) var(--gutter);
+      max-width: 66%;
+      left: var(--gutter-double);
+    }
+
+    &.frame-right {
+      .hero-text {
+        right: var(--gutter-double);
+        left: auto;
+      }
+    }
+
+  }
+}
+
+@media screen and (min-width: $mediaquery-xlarge-min) {
+  .frame-type-heroimage {
+    .hero-text {
+      top: 20%;
+      max-width: 50%;
+    }
+  }
+}

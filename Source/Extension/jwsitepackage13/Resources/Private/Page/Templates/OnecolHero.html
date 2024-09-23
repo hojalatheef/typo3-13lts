@@ -1,0 +1,12 @@
+<f:layout name="Standard"/>
+<f:comment>JW: Default template in V12</f:comment>
+<f:section name="Content">
+  <div class="content-main width-max">
+    <div class="grid">
+      <f:render partial="VerticalMenu" arguments="{_all}"/>
+      <div class="{f:if(condition:'{menuType}!=0', then: 'col-9_md-8_sm-12', else: 'col-12')}">
+        <f:format.raw>{content0}</f:format.raw>
+      </div>
+    </div>
+  </div>
+</f:section>

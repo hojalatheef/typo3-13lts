@@ -1,0 +1,38 @@
+//fixed header
+@media screen and (min-width: $desktop-menu-min) {
+  .header-fixed {
+    .content-header {
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      right: 0;
+    }
+
+    &.scroll-fixed {
+      .header-service,
+      .wrapper-search {
+        height: var(--header-height-fixed);
+      }
+
+      .wrapper-logo {
+        height: var(--header-height-fixed);
+
+        img {
+          height: var(--header-height-fixed);
+        }
+      }
+    }
+
+    main {
+      padding-top: var(--header-height);
+      &.less-padding {
+        padding-top: var(--header-service-height);
+      }
+    }
+
+    .anker {
+      position: absolute;
+      margin-top: calc(-6 * var(--base-size));
+    }
+  }
+}

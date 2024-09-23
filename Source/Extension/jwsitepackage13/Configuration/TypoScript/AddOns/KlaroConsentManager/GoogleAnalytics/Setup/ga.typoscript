@@ -1,0 +1,23 @@
+## Tracking ID for Google Analytics
+## Set the ID of your Google Analytics property in the Constants Editor on the root page of your website
+["{$jwsitepackage12CCM.gaTrackingId}" != ""]
+
+page.headerData.1588597223 = TEXT
+page.headerData.1588597223.value (
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async type="text/plain"
+  data-src="https://www.googletagmanager.com/gtag/js?id={$jwsitepackage12CCM.gaTrackingId}"
+  data-type="application/javascript"
+  data-name="googleAnalytics"></script>
+<script type="text/plain"
+  data-type="application/javascript"
+  data-name="googleAnalytics">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{$jwsitepackage12CCM.gaTrackingId}'), { 'anonymize_ip': true };
+</script>
+
+)
+[END]

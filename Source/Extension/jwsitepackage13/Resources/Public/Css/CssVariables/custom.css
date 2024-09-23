@@ -1,0 +1,264 @@
+/******************* 01. Font Implementation *******************/
+/*
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../../Fonts/OpenSans/OpenSans-Regular-webfont.eot');
+  src: url('../../Fonts/OpenSans/OpenSans-Regular-webfont.eot?#iefix') format("embedded-opentype"),
+  url('../../Fonts/OpenSans/OpenSans-Regular-webfont.woff') format('woff'),
+  url('../../Fonts/OpenSans/OpenSans-Regular-webfont.ttf') format('truetype'),
+  url('../../Fonts/OpenSans/OpenSans-Regular-webfont.svg##{$font-name-normal}') format('svg');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'open_sansbold';
+  src: url('../../Fonts/OpenSans/OpenSans-Bold-webfont.eot');
+  src: url('../../Fonts/OpenSans/OpenSans-Bold-webfont.eot?#iefix') format("embedded-opentype"),
+  url('../../Fonts/OpenSans/OpenSans-Bold-webfont.woff') format('woff'),
+  url('../../Fonts/OpenSans/OpenSans-Bold-webfont.ttf') format('truetype'),
+  url('../../Fonts/OpenSans/OpenSans-Bold-webfont.svg##{$font-name-bold}') format("svg");
+  font-style: normal;
+  font-display: swap;
+}
+*/
+@font-face {
+  font-family: 'Roboto Flex Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto Flex Regular'), url('../../Fonts/Roboto/RobotoFlex[GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght].woff') format('woff');
+}
+/******************* 02. Variable Declarations *******************/
+:root {
+
+  /*** Fonts,see also Font Implementation at to top of this file ***/
+  --font-family-normal: 'Roboto Flex Regular', verdana, arial, helvetica, sans-serif;
+  --font-weight-normal: 400;
+  --font-variation-settings: 'wdth' 120, 'wght' 400;
+
+  --font-family-bold: 'Roboto Flex Regular', verdana, arial, helvetica, sans-serif;
+  --font-weight-bold: 550;
+  --font-variation-settings-bold: 'wdth' 120, 'wght' 550;
+
+  /*** Colors begin ***/
+
+  /* Links/Menus */
+  --color1: #0026a8;
+  --color2: #000F42;
+
+  /* Decoration*/
+  --color3: #ff9635;
+  --color4: #9a031e;
+
+  /* Gray Scale */
+  --black: #000;
+  --gray1: #222;
+  --gray2: #666;
+  --gray3: #999;
+  --gray4: #ccc;
+  --gray5: #eee;
+  --white: #fff;
+  --white-opacity: rgba(255, 255, 255, 0.9);
+
+  /* Message Colors */
+  --error: #ba0202;
+  --error-light: #fff2f2;
+  --valid: #5abc55;
+  --valid-light: #e8f6e7;
+  --warning: #ffc800;
+  --warning-light: #fffae8;
+  --information: #0080ff;
+  --information-light: #ecf5fe;
+
+  /*** Colors end ***/
+
+  /*** Basic Sizes ***/
+
+  /* Basic horizontal spaces */
+  --base-html-size: 16px;
+  --body-font-size: 1rem; /* 16px*/
+
+  --base-size: 1.5rem;
+  --base-size-double: 3rem;
+  --base-size-triple: 4.5rem;
+  --base-size-half: 0.75rem;
+  --base-size-quarter: 0.375rem;
+  --base-size-eighth: 0.1875rem;
+
+  /* Basic vertical spaces */
+  --gutter: 1.5rem;
+  --gutter-double: 3rem;
+  --gutter-triple: 4.5rem;
+  --gutter-half: 0.75rem;
+  --gutter-quarter: 0.375rem;
+  --gutter-eighth: 0.1875rem;
+
+  /* Borders */
+  --border-width: 2px;
+  --border-radius: 2px;
+
+  --transition: .3s ease-in-out;
+
+
+  /******************* 03. Property Declarations, Individual Layout *******************/
+
+  /* Max. Height of Logo in Header (--logo-height) on Website
+  Rendered File height is defined in TypoScript Constants on Root Page. Adjust value if necessary
+  Example: --logo-height: 150px;
+  */
+  --logo-height: calc(var(--base-size, 16px) * 3);
+
+  /* Body */
+  --font-color: var(--gray1);
+  --font-color-light: var(--gray2);
+  --body-bg-color: var(--white);
+
+  /* Body links */
+  --body-link-color: var(--color1);
+  --body-link-hover-color: var(--color2);
+  --body-link-invers-color: var(--gray4);
+  --body-link-invers-hover-color: var(--white);
+  --body-link-text-decoration: underline;
+  --body-link-text-decoration-color: var(--gray4);
+  --body-link-text-decoration-thickness: 1px;
+  --body-link-underline-offset: 3px;
+
+  /* Page Header */
+  --header-bg-color: var(--white);
+  --header-bg-overlay: var(--white-opacity);
+  --header-color: var(--font-color);
+  --header-link-color: var(--body-link-color);
+  --header-link-hover-color: var(--body-link-hover-color);
+  --header-service-height: var(--logo-height, calc(var(--base-size, 16px) * 3));
+  --mobile-logo-height: calc(var(--base-size, 16px) * 3);
+  --nav-header-height: calc(var(--base-size, 16px) * 2);
+  --header-height: calc(var(--header-service-height) + var(--nav-header-height));
+  --header-height-fixed: calc(var(--base-size, 16px) * 2);
+
+  --header-button-color: var(--white);
+  --header-button-hover-color: var(--white);
+  --header-button-bg: var(--body-link-color);
+  --header-button-hover-bg: var(--body-link-hover-color);
+  --header-button-border: var(--body-link-color);
+  --header-button-hover-border: var(--body-link-hover-color);
+
+  /* Page Footers */
+  --footer-bg: var(--gray2);
+  --footer-color: var(--white);
+  --footer-link-color: var(--gray5);
+  --footer-link-hover-color: var(--body-link-invers-hover-color);
+
+  --footer2-bg: var(--gray1);
+  --footer2-color: var(--white);
+  --footer2-link-color: var(--body-link-invers-color);
+  --footer2-link-hover-color: var(--body-link-invers-hover-color);
+
+  /* Fonts sizes depending on display size */
+  --base-html-size-small: var(--base-html-size);
+  --base-html-size-medium: calc(var(--base-html-size) * 1.125);
+  --base-html-size-large: calc(var(--base-html-size) * 1.1875);
+
+  /* Font sizes - https://type-scale.com/ Perfect Fourth, 1.333 */
+  --font-size1: 2.369rem; /* h1 */
+  --line-height1: var(--base-size-double);
+  --font-size2: 1.777rem; /* h2 */
+  --line-height2: calc(var(--base-size) * 1.5);
+  --font-size3: 1.333rem; /* h3 */
+  --line-height3: calc(var(--base-size) * 1.25);
+  --font-size4: 1.125rem; /* h4 */
+  --font-size5: var(--body-font-size); /* h5 */
+  --font-size-small: calc(var(--body-font-size) * 0.8);
+  --line-height-small: calc(var(--body-font-size) * 0.8);
+
+  /* Headers h1-h5 */
+  --header-font-family: var(--font-family-bold);
+  --header-font-weight: var(--font-weight-bold);
+  --header-font-color: var(--font-color-light);
+  --header-font-variation-settings: var(--font-variation-settings-bold);
+
+  /* Buttons primary */
+  --button-color: var(--white);
+  --button-hover-color: var(--white);
+  --button-bg: var(--body-link-color);
+  --button-hover-bg: var(--body-link-hover-color);
+  --button-border: var(--body-link-color);
+  --button-hover-border: var(--body-link-hover-color);
+
+  /* Buttons secondary */
+  --button2-color: var(--body-link-color);
+  --button2-hover-color: var(--white);
+  --button2-bg: var(--white);
+  --button2-hover-bg: var(--body-link-hover-color);
+  --button2-border: var(--body-link-color);
+  --button2-hover-border: var(--body-link-hover-color);
+
+  /* Tables: border color and cell borders.*/
+  --table-border-color: var(--gray3);
+  --table-hover-color: var(--font-color);
+  --table-hover-bg: var(--gray5);
+  --table-header-bg: var(--gray5);
+  --table-header-color: var(--font-color);
+  --stripedblock-bg: var(--gray5);
+
+  /* Default Border */
+  --border-color: var(--gray3);
+
+  /* Image Border Option for Editors*/
+  --image-border-color: var(--border-color);
+  --image-border-width: var(--border-width);
+
+  /* Layout Option for Editors*/
+  --layout-100-bg: var(--gray5);
+
+  /* Toggle Content Header Frame Option */
+  --toggle-bg: var(--gray5);
+
+  /* Paddíng for all boxes with background */
+  --padding-boxes: var(--base-size) var(--gutter);
+
+  --box-shadow: rgba(0, 0, 0, 0.2);
+
+
+  /***** Content Element: Hero Text over image options *****/
+  --hero-text-light: var(--white);
+  --hero-text-dark: var(--black);
+  --hero-text-bg-light: rgba(255, 255, 255, 0.9);
+  --hero-text-bg-dark: rgba(0, 0, 0, 0.9);
+  --hero-text-shadow-dark: 1px 1px 1px var(--black);
+  --hero-text-shadow-light: 1px 1px 1px var(--white);
+
+  /***** Navigation smartmenu *****/
+
+  /* Navigation background over whole browser width */
+  --menu-bg-100vw: var(--gray5, #eee);
+
+  --menu-font-family: var(--font-family-normal);
+
+  /*Mobile Items separators*/
+  --collapsible-separators-color: rgba(0, 0, 0, 0.05);
+  /*Toggle button (sub menu indicators)*/
+  --collapsible-toggle-bg: var(--white-opacity);
+  --collapsible-submenu-bg: rgba(var(--gray4), 0.1);
+
+  /* 1.level menu */
+  --menu-link-color: var(--body-link-color);
+  --menu-link-hover-color: var(--font-color);
+  --menu-bg: var(--gray5);
+  --menu-hover-bg: var(--gray5);
+  --menu-current-bg: var(--gray5);
+  --menu-arrow-color: var(--menu-link-color);
+
+  /* 2.level menu */
+  --submenu-link-color: var(--body-link-color);
+  --submenu-link-hover-color: var(--font-color);
+  --submenu-current-color: var(--font-color);
+  --submenu-bg: var(--gray5);
+  --submenu-hover-bg: var(--white);
+  --submenu-current-bg: var(--white);
+  --submenu-arrow-color: var(--body-link-color);
+  --desktop-submenu-border-color: var(--border-color);
+
+  /* hamburger icon for mobile menu */
+  --menu-icon-button: var(--body-link-color);
+
+}

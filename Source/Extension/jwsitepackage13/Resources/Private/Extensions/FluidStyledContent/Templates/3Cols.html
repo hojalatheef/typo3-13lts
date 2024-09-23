@@ -1,0 +1,28 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="Main">
+  <div class="grid flex-center">
+    <f:if condition="{childrenLeft3}">
+      <div class="col-4_md-6_xs-12{f:if(condition: '{data.layout}==300', then: ' height-100')}">
+        <f:for each="{childrenLeft3}" as="child">
+          <f:format.raw>{child.renderedContent}</f:format.raw>
+        </f:for>
+      </div>
+    </f:if>
+    <f:if condition="{childrenMiddle3}">
+      <div class="col-4_md-6_xs-12{f:if(condition: '{data.layout}==300', then: ' height-100')}">
+        <f:for each="{childrenMiddle3}" as="child">
+          <f:format.raw>{child.renderedContent}</f:format.raw>
+        </f:for>
+      </div>
+    </f:if>
+    <f:if condition="{childrenRight3}">
+      <div class="col-4_md-6_xs-12{f:if(condition: '{data.layout}==300', then: ' height-100')}">
+        <f:for each="{childrenRight3}" as="child">
+          <f:format.raw>{child.renderedContent}</f:format.raw>
+        </f:for>
+      </div>
+    </f:if>
+  </div>
+</f:section>
+</html>

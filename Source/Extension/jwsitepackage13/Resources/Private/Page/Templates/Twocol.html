@@ -1,0 +1,29 @@
+<f:layout name="Standard"/>
+
+<f:section name="Content">
+  <div class="content-main width-max">
+    <div class="grid">
+      <f:render partial="VerticalMenu" arguments="{_all}"/>
+      <div class="{f:if(condition:'{menuType}!=0', then: 'col-9_md-8_sm-12', else: 'col-12')}">
+        <f:if condition="{content1}">
+          <div class="col-12">
+            <f:format.raw>{content1}</f:format.raw>
+          </div>
+        </f:if>
+        <div class="grid">
+          <div class="{f:if(condition:'{menuType}!=0', then: 'col-6_md-12', else: 'col-6_sm-12')}">
+            <f:format.raw>{content0}</f:format.raw>
+          </div>
+          <div class="{f:if(condition:'{menuType}!=0', then: 'col-6_md-12', else: 'col-6_sm-12')}">
+            <f:format.raw>{content2}</f:format.raw>
+          </div>
+        </div>
+        <f:if condition="{content3}">
+          <div class="col-12">
+            <f:format.raw>{content3}</f:format.raw>
+          </div>
+        </f:if>
+      </div>
+    </div>
+  </div>
+</f:section>

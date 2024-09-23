@@ -1,0 +1,23 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<div class="content-footer2">
+	<div class="width-max align-center">
+		<f:cObject typoscriptObjectPath="lib.copyright"/>
+		<nav class="inline-block" aria-label="Footer">
+			<ul class="horizontal">
+				<f:for each="{menuServiceFooter}" as="Item">
+					<f:if condition="{Item.current}">
+						<f:then>
+							<li><span>{Item.title}</span></li>
+						</f:then>
+						<f:else>
+							<li class="{f:if(condition: Item.active, then: ' active')}">
+								<f:render partial="MenuItemLink" arguments="{item: Item}"/>
+							</li>
+						</f:else>
+					</f:if>
+
+				</f:for>
+			</ul>
+		</nav>
+	</div>
+</div>

@@ -1,0 +1,52 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:switch expression="{menuType}">
+	<f:case value="0"></f:case>
+
+	<f:case value="1">
+		<div class="col-3_md-4_sm-12">
+			<f:if condition="{menuMain}">
+				<f:render section="verticalMenu" arguments="{_all}"/>
+			</f:if>
+		</div>
+	</f:case>
+
+	<f:case value="2">
+		<div class="col-3_md-4_sm-0">
+			<f:if condition="{verticalMenu1}">
+				<f:render section="verticalMenu" arguments="{menuMain: verticalMenu1}"/>
+			</f:if>&nbsp;
+		</div>
+	</f:case>
+</f:switch>
+
+<f:section name="verticalMenu">
+	<ul id="main-menu-v" class="sm sm-vertical sm-clean hidden-sm">
+		<f:for each="{menuMain}" as="Item">
+			<f:if condition="{Item.spacer}">
+				<f:then>
+				</f:then>
+				<f:else>
+					<li class="{f:if(condition: Item.active, then: ' active')}{f:if(condition: Item.current, then: ' current')}">
+						<f:render partial="MenuItemLink" arguments="{item: Item}"/>
+						<f:if condition="{Item.children}">
+							<f:render section="submenu" arguments="{submenu: Item.children}"/>
+						</f:if>
+					</li>
+				</f:else>
+			</f:if>
+		</f:for>
+	</ul>
+</f:section>
+
+<f:section name="submenu">
+	<ul>
+		<f:for each="{submenu}" as="subItem">
+			<li>
+				<f:render partial="MenuItemLink" arguments="{item: subItem}"/>
+				<f:if condition="{subItem.children}">
+					<f:render section="submenu" arguments="{submenu: subItem.children}"/>
+				</f:if>
+			</li>
+		</f:for>
+	</ul>
+</f:section>

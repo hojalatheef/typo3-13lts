@@ -1,0 +1,16 @@
+klaroConfig.services.push(
+	{
+			name: 'matomo',
+			default: true,
+			// The title of you app as listed in the consent modal.
+			title: 'Matomo/Piwik',
+			purposes: ['analytics'],
+			cookies: [
+					/^_pk_.*$/,
+					'piwik_ignore',
+			],
+			required: false,
+			optOut: false,
+			onlyOnce: true,
+	},
+);

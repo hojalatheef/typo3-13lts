@@ -1,0 +1,156 @@
+
+renderingOptions:
+  submitButtonLabel: Senden
+type: Form
+identifier: beispielformular
+label: Beispielformular
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'Nachricht über Kontaktformular'
+      senderAddress: noreply@domain.tld
+      senderName: '{text-1}'
+      attachUploads: true
+      translation:
+        language: default
+      recipients:
+        empfaenger@domain.tld: 'Max Mustermann'
+      addHtmlPart: true
+      replyToRecipients:
+        '{email-1}': ''
+    identifier: EmailToReceiver
+  -
+    options:
+      pageUid: '39'
+      additionalParameters: ''
+    identifier: Redirect
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Neue Seite'
+    type: Page
+    identifier: page-1
+    label: 'Ihre Daten'
+    renderables:
+      -
+        defaultValue: ''
+        type: Text
+        identifier: text-1
+        label: Name
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+          validationErrorMessages:
+            -
+              code: '1221560910'
+              message: 'Bitte geben Sie Ihren Namen an.'
+            -
+              code: '1221560718'
+              message: 'Bitte geben Sie Ihren Namen an.'
+            -
+              code: '1347992400'
+              message: 'Bitte geben Sie Ihren Namen an.'
+            -
+              code: '1347992453'
+              message: 'Bitte geben Sie Ihren Namen an.'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Email
+        identifier: email-1
+        label: E-Mail
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+          validationErrorMessages:
+            -
+              code: '1221560910'
+              message: 'Bitte geben Sie Ihre E-Mailadresse an.'
+            -
+              code: '1221560718'
+              message: 'Bitte geben Sie Ihre E-Mailadresse an.'
+            -
+              code: '1347992400'
+              message: 'Bitte geben Sie Ihre E-Mailadresse an.'
+            -
+              code: '1347992453'
+              message: 'Bitte geben Sie Ihre E-Mailadresse an.'
+            -
+              code: '1221559976'
+              message: 'Bitte geben Sie eine gültige E-Mailadresse an.'
+        validators:
+          -
+            identifier: EmailAddress
+          -
+            identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Telephone
+        identifier: telephone-1
+        label: 'Telephone number'
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: Nachricht
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+          validationErrorMessages:
+            -
+              code: '1221560910'
+              message: 'Bitte geben Sie eine Nachricht ein.'
+            -
+              code: '1221560718'
+              message: 'Bitte geben Sie eine Nachricht ein.'
+            -
+              code: '1347992400'
+              message: 'Bitte geben Sie eine Nachricht ein.'
+            -
+              code: '1347992453'
+              message: 'Bitte geben Sie eine Nachricht ein.'
+        validators:
+          -
+            identifier: NotEmpty
+      -
+        properties:
+          options:
+            qwqweqweeqwe: qweqwe
+            wqewewee: wqee
+            qweqwewq: qwewq
+        type: SingleSelect
+        identifier: singleselect-1
+        label: 'Single select'
+      -
+        properties:
+          options:
+            ewqeq: eqwe
+            weweewe: wewe
+            ewewewew: eewew
+        type: MultiSelect
+        identifier: multiselect-1
+        label: 'Multi select'
+      -
+        properties:
+          options:
+            Option1w: Option1
+            Option2: Option2
+        type: RadioButton
+        identifier: radiobutton-1
+        label: 'Radio button'
+      -
+        type: Checkbox
+        identifier: checkbox-1
+        label: Checkbox
+      -
+        properties:
+          options:
+            Option1: Option1
+            Option2: Option2
+        type: MultiCheckbox
+        identifier: multicheckbox-1
+        label: 'Multi checkbox'

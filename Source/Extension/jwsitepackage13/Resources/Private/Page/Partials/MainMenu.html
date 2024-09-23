@@ -1,0 +1,18 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<div class="clean-menubg wrapper-topmenu{f:if(condition: '{menuType} == 1', then: ' hidden-mdup', else: '')}">
+	<nav aria-label="Main" class="main-nav menu-horizontal{f:if(condition: '{menuType} == 2', then: ' onelevel-mdup', else: '')}">
+		<input id="main-menu-state" type="checkbox"><label class="main-menu-btn" for="main-menu-state"><span class="main-menu-btn-icon"></span><span class="main-menu-btn-text">Menu</span></label>
+		<f:switch expression="{menuTheme}">
+			<f:case value="standard">
+				<f:render partial="MenuThemes/StandardMenu" arguments="{_all}"/>
+			</f:case>
+			<f:case value="megamenu">
+				<f:render partial="MenuThemes/MegaMenu" arguments="{_all}"/>
+			</f:case>
+			<f:defaultCase>
+				<f:render partial="MenuThemes/StandardMenu" arguments="{_all}"/>
+			</f:defaultCase>
+		</f:switch>
+	</nav>
+</div>
+

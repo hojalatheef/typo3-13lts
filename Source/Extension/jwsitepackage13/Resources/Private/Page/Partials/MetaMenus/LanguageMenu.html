@@ -1,0 +1,25 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:spaceless>
+	<f:if condition="{languageMenu}">
+		<ul class="languagemenu horizontal" role="menu" aria-label="Language Choice">
+			<f:for each="{languageMenu}" as="item" iteration="iterator">
+				<f:if condition="{iterator.isFirst} && {iterator.isLast}">
+					<f:else>
+						<li class="{f:if(condition: item.active, then: 'active')}{f:if(condition: iterator.isLast, then: ' last')}{f:if(condition: item.available, else: ' hidden')}"
+								role="none">
+							<f:if condition="{item.available} && !{item.active}">
+								<f:then>
+									<a role="menuitem" href="{item.link}" hreflang="{item.hreflang}" title="{item.navigationTitle}">{item.navigationTitle}</a>
+								</f:then>
+								<f:else>
+									<span role="menuitem" aria-disabled="true">{item.navigationTitle}</span>
+								</f:else>
+							</f:if>
+						</li>
+					</f:else>
+				</f:if>
+			</f:for>
+		</ul>
+	</f:if>
+</f:spaceless>
+</html>

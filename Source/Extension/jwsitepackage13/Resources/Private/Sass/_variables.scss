@@ -1,0 +1,131 @@
+//see also Resources/Public/Css/custom.css for css variables
+//Variables for Media Queries and Navigation:
+
+// ----------------------------------------------------------
+// Media Queries
+// ----------------------------------------------------------
+// Max Content Width
+$content-max: 1280px;
+$gutter-px: 16px; // gutter value in px
+// Breakpoints
+$mediaquery-xsmall-max: 480px;
+$mediaquery-small-min: ($mediaquery-xsmall-max + 1);
+$mediaquery-small-max: 768px;
+$mediaquery-medium-min: ($mediaquery-small-max + 1);
+$mediaquery-medium-max: 1024px;
+$mediaquery-large-min: ($mediaquery-medium-max + 1);
+$mediaquery-large-max: $content-max;
+$mediaquery-xlarge-min: ($content-max + 1);
+$content-max-with-gutter: $content-max + $gutter-px;
+
+$mobile-menu-max: $mediaquery-small-max;
+$desktop-menu-min: $mediaquery-medium-min;
+
+//----------------------------------------------------------
+// Navigation smartmenu
+// ----------------------------------------------------------
+
+//Vertical Space
+$base-size: 1.5rem; // default line height, compare with css variable
+// Horizontal Space
+$gutter: 1.5rem; // default gutter width, compare with css variable
+
+// ----------------------------------------------------------
+// :: 1.1. Colors
+// ----------------------------------------------------------
+
+$sm-clean__box-shadow: var(--box-shadow);
+
+
+// ----------------------------------------------------------
+// :: 1.2. Breakpoints
+// ----------------------------------------------------------
+
+$sm-clean__desktop-vp: $desktop-menu-min; // switch from collapsible to desktop
+
+
+// ----------------------------------------------------------
+// :: 1.3. Typography
+// ----------------------------------------------------------
+$sm-clean__font-size-small: var(--body-font-size); //submenu font-size
+$sm-clean__line-height: $base-size;
+
+
+// ----------------------------------------------------------
+// :: 1.4. Borders
+// ----------------------------------------------------------
+
+$sm-clean__border-width: 1px;
+$sm-clean__border-radius: 2px;
+
+
+// ----------------------------------------------------------
+// :: 1.5. Collapsible main menu
+// ----------------------------------------------------------
+
+// Menu box
+$sm-clean__collapsible-border-radius: $sm-clean__border-radius;
+
+// Items
+$sm-clean__collapsible-item-padding-vertical: ($gutter*.5);
+$sm-clean__collapsible-item-padding-horizontal: ($base-size*.5);
+
+// ----------------------------------------------------------
+// :: 1.6. Collapsible sub menus
+// ----------------------------------------------------------
+
+// Items text indentation for deeper levels
+$sm-clean__collapsible-sub-item-indentation: ($gutter*.5);
+
+
+// ----------------------------------------------------------
+// :: 1.7. Desktop main menu
+// ----------------------------------------------------------
+
+// Menu box
+$sm-clean__desktop-border-radius: 0 !default;
+$sm-clean__desktop-padding-horizontal: 0;
+
+// Items
+$sm-clean__desktop-item-padding-vertical: ($gutter*.5);
+$sm-clean__desktop-item-padding-horizontal: ($base-size *.5);
+
+// Sub menu indicators
+$sm-clean__desktop-arrow-size: 6px !default; // border-width
+$sm-clean__desktop-arrow-spacing: 4px !default;
+
+// Vertical menu box
+$sm-clean__desktop-vertical-border-radius: $sm-clean__border-radius !default;
+$sm-clean__desktop-vertical-padding-vertical: ($gutter*.5);
+
+// Vertical items
+$sm-clean__desktop-vertical-item-padding-vertical: ($gutter*.5);
+$sm-clean__desktop-vertical-item-padding-horizontal: ($base-size*.5);
+
+// ----------------------------------------------------------
+// :: 1.8. Desktop sub menus
+// ----------------------------------------------------------
+
+// Menu box
+$sm-clean__desktop-sub-border-radius: $sm-clean__border-radius !default;
+$sm-clean__desktop-sub-box-shadow: 0 5px 9px $sm-clean__box-shadow !default;
+$sm-clean__desktop-sub-padding-vertical: 3px !default;
+$sm-clean__desktop-sub-padding-horizontal: 0 !default;
+
+// Items
+$sm-clean__desktop-sub-item-padding-vertical: ($gutter*.5);
+$sm-clean__desktop-sub-item-padding-horizontal: ($base-size*.5);
+
+// Sub menu indicators
+$sm-clean__desktop-sub-arrow-size: 5px !default; // border-width
+
+// Sub menu carets
+$sm-clean__desktop-sub-caret-size: 8px !default; // border-width
+$sm-clean__desktop-sub-caret-left: 30px !default;
+
+// calc item height and sub menus toggle button size
+$sm-clean__item-height: $sm-clean__line-height + $sm-clean__collapsible-item-padding-vertical * 2;
+// set toggle button size to 80% of item height
+$sm-clean__toggle-size: floor($sm-clean__item-height * 0.8);
+$sm-clean__toggle-spacing: floor($sm-clean__item-height * 0.1);
+

@@ -1,0 +1,74 @@
+###################### Secure Headers ##############################
+## see also:
+## https://scotthelme.co.uk/content-security-policy-an-introduction/
+## https://www.permissionspolicy.com/
+
+config.additionalHeaders {
+  10.header = x-xss-protection: 1; mode=block
+  20.header = x-frame-options: SAMEORIGIN
+  30.header = x-content-type: nosniff
+  40.header = Referrer-Policy: no-referrer-when-downgrade
+#  50.header = strict-transport-security: max-age=31536000;
+#  60.header = Permissions-Policy: autoplay=(), battery=(), camera=(), microphone=()#
+#  70.header = Content-Security-Policy-Report-Only:
+}
+
+/*
+config {
+  headerComment (
+  Design, Programming and Hosting:
+  jweiland.net - TYPO3 Hosting, Support, Training and Projects
+  Echterdinger Straße 57
+  70794 Filderstadt
+  Germany
+  E-Mail: hosting@jweiland.net
+  )
+}
+*/
+
+config {
+  ## HTML5 Settings ##
+  ## Set doctype
+  doctype = html5
+  xmlprologue = none
+
+  ## Removes comments around content elements
+  disablePrefixComment = 1
+
+  ## Activate Admin-Panel
+  admPanel = 0
+
+  ## Extra Debug-Info as comment in HTML code.
+  ## Should be deactivated after going online!
+  #debug = 0
+
+  ## Spam protection, encode email-address, exchanging @ to '(at)':
+  spamProtectEmailAddresses = 1
+  spamProtectEmailAddresses_atSubst = (at)
+
+  ## Enable indexedsearch also for extern files (pdf, doc, etc.)
+  index_enable = 1
+  index_externals = 1
+  index_metatags = 0
+
+  contentObjectExceptionHandler = 0
+}
+
+## Check the constants to compress/concatante CSS/JavaScript
+config.compressCss = {$jwsitepackage12.compressCss}
+config.concatenateCss = {$jwsitepackage12.concatenateCss}
+config.compressJs = {$jwsitepackage12.compressJs}
+config.concatenateJs = {$jwsitepackage12.concatenateJs}
+
+## Always deactivate compression and concatenation in development context
+[applicationContext == "Development"]
+config {
+  compressCss = 0
+  concatenateCss = 0
+  compressJs = 0
+  concatenateJs = 0
+}
+[END]
+
+## Order of website-title and page-title
+config.pageTitleFirst = {$jwsitepackage12.pageTitleFirst}

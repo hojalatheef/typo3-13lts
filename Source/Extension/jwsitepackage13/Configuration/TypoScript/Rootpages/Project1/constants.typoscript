@@ -1,0 +1,5 @@
+@import "EXT:jwsitepackage12/Configuration/TypoScript/General/Constants/*.typoscript"
+
+@import "EXT:jwsitepackage12/Configuration/TypoScript/Extensions/News/Constants/*.typoscript"
+
+@import "EXT:jwsitepackage12/Configuration/TypoScript/Rootpages/Project1/Constants/*.typoscript"

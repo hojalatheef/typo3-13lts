@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" original="EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf" date="2021-09-24T08:23:01Z" product-name="jwsitepackage12">
+		<header/>
+		<body>
+			<trans-unit id="jwsitepackage12.companyname" resname="jwsitepackage12.companyname">
+				<source>Company Name:Name used in the copyright info, f.e. in the footer</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.compressCss" resname="jwsitepackage12.compressCss">
+				<source>Compress CSS:Activate compression/minification of CSS files</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.compressJs" resname="jwsitepackage12.compressJs">
+				<source>Compress JavaScript:Activate compression/minification of JavaScript files</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.concatenateCss" resname="jwsitepackage12.concatenateCss">
+				<source>Concatenate CSS:Activate concatenation of multiple CSS files to one single file</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.concatenateJs" resname="jwsitepackage12.concatenateJs">
+				<source>Concatenate JavaScript:Activate concatenation of multiple JavaScript files to one single file</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.usePrism" resname="jwsitepackage12.usePrism">
+				<source>use Prism to layout code snippets on website</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.logo" resname="jwsitepackage12.logo">
+				<source>Logo:Path to an image file used as logo in the header of the website, f.e. fileadmin/images/my_bgr.jpg, or EXT:myext/Resources/Public/Images/my_bgr.jpg
+				</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.logoHeight" resname="jwsitepackage12.logoHeight">
+				<source>Logo Height:Rendered height of file in px. Visual height is defined in css</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.headerFixed" resname="jwsitepackage12.headerFixed">
+				<source>Fixed Header: Header stays visible when scrolling.</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.fadeInContent" resname="jwsitepackage12.fadeInContent">
+				<source>Fade in Content Elements: Content elements get visible when scrolling.</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.heroTextMaxLength" resname="jwsitepackage12.heroTextMaxLength">
+				<source>Maximum amount of characters for bodytext on hero image</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.metaId" resname="jwsitepackage12.metaId">
+				<source>Meta ID:ID of the starting page of the meta navigation</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.rootId" resname="jwsitepackage12.rootId">
+				<source>Root ID:ID of the root page</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.searchResultId" resname="jwsitepackage12.searchResultId">
+				<source>Search Result ID:ID of the page for search results</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.searchFormId" resname="jwsitepackage12.searchFormId">
+				<source>Search Form ID:ID of the search form content element</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.matomourl" resname="jwsitepackage12.matomourl">
+				<source>Address of the Matomo installation:Insert the URL of your Matomo installation (f.e. matomo.domain.com or domain.com/matomo, without http or https and without trailing slash!)
+				</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.matomoSiteId" resname="jwsitepackage12.matomoSiteId">
+				<source>ID of the website:Insert the ID of the website you want to monitor. You can find it in the Matomo settings (Administration -&gt; Websites -&gt; Manage).
+				</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.pageTitleFirst" resname="jwsitepackage12.pageTitleFirst">
+				<source>Print the page title first in title-Tag:TYPO3 by default prints a title tag in the format “website:page title”. If pageTitleFirst is set then the page title will be printed IN FRONT OF the template title. So it will look like “page title: website”.
+				</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.customsubcategory.klaro" resname="jwsitepackage12.customsubcategory.klaro">
+				<source>Settings for the Klaro consent management tool</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.showKlaro" resname="jwsitepackage12.showKlaro">
+				<source>Show Consent Manager:Displays a window in which the website visitor can agree or decline the use of cookies</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.mustConsent" resname="jwsitepackage12.mustConsent">
+				<source>Visitor action required:If this checkbox is active, the visitor must decide whether to accept or reject cookies before the website can be used. If the checkbox is deactivated, the visitor can use the website even without accepting or rejecting cookies.</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.privacyPolicyUid" resname="jwsitepackage12.privacyPolicyUid">
+				<source>Privacy page ID:Enter the ID of the privacy page here</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.gaTrackingId" resname="jwsitepackage12.gaTrackingId">
+				<source>Tracking ID of Google Analytics:If you use Google Analytics, enter the ID of your property here. (Example: GA4-123456-7)</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.gaPath" resname="jwsitepackage12.gaPath">
+				<source>Path of the Google Analytics Cookies:Usually the entry / is sufficient here</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.gaDomain" resname="jwsitepackage12.gaDomain">
+				<source>Domain of this website:To ensure that cookies can be deleted correctly, it is necessary to specify the domain. The domain must be specified in the form 'domain.tld', without www, without http and without /!</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.fbp" resname="jwsitepackage12.fbp">
+				<source>Facebook Pixel:If you use the Facebook pixel, enter the pixel ID here (you can find it on https://business.facebook.com/events_manager/pixel).</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.useTwitter" resname="jwsitepackage12.useTwitter">
+				<source>Twitter: Enable this checkbox if you embed Twitter widgets on your website, for example a timeline.
+					Note: the JavaScript must be adapted according to our documentation, so that it is only executed after the website visitor has given his or her consent!</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.externalMedia" resname="jwsitepackage12.externalMedia">
+				<source>Use of external media: Activate this checkbox if you include videos from YouTube or Vimeo. Attention: the extension &quot;video_shariff&quot; should be activated!</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.iconSquare" resname="jwsitepackage12.iconSquare">
+				<source>App-/FavIcon Square: Path to an image, which is used as Favicon in browsers and as touch icons for smartphones and Tablets. You need 2 variants of this icon to cover all devices, this one has to be square.
+				</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.iconWide" resname="jwsitepackage12.iconWide">
+				<source>App-/FavIcon Wide: Path to a second image, which is used as Favicon in browsers and as touch icons for smartphones and Tablets. This variant need an aspect ratio of 31:15, for example: width 310px, height 150px.
+				</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.showRootline" resname="jwsitepackage12.showRootline">
+				<source>Show rootline: If set, the rootline (breadcrumb) navigation on subpages is shown.</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.showLang" resname="jwsitepackage12.showLang">
+				<source>Show language menu: Turn on and off the language menu.</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.showSearch" resname="jwsitepackage12.showSearch">
+				<source>Show search box: Turn on and off the search box in the header.</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.menuType" resname="jwsitepackage12.menuType">
+				<source>Navigation type: Select position (vertical/horizontal) of the main navigation</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.menuTheme" resname="jwsitepackage12.menuTheme">
+				<source>Navigation type: Select the style of the main navigation</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.newsStartingPoints" resname="jwsitepackage12.newsStartingPoints">
+				<source>Page IDs news storage: Comma separated list of page IDs with news records (default value, can be overwritten in the news plugins)
+				</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.newsDetailPid" resname="jwsitepackage12.newsDetailPid">
+				<source>Page ID news detail page: ID of the page with the news plugin for the detail view (default value, can be overwritten in the news plugins)
+				</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.newsListPid" resname="jwsitepackage12.newsListPid">
+				<source>Page ID news list page: ID of the page with the news plugin for the list view (default value, can be overwritten in the news plugins)
+				</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.footerContentUid" resname="jwsitepackage12.footerContentUid">
+				<source>Page ID for footer content: ID of the page, where the content for the footer of the website is stored
+				</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.metaMenuUid" resname="jwsitepackage12.metaMenuUid">
+				<source>Page ID of starting point for meta navigation: ID of the folder, under which the pages for the meta navigation are stored
+				</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.customcategory" resname="jwsitepackage12.customcategory">
+				<source>jweiland.net TYPO3 Sitepackage</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.customcategoryCCM" resname="jwsitepackage12.customcategoryCCM">
+				<source>jweiland.net Cookie Consent Manager</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.customsubcategory.layout" resname="jwsitepackage12.customsubcategory.layout">
+				<source>Layout</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.customsubcategory.meta" resname="jwsitepackage12.customsubcategory.meta">
+				<source>Settings for meta navigation</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.customsubcategory.menu" resname="jwsitepackage12.customsubcategory.menu">
+				<source>Settings for navigation</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.customsubcategory.content" resname="jwsitepackage12.customsubcategory.content">
+				<source>Page IDs</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.customsubcategory.basic" resname="jwsitepackage12.customsubcategory.basic">
+				<source>Basic settings</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.customsubcategory.cookies" resname="jwsitepackage12.customsubcategory.cookies">
+				<source>Cookies and privacy</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.customsubcategory.tracking" resname="jwsitepackage12.customsubcategory.tracking">
+				<source>Tracking codes</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.customsubcategory.seo" resname="jwsitepackage12.customsubcategory.seo">
+				<source>SEO</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.customsubcategory.rss" resname="jwsitepackage12.customsubcategory.rss">
+				<source>RSS feed for News</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.useRss" resname="jwsitepackage12.useRss">
+				<source>Output of a RSS feed for news articles</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.rssTitle" resname="jwsitepackage12.rssTitle">
+				<source>Title of the RSS feed</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.rssDescription" resname="jwsitepackage12.rssDescription">
+				<source>Description of the RSS feed</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.rssLink" resname="jwsitepackage12.rssLink">
+				<source>URL of the main domain of the RSS feed</source>
+			</trans-unit>
+			<trans-unit id="jwsitepackage12.rssIcon" resname="jwsitepackage12.rssIcon">
+				<source>RSS Icon with Social Media Icons Content Element</source>
+			</trans-unit>
+			<trans-unit id="tt_content.layout.100" resname="tt_content.layout.100">
+				<source>Colored Box</source>
+			</trans-unit>
+			<trans-unit id="tt_content.layout.200" resname="tt_content.layout.200">
+				<source>Gallery with square thumbnails</source>
+			</trans-unit>
+			<trans-unit id="tt_content.layout.251" resname="tt_content.layout.251">
+				<source>Page preview 4 columns with image</source>
+			</trans-unit>
+			<trans-unit id="tt_content.layout.261" resname="tt_content.layout.261">
+				<source>Social Media Links from Pages</source>
+			</trans-unit>
+			<trans-unit id="tt_content.layout.300" resname="tt_content.layout.300">
+				<source>Columns with same height</source>
+			</trans-unit>
+			<trans-unit id="tt_content.heroimage.layout.0" resname="tt_content.heroimage.layout.0">
+				<source>Dark text, no background</source>
+			</trans-unit>
+			<trans-unit id="tt_content.layout.400" resname="tt_content.layout.400">
+				<source>Dark text on light background</source>
+			</trans-unit>
+			<trans-unit id="tt_content.layout.401" resname="tt_content.layout.401">
+				<source>Light text, no background</source>
+			</trans-unit>
+			<trans-unit id="tt_content.layout.402" resname="tt_content.layout.402">
+				<source>Light text on dark background</source>
+			</trans-unit>
+			<trans-unit id="news.template.1" resname="news.template.1">
+				<source>Latest news</source>
+			</trans-unit>
+			<trans-unit id="news.template.2" resname="news.template.2">
+				<source>Latest news, Card View</source>
+			</trans-unit>
+			<trans-unit id="widgets.jwspinfo.button.label" resname="widgets.jwspinfo.button.label">
+				<source>Open Sitepackage Information</source>
+			</trans-unit>
+			<trans-unit id="widgets.jwspinfo.title" resname="widgets.jwspinfo.title">
+				<source>Documentation of the TYPO3 12 LTS Sitepackage</source>
+			</trans-unit>
+			<trans-unit id="widgets.jwspinfo.longdesc" resname="widgets.jwspinfo.longdesc">
+				<source>On our website you will find detailed documentation about the sample project. In several text and video tutorials we show how you can adapt this template to your requirements.</source>
+			</trans-unit>
+			<trans-unit id="widgets.jwspinfo.shortdesc" resname="widgets.jwspinfo.shortdesc">
+				<source>Notes on the documentation of the template project</source>
+			</trans-unit>
+			<trans-unit id="col-content-headermedia" resname="col-content-headermedia">
+				<source>Header for media, whole browser width</source>
+			</trans-unit>
+			<trans-unit id="searchbuttonlink" resname="searchbuttonlink">
+				<source>Open/Close Search</source>
+			</trans-unit>
+			<trans-unit id="skiptocontent" resname="skiptocontent">
+				<source>Skip to content</source>
+			</trans-unit>
+			<trans-unit id="totop" resname="totop">
+				<source>Scroll to Top</source>
+			</trans-unit>
+			<trans-unit id="by" resname="by">
+				<source>by</source>
+			</trans-unit>
+			<trans-unit id="ctype.heroimage.title" resname="ctype.heroimage.title">
+				<source>Hero Image with Text</source>
+			</trans-unit>
+			<trans-unit id="ctype.heroimage.decription" resname="ctype.heroimage.decription">
+				<source>Text positioned over Image</source>
+			</trans-unit>
+			<trans-unit id="cropVariantDefault" resname="cropVariantDefault">
+				<source>Default Desktop</source>
+			</trans-unit>
+			<trans-unit id="cropVariantTablet" resname="cropVariantTablet">
+				<source>Tablet</source>
+			</trans-unit>
+			<trans-unit id="cropVariantSmartphone" resname="cropVariantSmartphone">
+				<source>Smartphone</source>
+			</trans-unit>
+			<trans-unit id="cropVariantFree" resname="cropVariantFree">
+				<source>Free</source>
+			</trans-unit>
+			<trans-unit id="cropVariant1to1" resname="cropVariant1to1">
+				<source>1:1</source>
+			</trans-unit>
+			<trans-unit id="cropVariant3to2" resname="cropVariant3to2">
+				<source>3:2</source>
+			</trans-unit>
+			<trans-unit id="cropVariant2to3" resname="cropVariant2to3">
+				<source>2:3</source>
+			</trans-unit>
+			<trans-unit id="cropVariant4to3" resname="cropVariant4to3">
+				<source>4:3</source>
+			</trans-unit>
+			<trans-unit id="cropVariant3to4" resname="cropVariant3to4">
+				<source>3:4</source>
+			</trans-unit>
+			<trans-unit id="cropVariant16to9" resname="cropVariant16to9">
+				<source>16:9</source>
+			</trans-unit>
+			<trans-unit id="cropVariant16to3" resname="cropVariant16to3">
+				<source>16:3</source>
+			</trans-unit>
+			<trans-unit id="cropVariant3to1" resname="cropVariant3to1">
+				<source>3:1</source>
+			</trans-unit>
+			<trans-unit id="search" resname="search">
+				<source>Search</source>
+			</trans-unit>
+			<trans-unit id="belayout-1colhero" resname="belayout-1colhero">
+				<source>One Column Layout with Hero Image</source>
+			</trans-unit>
+			<trans-unit id="belayout-standard" resname="belayout-standard">
+				<source>Standard Layout</source>
+			</trans-unit>
+			<trans-unit id="belayout-3col" resname="belayout-3col">
+				<source>Three Column Layout</source>
+			</trans-unit>
+			<trans-unit id="belayout-2col" resname="belayout-2col">
+				<source>Two Column Layout</source>
+			</trans-unit>
+			<trans-unit id="belayout-1col" resname="belayout-1col">
+				<source>One Column Layout</source>
+			</trans-unit>
+			<trans-unit id="belayout-footer" resname="belayout-footer">
+				<source>Footer Layout, 3 columns</source>
+			</trans-unit>
+			<trans-unit id="belayout-footer-1col" resname="belayout-footer-1col">
+				<source>Footer Layout, 1 column</source>
+			</trans-unit>
+			<trans-unit id="belayout-footer-2col" resname="belayout-footer-2col">
+				<source>Footer Layout, 2 columns</source>
+			</trans-unit>
+			<trans-unit id="col-content-top" resname="col-content-top">
+				<source>Top Content 100%</source>
+			</trans-unit>
+			<trans-unit id="col-content-main" resname="col-content-main">
+				<source>Main Content</source>
+			</trans-unit>
+			<trans-unit id="col-content-bottom" resname="col-content-bottom">
+				<source>Content Bottom 100%</source>
+			</trans-unit>
+			<trans-unit id="col-aside" resname="col-aside">
+				<source>Content Aside</source>
+			</trans-unit>
+			<trans-unit id="col-stage" resname="col-stage">
+				<source>Content Stage</source>
+			</trans-unit>
+			<trans-unit id="col-content-left50" resname="col-content-left50">
+				<source>Content Left 50%</source>
+			</trans-unit>
+			<trans-unit id="col-content-right50" resname="col-content-right50">
+				<source>Content Right 50%</source>
+			</trans-unit>
+			<trans-unit id="col-content-left33" resname="col-content-left33">
+				<source>Content Left 33%</source>
+			</trans-unit>
+			<trans-unit id="col-content-middle33" resname="col-content-middle33">
+				<source>Content Middle 33%</source>
+			</trans-unit>
+			<trans-unit id="col-content-right33" resname="col-content-right33">
+				<source>Content Right 33%</source>
+			</trans-unit>
+			<trans-unit id="ctype.col-2.title" resname="ctype.col-2.title">
+				<source>2 Column Container</source>
+			</trans-unit>
+			<trans-unit id="ctype.col-2.desc" resname="ctype.col-2.desc">
+				<source>Option to insert 2 columns within an existing column</source>
+			</trans-unit>
+			<trans-unit id="ctype.col-3.title" resname="ctype.col-3.title">
+				<source>3 Column Container</source>
+			</trans-unit>
+			<trans-unit id="ctype.col-3.desc" resname="ctype.col-3.desc">
+				<source>Option to insert 3 columns within an existing column</source>
+			</trans-unit>
+			<trans-unit id="ctype.col-4.title" resname="ctype.col-4.title">
+				<source>4 Column Container</source>
+			</trans-unit>
+			<trans-unit id="ctype.col-4.desc" resname="ctype.col-4.desc">
+				<source>Option to insert 4 columns within an existing column</source>
+			</trans-unit>
+			<trans-unit id="colpos-201" resname="colpos-201">
+				<source>Container Column 1</source>
+			</trans-unit>
+			<trans-unit id="colpos-202" resname="colpos-202">
+				<source>Container Column 2</source>
+			</trans-unit>
+			<trans-unit id="colpos-301" resname="colpos-301">
+				<source>Container Column 1</source>
+			</trans-unit>
+			<trans-unit id="colpos-302" resname="colpos-302">
+				<source>Container Column 2</source>
+			</trans-unit>
+			<trans-unit id="colpos-303" resname="colpos-303">
+				<source>Container Column 3</source>
+			</trans-unit>
+			<trans-unit id="colpos-401" resname="colpos-401">
+				<source>Container Column 1</source>
+			</trans-unit>
+			<trans-unit id="colpos-402" resname="colpos-402">
+				<source>Container Column 2</source>
+			</trans-unit>
+			<trans-unit id="colpos-403" resname="colpos-403">
+				<source>Container Column 3</source>
+			</trans-unit>
+			<trans-unit id="colpos-404" resname="colpos-404">
+				<source>Container Column 4</source>
+			</trans-unit>
+			<trans-unit id="header1" resname="header1">
+				<source>h1 - Page header</source>
+			</trans-unit>
+			<trans-unit id="header2" resname="header2">
+				<source>h2 - Theme headline</source>
+			</trans-unit>
+			<trans-unit id="header3" resname="header3">
+				<source>h3 - Headline Level 3</source>
+			</trans-unit>
+			<trans-unit id="header4" resname="header4">
+				<source>h4 - Headline Level 4</source>
+			</trans-unit>
+			<trans-unit id="header5" resname="header5">
+				<source>h5 - Headline Level 5</source>
+			</trans-unit>
+			<trans-unit id="infobox" resname="infobox">
+				<source>Highlighted Info Box</source>
+			</trans-unit>
+			<trans-unit id="tt_content.frameclass.collapsemobile" resname="tt_content.frameclass.collapsemobile">
+				<source>Content collapsed in mobile view</source>
+			</trans-unit>
+			<trans-unit id="tt_content.frameclass.collapse" resname="tt_content.frameclass.collapse">
+				<source>Content collapsed</source>
+			</trans-unit>
+			<trans-unit id="tt_content.frameclass.heroimage.default" resname="tt_content.frameclass.heroimage.default">
+				<source>Textbox left</source>
+			</trans-unit>
+			<trans-unit id="tt_content.frameclass.center" resname="tt_content.frameclass.center">
+				<source>Textbox center</source>
+			</trans-unit>
+			<trans-unit id="tt_content.frameclass.right" resname="tt_content.frameclass.right">
+				<source>Textbox right</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

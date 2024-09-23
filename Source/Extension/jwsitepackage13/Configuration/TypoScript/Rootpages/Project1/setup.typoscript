@@ -1,0 +1,16 @@
+@import "EXT:jwsitepackage12/Configuration/TypoScript/General/Setup/*.typoscript"
+
+@import "EXT:jwsitepackage12/Configuration/TypoScript/Extensions/Form/Setup/*.typoscript"
+@import "EXT:jwsitepackage12/Configuration/TypoScript/Extensions/Indexedsearch/Setup/*.typoscript"
+@import "EXT:jwsitepackage12/Configuration/TypoScript/Extensions/News/Setup/*.typoscript"
+@import "EXT:jwsitepackage12/Configuration/TypoScript/Extensions/Container/Setup/*.typoscript"
+@import "EXT:jwsitepackage12/Configuration/TypoScript/Extensions/Seo/Setup/*.typoscript"
+
+@import "EXT:jwsitepackage12/Configuration/TypoScript/AddOns/Copyright/Setup/*.typoscript"
+@import "EXT:jwsitepackage12/Configuration/TypoScript/AddOns/KlaroConsentManager/Matomo/Setup/*.typoscript"
+@import "EXT:jwsitepackage12/Configuration/TypoScript/AddOns/KlaroConsentManager/GoogleAnalytics/Setup/*.typoscript"
+@import "EXT:jwsitepackage12/Configuration/TypoScript/AddOns/KlaroConsentManager/FacebookPixel/Setup/*.typoscript"
+#@import "EXT:jwsitepackage12/Configuration/TypoScript/AddOns/SocialMediaLinks/Setup/*.typoscript"
+
+@import "EXT:jwsitepackage12/Configuration/TypoScript/Rootpages/Project1/Setup/*.typoscript"
+

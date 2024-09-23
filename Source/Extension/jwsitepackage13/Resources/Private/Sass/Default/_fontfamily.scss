@@ -1,0 +1,18 @@
+//only for Updates with scss variables
+@font-face {
+  font-family: quote($font-name-normal);
+  src: url('#{$font-path-normal}.woff2') format('woff2'),
+  url('#{$font-path-normal}.woff') format('woff');
+  font-weight: $font-weight-normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: quote($font-name-bold);
+  src: url('#{$font-path-bold}.woff2') format('woff2'),
+  url('#{$font-path-bold}.woff') format('woff');
+  font-weight: $font-weight-bold;
+  font-style: normal;
+  font-display: swap;
+}

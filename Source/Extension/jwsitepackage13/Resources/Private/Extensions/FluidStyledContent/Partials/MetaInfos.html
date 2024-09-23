@@ -1,0 +1,9 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:if condition="{file.properties.copyright}||{file.properties.creator}">
+  <small role="tooltip" class="tooltip" title="Info">
+    <span
+      data-tooltip="{file.properties.copyright}{f:if(condition: '{file.properties.copyright} && {file.properties.creator}', then: ',')}{f:if(condition: '{file.properties.creator}', then: ' {f:translate(key:\'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:by\')}: {file.properties.creator}')}">&copy;</span><i
+    class="vhidden">{file.properties.copyright}{f:if(condition: '{file.properties.creator}', then:'{f:translate(key:\'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:by\')}: {file.properties.creator}')}</i>
+  </small>
+</f:if>
+</html>

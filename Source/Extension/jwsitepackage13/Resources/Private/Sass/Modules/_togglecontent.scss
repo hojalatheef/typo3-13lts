@@ -1,0 +1,89 @@
+//accordion,  see also contentCollaps.js
+@mixin toggleheader() {
+  cursor: pointer;
+  position: relative;
+  background: var(--toggle-bg);
+  padding: var(--base-size-half) var(--gutter-triple) var(--base-size-half) var(--gutter);
+  min-height: var(--base-size-double);
+  margin-bottom: var(--base-size);
+  > * {
+    margin: 0;
+  }
+  &:hover, &:focus {
+    color: var(--body-link-color);
+  }
+
+  button {
+    border-style: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    &::-moz-focus-inner {
+      border: 0;
+    }
+    &[aria-expanded="false"]::before {
+      @include rotate(180deg, 2);
+    }
+  }
+}
+.frame-collapsemobile button {
+  cursor: text;
+}
+
+@mixin arrowdown() {
+  content: "\f077";
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: 0;
+  overflow: hidden;
+  position: absolute;
+  right: var(--gutter);
+  top: var(--base-size-half);
+  margin: 0;
+  font-weight: 900;
+  font-size: var(--font-size2);
+}
+
+////////////////////////////////////////////////
+.accordion > header,
+.frame-collapse > header {
+  @include toggleheader();
+}
+
+.accordion.container,
+.width-max > .frame-collapse {
+  padding-bottom: 0;
+}
+
+.accordion > header button:before,
+.frame-collapse > header button:before {
+  @include arrowdown();
+  @include transition(all);
+}
+
+///////////////////////////only mobile ///////////////////////////
+@media (max-width: $mediaquery-small-max) {
+  .frame-collapsemobile > header *,
+  .frame-collapse > header * {
+    margin: 0;
+  }
+}
+
+@media (max-width: $mediaquery-medium-max) {
+  .width-max > .frame-collapsemobile {
+    padding-bottom: 0;
+  }
+  .frame-collapsemobile > header {
+    @include toggleheader();
+  }
+  .frame-collapsemobile > header button::before {
+    @include arrowdown();
+    @include transition(all);
+  }
+  .frame-collapsemobile button {
+    cursor: pointer;
+  }
+}

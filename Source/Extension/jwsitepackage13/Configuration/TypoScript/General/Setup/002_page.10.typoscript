@@ -1,0 +1,99 @@
+page.10 = FLUIDTEMPLATE
+page.10 {
+  partialRootPath = EXT:jwsitepackage12/Resources/Private/Page/Partials
+  layoutRootPath = EXT:jwsitepackage12/Resources/Private/Page/Layouts
+
+  file.stdWrap.cObject = CASE
+  file.stdWrap.cObject {
+    key.data = pagelayout
+    pagets__1colhero = TEXT
+    pagets__1colhero.value = EXT:jwsitepackage12/Resources/Private/Page/Templates/OnecolHero.html
+    pagets__1col = TEXT
+    pagets__1col.value = EXT:jwsitepackage12/Resources/Private/Page/Templates/Onecol.html
+    pagets__styleguide = TEXT
+    pagets__styleguide.value = EXT:jwsitepackage12/Resources/Private/Page/Templates/Styleguide.html
+
+    default < .pagets__1colhero
+
+    ## Layout Options of V11, deprecated, only for updated projects
+    ## Layout Varianten in Templates
+    #pagets__standard = TEXT
+    #pagets__standard.value = EXT:jwsitepackage12/Resources/Private/Page/Templates/Standard.html
+    #pagets__2col = TEXT
+    #pagets__2col.value = EXT:jwsitepackage12/Resources/Private/Page/Templates/Twocol.html
+    #pagets__3col = TEXT
+    #pagets__3col.value = EXT:jwsitepackage12/Resources/Private/Page/Templates/Threecol.html
+  }
+
+  variables {
+    ## Header for hero image
+    content5 < styles.content.get
+    content5.select.where = colPos = 5
+
+    ##Main Content
+    content0 < styles.content.get
+    content0.select.where = colPos = 0
+    content0.stdWrap.ifEmpty.stdWrap.wrap = &nbsp;
+
+    ## deprecated, only for updated projects
+    #content1 < styles.content.get
+    #content1.select.where = colPos = 1
+    ##zweite Spalte in Mehrspalter
+    #content2 < styles.content.get
+    #content2.select.where = colPos = 2
+    ## Bereich unten ueber ganze Breite
+    #content3 < styles.content.get
+    #content3.select.where = colPos = 3
+    ##dritte Spalte in Dreispalter
+    #content4 < styles.content.get
+    #content4.select.where = colPos = 4
+
+    ## Footer
+    content10 < styles.content.get
+    content10.select.where = colPos = 10
+    content10.select.pidInList = {$jwsitepackage12.footerContentUid}
+    content11 < .content10
+    content11.select.where = colPos = 11
+    content12 < .content10
+    content12.select.where = colPos = 12
+
+    ## Navigation parameter
+    menuType = TEXT
+    menuType.value = {$jwsitepackage12.menuType}
+    menuTheme = TEXT
+    menuTheme.value = {$jwsitepackage12.menuTheme}
+    ## Sprachparameter
+    showLang = TEXT
+    showLang.value = {$jwsitepackage12.showLang}
+    ## Footer Column Layout
+    footerBackendLayout = TEXT
+    footerBackendLayout.data = DB:pages:{$jwsitepackage12.footerContentUid}:backend_layout
+  }
+  settings {
+    showRootline = {$jwsitepackage12.showRootline}
+    showSearch = {$jwsitepackage12.showSearch}
+
+    logoFile = {$jwsitepackage12.logoFile}
+    logoAltText = {$jwsitepackage12.companyName}
+    logoLinkParameter = {$jwsitepackage12.rootId}
+    logoLinkTitle = {$jwsitepackage12.companyName}
+    logoHeight = {$jwsitepackage12.logoHeight}
+    headerFixed = {$jwsitepackage12.headerFixed}
+    imgMaxWidth = {$jwsitepackage12.imgMaxWidth}
+
+    useRss = {$jwsitepackage12.useRss}
+
+    ## Klaro Consent Manager
+    showKlaro = {$jwsitepackage12CCM.showKlaro}
+    mustConsent = {$jwsitepackage12CCM.mustConsent}
+    privacyPolicy = {$jwsitepackage12CCM.privacyPolicyUid}
+    useMatomo = {$jwsitepackage12CCM.matomoUrl}
+    useGA = {$jwsitepackage12CCM.gaTrackingId}
+    gaPath = {$jwsitepackage12CCM.gaPath}
+    gaDomain = {$jwsitepackage12CCM.gaDomain}
+    fbp = {$jwsitepackage12CCM.fbp}
+    useTwitter = {$jwsitepackage12CCM.useTwitter}
+    externalMedia = {$jwsitepackage12CCM.externalMedia}
+  }
+}
+

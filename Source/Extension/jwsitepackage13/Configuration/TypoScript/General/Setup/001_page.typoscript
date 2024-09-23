@@ -1,0 +1,164 @@
+page = PAGE
+
+page.meta {
+  viewport = width=device-width,initial-scale=1
+}
+
+###################### Favicon und Touchicons ######################
+page.headerData.2347 >
+page.headerData.2347 = COA
+page.headerData.2347 {
+  # iPhone
+  10 = IMAGE
+  10 {
+    file = {$jwsitepackage12.iconSquare}
+    file.width = 60
+    file.height = 60
+    layoutKey = apple-touch-icon
+    layout {
+      apple-touch-icon {
+        element = <link rel="apple-touch-icon" href="###SRC###"###SELFCLOSINGTAGSLASH###>
+      }
+
+      apple-touch-icon-with-sizes {
+        element = <link rel="apple-touch-icon" sizes="###WIDTH###x###HEIGHT###" href="###SRC###"###SELFCLOSINGTAGSLASH###>
+      }
+
+      msapplication-TileImage {
+        element = <meta name="msapplication-TileImage" content="###SRC###"###SELFCLOSINGTAGSLASH###>
+      }
+
+      msapplication-square {
+        element = <meta name="msapplication-square###WIDTH###x###HEIGHT###logo" content="###SRC###"###SELFCLOSINGTAGSLASH###>
+      }
+
+      msapplication-wide {
+        element = <meta name="msapplication-wide###WIDTH###x###HEIGHT###logo" content="###SRC###"###SELFCLOSINGTAGSLASH###>
+      }
+    }
+  }
+
+  # iPad
+  20 < .10
+  20.layoutKey = apple-touch-icon-with-sizes
+  20.file.width = 76
+  20.file.height = 76
+
+  # iPhone Retina
+  30 < .20
+  30.file.width = 120
+  30.file.height = 120
+
+  # iPad Retina
+  40 < .20
+  40.file.width = 152
+  40.file.height = 152
+
+  110 < .10
+  110.layoutKey = msapplication-TileImage
+  110.file.width = 144
+  110.file.height = 144
+
+  120 < .10
+  120.layoutKey = msapplication-square
+  120.file.width = 70
+  120.file.height = 70
+
+  130 < .10
+  130.layoutKey = msapplication-square
+  130.file.width = 150
+  130.file.height = 150
+
+  140 < .10
+  140.layoutKey = msapplication-square
+  140.file.width = 310
+  140.file.height = 310
+
+  150 < .10
+  150.layoutKey = msapplication-wide
+  150.file = {$jwsitepackage12.iconWide}
+  150.file.width = 310
+  150.file.height = 150c
+}
+
+page.shortcutIcon = {$jwsitepackage12.iconSquare}
+page.meta {
+  #IE11TileforWindows8.1StartScreen
+  msapplication-config = none
+  msapplication-TileColor = #ffffff
+  msapplication-tooltip = {$jwsitepackage12.companyName}
+  application-name = {$jwsitepackage12.companyName}
+  theme-color = #ffffff
+}
+
+###################### CSS-Files ######################
+page.includeCSS {
+  customcssvariables = EXT:jwsitepackage12/Resources/Public/Css/CssVariables/custom.css
+  customcssvariables.forceOnTop = 1
+  general = EXT:jwsitepackage12/Resources/Public/Css/style.css
+  ## Icon fonts see: https://fontawesome.com/icons?d=gallery&m=free
+  fontawesome = EXT:jwsitepackage12/Resources/Public/Css/Fontawesome/fontawesome.css
+  fontawesomesolid = EXT:jwsitepackage12/Resources/Public/Css/Fontawesome/solid.css
+  ## CSS fuer gewaehltes Farbschema der Navigation
+  mainmenu = EXT:jwsitepackage12/Resources/Public/Css/Smartmenu/sm-clean.css
+  megamenu = EXT:jwsitepackage12/Resources/Public/Css/Smartmenu/mega-menu.css
+  megamenu.if.value = megamenu
+  megamenu.if.equals = {$jwsitepackage12.menuTheme}
+
+  fancybox = EXT:jwsitepackage12/Resources/Public/Css/Extensions/jquery.fancybox.css
+
+  video_shariff = EXT:jwsitepackage12/Resources/Public/Css/Extensions/videoshariff.css
+
+  ## CSS fuer EXT:news
+  news = EXT:jwsitepackage12/Resources/Public/Css/Extensions/news.css
+
+  ## CSS für Styleguide
+  styleguide = EXT:jwsitepackage12/Resources/Public/Css/Modules/styleguidemodules.css
+  styleguide.if.value = pagets__styleguide
+  styleguide.if.equals.data = pagelayout
+}
+
+###################### Javascript im Header ######################
+page.includeJSLibs {
+  jquery = EXT:jwsitepackage12/Resources/Public/JavaScript/Lib/jquery-3.6.3.min.js
+  jquery {
+    forceOnTop = 1
+    disableCompression = 1
+    excludeFromConcatenation = 1
+    }
+}
+
+###################### JavaScript im Footer ######################
+
+page.includeJSFooter {
+  smartMenu = EXT:jwsitepackage12/Resources/Public/JavaScript/Smartmenu/jquery.smartmenus.min.js
+  smartMenu.disableCompression = 1
+  #smartMenuHotkey = EXT:jwsitepackage12/Resources/Public/JavaScript/Smartmenu/jquery.smartmenus.keyboard.min.js
+  #smartMenuHotkey.disableCompression = 1
+
+  ## menu with "more" option
+  initMoreSmartMenu = EXT:jwsitepackage12/Resources/Public/JavaScript/Smartmenu/initMoreSmartMenu.js
+  initMoreSmartMenu {
+    if.isFalse = {$jwsitepackage12.menuType}
+    if.value = standard
+    if.equals = {$jwsitepackage12.menuTheme}
+  }
+
+  initSmartMenu = EXT:jwsitepackage12/Resources/Public/JavaScript/Smartmenu/initSmartMenu.js
+
+  fancyBox = EXT:jwsitepackage12/Resources/Public/JavaScript/jquery.fancybox.min.js
+  fancyBox.disableCompression = 1
+
+  contentCollapse = EXT:jwsitepackage12/Resources/Public/JavaScript/contentCollapse.js
+
+  ## JavaScript fuer Klaro nur laden, wenn benoetigt
+  klaro = EXT:jwsitepackage12/Resources/Public/JavaScript/Klaro/klaro.js
+  klaro.if.value = 1
+  klaro.if.equals = {$jwsitepackage12CCM.showKlaro}
+
+  custom = EXT:jwsitepackage12/Resources/Public/JavaScript/custom.js
+
+  fadeIn = EXT:jwsitepackage12/Resources/Public/JavaScript/fadeInContent.js
+  fadeIn.if.value = 1
+  fadeIn.if.equals = {$jwsitepackage12.fadeInContent}
+}

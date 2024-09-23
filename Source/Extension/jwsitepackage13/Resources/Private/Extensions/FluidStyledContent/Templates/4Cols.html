@@ -1,0 +1,35 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default"/>
+<f:section name="Main">
+  <div class="grid">
+    <f:if condition="{childrenLeft4}">
+      <div class="col-3_md-6_xs-12{f:if(condition: '{data.layout}==300', then: ' height-100')}">
+        <f:for each="{childrenLeft4}" as="child">
+          <f:format.raw>{child.renderedContent}</f:format.raw>
+        </f:for>
+      </div>
+    </f:if>
+    <f:if condition="{childrenMiddleLeft4}">
+      <div class="col-3_md-6_xs-12{f:if(condition: '{data.layout}==300', then: ' height-100')}">
+        <f:for each="{childrenMiddleLeft4}" as="child">
+          <f:format.raw>{child.renderedContent}</f:format.raw>
+        </f:for>
+      </div>
+    </f:if>
+    <f:if condition="{childrenMiddleRight4}">
+      <div class="col-3_md-6_xs-12{f:if(condition: '{data.layout}==300', then: ' height-100')}">
+        <f:for each="{childrenMiddleRight4}" as="child">
+          <f:format.raw>{child.renderedContent}</f:format.raw>
+        </f:for>
+      </div>
+    </f:if>
+    <f:if condition="{childrenRight4}">
+      <div class="col-3_md-6_xs-12{f:if(condition: '{data.layout}==300', then: ' height-100')}">
+        <f:for each="{childrenRight4}" as="child">
+          <f:format.raw>{child.renderedContent}</f:format.raw>
+        </f:for>
+      </div>
+    </f:if>
+  </div>
+</f:section>
+</html>

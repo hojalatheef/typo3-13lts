@@ -1,0 +1,37 @@
+/*------------------------------------*\
+    $MESSAGING
+\*------------------------------------*/
+
+// Alerts
+.alert {
+  text-align: center;
+  background: var(--gray5, #eee);
+  border: var(--border-width) solid var(--font-color);
+  padding: var(--base-size) var(--gutter);
+  margin-bottom: var(--base-size);
+  color: var(--black, #000);
+}
+
+.bg-error,
+.alert.alert-error {
+  background: var(--error-light, #fff2f2);
+  border: var(--border-width) solid var(--error, #ba0202);
+}
+
+.bg-valid,
+.alert.alert-valid {
+  background: var(--valid-light, #e8f6e7);
+  border: var(--border-width) solid var(--valid, #5abc55);
+}
+
+.bg-warning,
+.alert.alert-warning {
+  background: var(--warning-light, #fffae8);
+  border: var(--border-width) solid var(--warning, #ffc800);
+}
+
+.bg-information,
+.alert.alert-information {
+  background: var(--information-light, #ecf5fe);
+  border: var(--border-width) solid var(--information, #0080ff);
+}

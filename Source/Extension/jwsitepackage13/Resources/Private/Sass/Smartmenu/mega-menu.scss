@@ -1,0 +1,111 @@
+@import "../variables";
+/* Mega menus */
+//#main-menu,
+#main-menu > .has-mega-menu {
+  position: static !important;
+}
+
+#main-menu .mega-menu {
+  margin-left: 0 !important;
+  right: 0 !important;
+  width: auto !important;
+  max-width: none !important;
+}
+
+#main-menu > .has-mega-menu .scroll-up,
+#main-menu > .has-mega-menu .scroll-down {
+  margin-left: 0 !important;
+}
+
+
+/* clear any floats inside the mega menus */
+
+#main-menu .mega-menu > li {
+  overflow: auto;
+}
+
+
+/* reset mega menu list/link styles (which are inherited from the SmartMenus core/theme styles) */
+#main-menu .mega-menu {
+  padding: 0;
+  border-width: 1px 0;
+  box-shadow: none;
+  ul {
+    position: static;
+    display: block;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: auto;
+    background: transparent;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    list-style: none;
+    li {
+      border: 0;
+    }
+  }
+}
+#main-menu .mega-menu .subitem-image {
+  display: none;
+}
+@media (max-width: $mobile-menu-max) {
+  #main-menu .mega-flex > div {
+    width: 100% !important;
+  }
+}
+@media (min-width: $sm-clean__desktop-vp){
+  #main-menu {
+    // No sub level carets
+    > li > ul::before,
+    > li > ul::after {
+      display: none;
+    }
+  }
+  #main-menu .mega-menu .subitem-image {
+    display: block;
+    text-align: center;
+    img {
+      margin: var(--base-size-half) auto;
+    }
+  }
+  #main-menu .mega-flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    > div {
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+      align-self: auto;
+    }
+
+
+  }
+  /*
+      Legacy Firefox implementation treats all flex containers
+      as inline-block elements.
+  */
+  @-moz-document url-prefix() {
+    #main-menu .mega-flex {
+      width: 100%;
+      -moz-box-sizing: border-box;
+    }
+  }
+
+
+}

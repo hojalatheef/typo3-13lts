@@ -1,0 +1,13 @@
+var gaPath = "{settings.gaPath}";
+var gaDomain = "{settings.gaDomain}";
+klaroConfig.services.push(
+	{
+		name : 'googleAnalytics',
+		default: false,
+		title : 'Google Analytics',
+		purposes : ['analytics'],
+		cookies : [
+			[/^_g(a|id|at_.*|ac_.*)$/, gaPath, gaDomain],
+		],
+	 },
+);

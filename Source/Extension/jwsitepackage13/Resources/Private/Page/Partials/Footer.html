@@ -1,0 +1,51 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:switch expression="{footerBackendLayout}">
+	<f:case value="pagets__footer-2col">
+		<f:if condition="{content10}||{content11}">
+			<div class="content-footer">
+				<div class="width-max padding-top">
+					<div class="grid">
+						<div class="col-6_sm-12 align-center_sm">
+							<f:format.raw>{content10}</f:format.raw>
+						</div>
+						<div class="col-6_sm-12 align-right align-center_sm">
+							<f:format.raw>{content11}</f:format.raw>
+						</div>
+					</div>
+				</div>
+			</div>
+		</f:if>
+	</f:case>
+	<f:case value="pagets__footer-3col">
+		<f:if condition="{content10}||{content11}||{content12}">
+			<div class="content-footer">
+				<div class="width-max padding-top">
+					<div class="grid">
+						<div class="col-4_md-6_sm-12 align-center_sm">
+							<f:format.raw>{content10}</f:format.raw>
+						</div>
+						<div class="col-4_md-6_sm-12 align-center_sm">
+							<f:format.raw>{content11}</f:format.raw>
+						</div>
+						<div class="col-4_md-12_sm-12 align-center_sm">
+							<f:format.raw>{content12}</f:format.raw>
+						</div>
+					</div>
+				</div>
+			</div>
+		</f:if>
+	</f:case>
+	<f:defaultCase>
+		<f:if condition="{content10}">
+			<div class="content-footer">
+				<div class="width-max padding-top">
+					<div class="grid">
+						<div class="col-12 align-center_sm">
+							<f:format.raw>{content10}</f:format.raw>
+						</div>
+					</div>
+				</div>
+			</div>
+		</f:if>
+	</f:defaultCase>
+</f:switch>

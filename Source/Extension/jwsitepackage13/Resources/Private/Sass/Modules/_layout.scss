@@ -1,0 +1,129 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  @include flex-container(nowrap);
+  flex-direction: column;
+}
+
+.wrapper-content {
+  flex: 1;
+}
+
+.wrapper-footer {
+  flex: 0;
+}
+
+.width-max {
+  max-width: $content-max;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//////////////PAGE HEADER//////////////
+//Skip to content for Screenreaders
+.skip-to-content {
+  position: absolute;
+  top: var(--borderwidth);
+  left: var(--gutter);
+  transform: translateY(-100%);
+  transition: transform .3s;
+  z-index: 100;
+
+  &:focus {
+    transform: translateY(0%);
+  }
+}
+
+.content-header {
+  background: var(--header-bg-color);
+  color: var(--header-color);
+
+  .wrapper-header {
+    align-items: center;
+  }
+
+  .header-service {
+    align-items: center;
+    height: var(--nav-header-height);
+    @include transition(all);
+  }
+}
+
+.wrapper-logo img {
+  height: var(--header-service-height);
+  width: auto;
+  @include transition(all);
+}
+
+@media (max-width: $mobile-menu-max) {
+  .header-service {
+    background: var(--menu-bg);
+  }
+  div.wrapper-logo {
+    margin: 0 auto;
+    text-align: center;
+
+    img {
+      display: inline-block;
+      height: var(--mobile-logo-height);
+    }
+  }
+}
+
+@media (min-width: $desktop-menu-min) {
+  .content-header {
+    .header-service {
+      height: var(--header-service-height);
+    }
+  }
+}
+
+.header-image img {
+  width: 100vw;
+}
+
+//////////////CONTENT//////////////
+.content-main {
+  padding-top: var(--base-size);
+  padding-bottom: var(--base-size);
+}
+
+@media screen and (max-width: $mediaquery-small-max) {
+  //space before logo
+  .content-main {
+    padding-top: var(--base-size);
+  }
+}
+
+//////////////CONTENT - header-image//////////////
+.header-image {
+  .ce-column {
+    padding: 0;
+    margin-bottom: 0;
+
+    img {
+      width: 100vw;
+    }
+  }
+
+  .ce-above .ce-gallery {
+    margin-right: 0;
+  }
+}
+
+//////////////FOOTER//////////////
+.content-footer {
+  background: var(--footer-bg);
+  color: var(--footer-color);
+}
+
+.content-footer2 {
+  background: var(--footer2-bg);
+  color: var(--footer2-color);
+}
