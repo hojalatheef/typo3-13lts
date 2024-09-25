@@ -27,6 +27,7 @@
 	},
 	"require": {
 		"b13/container": "dev-master",
+		"georgringer/news": "dev-12-13",
 		"jweiland/jwsitepackage13": "^1.0",
 		"typo3/cms-backend": "^13.3.0",
 		"typo3/cms-belog": "^13.3.0",

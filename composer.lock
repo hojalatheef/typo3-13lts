@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "946e4489fa5c9c0fde3776265fa1aeda",
+    "content-hash": "7bdeff6af2e7d3ac681b28b7c2db18fd",
     "packages": [
         {
             "name": "b13/container",
@@ -875,6 +875,106 @@
                 "source": "https://github.com/firebase/php-jwt/tree/v6.10.1"
             },
             "time": "2024-05-18T18:05:11+00:00"
+        },
+        {
+            "name": "georgringer/news",
+            "version": "dev-12-13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/georgringer/news.git",
+                "reference": "16c9970c207057e65e6fc8a3eacb83556a21c629"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/georgringer/news/zipball/16c9970c207057e65e6fc8a3eacb83556a21c629",
+                "reference": "16c9970c207057e65e6fc8a3eacb83556a21c629",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 8.1 < 8.4",
+                "symfony/console": "^5.4 || ^6.4 || ^7.0",
+                "typo3/cms-backend": "^12.4.2 || ^13.1",
+                "typo3/cms-core": "^12.4.2 || ^13.1",
+                "typo3/cms-extbase": "^12.4.2 || ^13.1",
+                "typo3/cms-fluid": "^12.4.2 || ^13.1",
+                "typo3/cms-frontend": "^12.4.2 || ^13.1"
+            },
+            "replace": {
+                "typo3-ter/news": "self.version"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.47.1",
+                "phpunit/phpunit": "^10.5",
+                "typo3/cms-install": "^12.4.2 || ^13.1",
+                "typo3/cms-seo": "^12.4.2 || ^13.1",
+                "typo3/coding-standards": "^0.5.5",
+                "typo3/testing-framework": "^8.0.9",
+                "webmozart/assert": "^1.11.0"
+            },
+            "suggest": {
+                "georgringer/news-tagsuggest": "On the fly creation of tag records within a news record",
+                "georgringer/numbered-pagination": "Improved pagination API",
+                "reelworx/rx-shariff": "GDPR compliant social sharing",
+                "typo3/cms-install": "Upgrade wizards",
+                "typo3/cms-scheduler": "XML and ICS import",
+                "typo3/cms-seo": "Sitemaps"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "news",
+                    "app-dir": ".Build",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GeorgRinger\\News\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Georg Ringer",
+                    "homepage": "https://ringer.it",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Versatile news system based on Extbase & Fluid and using the latest technologies provided by TYPO3 CMS.",
+            "homepage": "https://extensions.typo3.org/extension/news",
+            "keywords": [
+                "article",
+                "extension",
+                "news",
+                "typo3"
+            ],
+            "support": {
+                "docs": "https://docs.typo3.org/p/georgringer/news/main/en-us/",
+                "issues": "https://github.com/georgringer/news/issues",
+                "source": "https://github.com/georgringer/news"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/GeorgRinger/10",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.amazon.de/hz/wishlist/ls/8F573K08TSDG",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/georgringer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/georgringer",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2024-09-13T20:10:36+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -7735,6 +7835,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "b13/container": 20,
+        "georgringer/news": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": false,
