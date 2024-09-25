@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Ebene_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#1877F2;}
+	.st1{fill:#FFFFFF;}
+</style>
+<path class="st0" d="M512,256C512,114.6,397.4,0,256,0S0,114.6,0,256c0,127.8,93.6,233.7,216,252.9V330h-65v-74h65v-56.4  c0-64.2,38.2-99.6,96.7-99.6c28,0,57.3,5,57.3,5v63h-32.3c-31.8,0-41.7,19.7-41.7,40v48h71l-11.4,74H296v178.9  C418.4,489.7,512,383.8,512,256z"></path>
+<path class="st1" d="M355.6,330l11.4-74h-71v-48c0-20.2,9.9-40,41.7-40H370v-63c0,0-29.3-5-57.3-5c-58.5,0-96.7,35.4-96.7,99.6V256  h-65v74h65v178.9c26.5,4.1,53.5,4.1,80,0V330H355.6z"></path>
+</svg>

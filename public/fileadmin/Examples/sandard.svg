@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="304" height="204" viewBox="0 0 304 204">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eaeaea;
+      }
+
+      .cls-2 {
+        fill: #5b5b5b;
+      }
+
+      .cls-3 {
+        fill: #3a3a3a;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        stroke: #1d1d1b;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+    </style>
+  </defs>
+  <g id="Ebene_3" data-name="Ebene 3">
+    <rect class="cls-4" x="2" y="2" width="300" height="200"></rect>
+    <rect class="cls-2" x="4" y="186" width="296" height="14"></rect>
+    <rect class="cls-3" x="4" y="22" width="296" height="2"></rect>
+  </g>
+  <g id="Ebene_2" data-name="Ebene 2">
+    <rect class="cls-1" x="57" y="24" width="190" height="162"></rect>
+    <rect x="69.06" y="47.34" width="62" height="3"></rect>
+    <rect x="69.06" y="63.68" width="168.84" height="1"></rect>
+    <rect x="69.06" y="74.51" width="168.84" height="1"></rect>
+    <rect x="69.06" y="85.34" width="168.84" height="1"></rect>
+    <rect x="69.06" y="96.17" width="140" height="1"></rect>
+    <rect x="153.48" y="108.43" width="84" height="46"></rect>
+    <rect x="69.06" y="108.77" width="73.96" height="1"></rect>
+    <rect x="69.06" y="119.6" width="73.96" height="1"></rect>
+    <rect x="69.06" y="130.43" width="73.96" height="1"></rect>
+    <rect x="69.06" y="141.27" width="73.96" height="1"></rect>
+    <rect x="69.06" y="152.1" width="73.96" height="1"></rect>
+  </g>
+</svg>
