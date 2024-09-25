@@ -7,7 +7,7 @@
 [![License][LICENSE_BADGE]][extension-packagist-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-![Build Status]([ci-tests-url])
+[![Build Status]][ci-tests-url]
 
 
 <!-- PROJECT LOGO -->
