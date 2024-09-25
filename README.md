@@ -7,6 +7,7 @@
 [![License][LICENSE_BADGE]][extension-packagist-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
+![Build Status]()
 
 
 <!-- PROJECT LOGO -->
@@ -131,3 +132,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [LICENSE_BADGE]: https://img.shields.io/github/license/jweiland-net/maps2?label=license&style=for-the-badge
 [linkedin-url]: https://www.linkedin.com/company/jweiland-net/mycompany/
 [product-screenshot]: Source/Extension/jwsitepackage13/Resources/Public/Images/screenshot.png
+[ci-tests-url]: https://github.com/hojalatheef/typo3-13lts/actions/workflows/ci.yml/badge.svg
