@@ -1,6 +1,6 @@
-@import "EXT:jwsitepackage12/Configuration/TSconfig/BackendLayouts/1colhero.tsconfig"
-@import "EXT:jwsitepackage12/Configuration/TSconfig/BackendLayouts/1col.tsconfig"
+@import "EXT:jwsitepackage13/Configuration/TSconfig/BackendLayouts/1colhero.tsconfig"
+@import "EXT:jwsitepackage13/Configuration/TSconfig/BackendLayouts/1col.tsconfig"
 #only for compatibility, use EXT:container instead
-#@import "EXT:jwsitepackage12/Configuration/TSconfig/BackendLayouts/standard.tsconfig"
-#@import "EXT:jwsitepackage12/Configuration/TSconfig/BackendLayouts/2col.tsconfig"
-#@import "EXT:jwsitepackage12/Configuration/TSconfig/BackendLayouts/3col.tsconfig"
+#@import "EXT:jwsitepackage13/Configuration/TSconfig/BackendLayouts/standard.tsconfig"
+#@import "EXT:jwsitepackage13/Configuration/TSconfig/BackendLayouts/2col.tsconfig"
+#@import "EXT:jwsitepackage13/Configuration/TSconfig/BackendLayouts/3col.tsconfig"

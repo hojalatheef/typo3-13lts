@@ -1,7 +1,7 @@
 tt_content.cols_2 < lib.contentElement
 tt_content.cols_2 {
 	templateName = 2Cols
-	templateRootPaths.10 = EXT:jwsitepackage12/Resources/Private/Extensions/FluidStyledContent/Templates
+	templateRootPaths.10 = EXT:jwsitepackage13/Resources/Private/Extensions/FluidStyledContent/Templates
 	dataProcessing {
 		201 = B13\Container\DataProcessing\ContainerProcessor
 		201 {
@@ -18,7 +18,7 @@ tt_content.cols_2 {
 tt_content.cols_3 < lib.contentElement
 tt_content.cols_3 {
 	templateName = 3Cols
-	templateRootPaths.10 = EXT:jwsitepackage12/Resources/Private/Extensions/FluidStyledContent/Templates
+	templateRootPaths.10 = EXT:jwsitepackage13/Resources/Private/Extensions/FluidStyledContent/Templates
 	dataProcessing {
 		301 = B13\Container\DataProcessing\ContainerProcessor
 		301 {
@@ -41,7 +41,7 @@ tt_content.cols_3 {
 tt_content.cols_4 < lib.contentElement
 tt_content.cols_4 {
 	templateName = 4Cols
-	templateRootPaths.10 = EXT:jwsitepackage12/Resources/Private/Extensions/FluidStyledContent/Templates
+	templateRootPaths.10 = EXT:jwsitepackage13/Resources/Private/Extensions/FluidStyledContent/Templates
 	dataProcessing {
 		401 = B13\Container\DataProcessing\ContainerProcessor
 		401 {

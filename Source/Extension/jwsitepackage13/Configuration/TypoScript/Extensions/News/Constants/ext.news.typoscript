@@ -3,11 +3,11 @@
 plugin.tx_news {
   view {
     # cat=plugin.tx_news/file; type=string; label=Path to template root (FE)
-    templateRootPath = EXT:jwsitepackage12/Resources/Private/Extensions/News/Templates/
+    templateRootPath = EXT:jwsitepackage13/Resources/Private/Extensions/News/Templates/
     # cat=plugin.tx_news/file; type=string; label=Path to template partials (FE)
-    partialRootPath = EXT:jwsitepackage12/Resources/Private/Extensions/News/Partials/
+    partialRootPath = EXT:jwsitepackage13/Resources/Private/Extensions/News/Partials/
     # cat=plugin.tx_news/file; type=string; label=Path to template layouts (FE)
-    layoutRootPath = EXT:jwsitepackage12/Resources/Private/Extensions/News/Layouts/
+    layoutRootPath = EXT:jwsitepackage13/Resources/Private/Extensions/News/Layouts/
   }
 
   settings {

@@ -8,7 +8,7 @@ imports:
 # For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
 editor:
   config:
-    contentsCss: "EXT:jwsitepackage12/Resources/Public/Css/RTE/editor.css"
+    contentsCss: "EXT:jwsitepackage13/Resources/Public/Css/RTE/editor.css"
     format_tags: "p;h1;h2;h3;h4;h5;pre"
 
     toolbarGroups:

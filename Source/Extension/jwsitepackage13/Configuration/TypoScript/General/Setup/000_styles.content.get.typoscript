@@ -2,17 +2,17 @@ plugin.tx_frontend._CSS_DEFAULT_STYLE >
 lib.parseFunc_RTE.externalBlocks.table.stdWrap.wrap = <div class="table-responsive">|</div>
 
 lib.contentElement.settings {
-  imageSizeSmall = {$jwsitepackage12.mediaQuerySmallMax}
-  imageSizeMedium = {$jwsitepackage12.mediaQueryMediumMax}
-  imageSizeLarge = {$jwsitepackage12.mediaQueryLargeMax}
-  imageSizeHeader = {$jwsitepackage12.imgMaxHeaderWidth}
+  imageSizeSmall = {$jwsitepackage13.mediaQuerySmallMax}
+  imageSizeMedium = {$jwsitepackage13.mediaQueryMediumMax}
+  imageSizeLarge = {$jwsitepackage13.mediaQueryLargeMax}
+  imageSizeHeader = {$jwsitepackage13.imgMaxHeaderWidth}
   ##info for container templates
-  menuType = {$jwsitepackage12.menuType}
-  fadeInContent = {$jwsitepackage12.fadeInContent}
-  useRss = {$jwsitepackage12.useRss}
-  rssTitle = {$jwsitepackage12.rssTitle}
-  rootId = {$jwsitepackage12.rootId}
-  rssIcon = {$jwsitepackage12.rssIcon}
+  menuType = {$jwsitepackage13.menuType}
+  fadeInContent = {$jwsitepackage13.fadeInContent}
+  useRss = {$jwsitepackage13.useRss}
+  rssTitle = {$jwsitepackage13.rssTitle}
+  rootId = {$jwsitepackage13.rootId}
+  rssIcon = {$jwsitepackage13.rssIcon}
 }
 
 
@@ -79,35 +79,35 @@ tt_content.image.dataProcessing.20 {
   maxGalleryWidth >
   maxGalleryWidth.cObject < lib.columnCalculator
   maxGalleryWidth.cObject {
-    default.value = {$jwsitepackage12.imgMaxWidth}
-    0.default.value = {$jwsitepackage12.imgMaxWidth}
-    0.pagets__1colhero.value = {$jwsitepackage12.imgMaxWidth}
-    0.pagets__1col.value = {$jwsitepackage12.imgMaxWidth}
+    default.value = {$jwsitepackage13.imgMaxWidth}
+    0.default.value = {$jwsitepackage13.imgMaxWidth}
+    0.pagets__1colhero.value = {$jwsitepackage13.imgMaxWidth}
+    0.pagets__1col.value = {$jwsitepackage13.imgMaxWidth}
 
     ## deprecated, only for updated projects
-    #0.pagets__standard.value = {$jwsitepackage12.imgWidth66}
-    #0.pagets__2col.value = {$jwsitepackage12.imgWidth50}
-    #0.pagets__3col.value = {$jwsitepackage12.imgWidth33}
-    #1.value = {$jwsitepackage12.imgMaxWidth}
-    #2.pagets__standard.value = {$jwsitepackage12.imgMaxWidth}
-    #2.pagets__2col.value = {$jwsitepackage12.imgWidth50}
-    #2.pagets__3col.value = {$jwsitepackage12.imgWidth33}
-    #3.value = {$jwsitepackage12.imgMaxWidth}
-    #4.value = {$jwsitepackage12.imgWidth33}
+    #0.pagets__standard.value = {$jwsitepackage13.imgWidth66}
+    #0.pagets__2col.value = {$jwsitepackage13.imgWidth50}
+    #0.pagets__3col.value = {$jwsitepackage13.imgWidth33}
+    #1.value = {$jwsitepackage13.imgMaxWidth}
+    #2.pagets__standard.value = {$jwsitepackage13.imgMaxWidth}
+    #2.pagets__2col.value = {$jwsitepackage13.imgWidth50}
+    #2.pagets__3col.value = {$jwsitepackage13.imgWidth33}
+    #3.value = {$jwsitepackage13.imgMaxWidth}
+    #4.value = {$jwsitepackage13.imgWidth33}
 
     ## Hero image
-    5.value = {$jwsitepackage12.imgMaxHeaderWidth}
+    5.value = {$jwsitepackage13.imgMaxHeaderWidth}
     ## Container 50:50
-    201.value = {$jwsitepackage12.imgWidth50}
+    201.value = {$jwsitepackage13.imgWidth50}
     202 < .201
 
     # Container 33:33:33
-    301.value = {$jwsitepackage12.imgWidth50}
+    301.value = {$jwsitepackage13.imgWidth50}
     302 < .301
     303 < .301
 
     ## Container 25:25:25:25
-    401.value = {$jwsitepackage12.imgWidth25}
+    401.value = {$jwsitepackage13.imgWidth25}
     402 < .401
     403 < .401
     404 < .401
@@ -116,35 +116,35 @@ tt_content.image.dataProcessing.20 {
   maxGalleryWidthInText >
   maxGalleryWidthInText.cObject < lib.columnCalculator
   maxGalleryWidthInText.cObject {
-    default.value = {$jwsitepackage12.imgTextMaxWidth}
-    0.default.value = {$jwsitepackage12.imgTextMaxWidth}
-    0.pagets__1colhero.value = {$jwsitepackage12.imgTextMaxWidth}
-    0.pagets__1col.value = {$jwsitepackage12.imgTextMaxWidth}
+    default.value = {$jwsitepackage13.imgTextMaxWidth}
+    0.default.value = {$jwsitepackage13.imgTextMaxWidth}
+    0.pagets__1colhero.value = {$jwsitepackage13.imgTextMaxWidth}
+    0.pagets__1col.value = {$jwsitepackage13.imgTextMaxWidth}
     ## deprecated, only for updated projects
-    #0.pagets__standard.value = {$jwsitepackage12.imgTextWidth66}
-    #0.pagets__2col.value = {$jwsitepackage12.imgTextWidth50}
-    #0.pagets__3col.value = {$jwsitepackage12.imgTextWidth33}
+    #0.pagets__standard.value = {$jwsitepackage13.imgTextWidth66}
+    #0.pagets__2col.value = {$jwsitepackage13.imgTextWidth50}
+    #0.pagets__3col.value = {$jwsitepackage13.imgTextWidth33}
     ## deprecated, only for updated projects
-    #1.value = {$jwsitepackage12.imgTextMaxWidth}
-    #2.pagets__standard.value = {$jwsitepackage12.imgTextMaxWidth}
-    #2.pagets__2col.value = {$jwsitepackage12.imgWidth50}
-    #2.pagets__3col.value = {$jwsitepackage12.imgWidth33}
-    #3.value = {$jwsitepackage12.imgMaxWidth}
-    #4.value = {$jwsitepackage12.imgTextWidth33}
+    #1.value = {$jwsitepackage13.imgTextMaxWidth}
+    #2.pagets__standard.value = {$jwsitepackage13.imgTextMaxWidth}
+    #2.pagets__2col.value = {$jwsitepackage13.imgWidth50}
+    #2.pagets__3col.value = {$jwsitepackage13.imgWidth33}
+    #3.value = {$jwsitepackage13.imgMaxWidth}
+    #4.value = {$jwsitepackage13.imgTextWidth33}
 
     ## Hero image
-    5.value = {$jwsitepackage12.imgMaxHeaderWidth}
+    5.value = {$jwsitepackage13.imgMaxHeaderWidth}
     ## Container 50:50
-    201.value = {$jwsitepackage12.imgTextWidth50}
+    201.value = {$jwsitepackage13.imgTextWidth50}
     202 < .201
 
     # Container 33:33:33
-    301.value = {$jwsitepackage12.imgTextWidth50}
+    301.value = {$jwsitepackage13.imgTextWidth50}
     302 < .301
     303 < .301
 
     ## Container 25:25:25:25
-    401.value = {$jwsitepackage12.imgTextWidth25}
+    401.value = {$jwsitepackage13.imgTextWidth25}
     402 < .401
     403 < .401
     404 < .401

@@ -11,7 +11,7 @@ page.headerData.2347 {
   # iPhone
   10 = IMAGE
   10 {
-    file = {$jwsitepackage12.iconSquare}
+    file = {$jwsitepackage13.iconSquare}
     file.width = 60
     file.height = 60
     layoutKey = apple-touch-icon
@@ -76,51 +76,51 @@ page.headerData.2347 {
 
   150 < .10
   150.layoutKey = msapplication-wide
-  150.file = {$jwsitepackage12.iconWide}
+  150.file = {$jwsitepackage13.iconWide}
   150.file.width = 310
   150.file.height = 150c
 }
 
-page.shortcutIcon = {$jwsitepackage12.iconSquare}
+page.shortcutIcon = {$jwsitepackage13.iconSquare}
 page.meta {
   #IE11TileforWindows8.1StartScreen
   msapplication-config = none
   msapplication-TileColor = #ffffff
-  msapplication-tooltip = {$jwsitepackage12.companyName}
-  application-name = {$jwsitepackage12.companyName}
+  msapplication-tooltip = {$jwsitepackage13.companyName}
+  application-name = {$jwsitepackage13.companyName}
   theme-color = #ffffff
 }
 
 ###################### CSS-Files ######################
 page.includeCSS {
-  customcssvariables = EXT:jwsitepackage12/Resources/Public/Css/CssVariables/custom.css
+  customcssvariables = EXT:jwsitepackage13/Resources/Public/Css/CssVariables/custom.css
   customcssvariables.forceOnTop = 1
-  general = EXT:jwsitepackage12/Resources/Public/Css/style.css
+  general = EXT:jwsitepackage13/Resources/Public/Css/style.css
   ## Icon fonts see: https://fontawesome.com/icons?d=gallery&m=free
-  fontawesome = EXT:jwsitepackage12/Resources/Public/Css/Fontawesome/fontawesome.css
-  fontawesomesolid = EXT:jwsitepackage12/Resources/Public/Css/Fontawesome/solid.css
+  fontawesome = EXT:jwsitepackage13/Resources/Public/Css/Fontawesome/fontawesome.css
+  fontawesomesolid = EXT:jwsitepackage13/Resources/Public/Css/Fontawesome/solid.css
   ## CSS fuer gewaehltes Farbschema der Navigation
-  mainmenu = EXT:jwsitepackage12/Resources/Public/Css/Smartmenu/sm-clean.css
-  megamenu = EXT:jwsitepackage12/Resources/Public/Css/Smartmenu/mega-menu.css
+  mainmenu = EXT:jwsitepackage13/Resources/Public/Css/Smartmenu/sm-clean.css
+  megamenu = EXT:jwsitepackage13/Resources/Public/Css/Smartmenu/mega-menu.css
   megamenu.if.value = megamenu
-  megamenu.if.equals = {$jwsitepackage12.menuTheme}
+  megamenu.if.equals = {$jwsitepackage13.menuTheme}
 
-  fancybox = EXT:jwsitepackage12/Resources/Public/Css/Extensions/jquery.fancybox.css
+  fancybox = EXT:jwsitepackage13/Resources/Public/Css/Extensions/jquery.fancybox.css
 
-  video_shariff = EXT:jwsitepackage12/Resources/Public/Css/Extensions/videoshariff.css
+  video_shariff = EXT:jwsitepackage13/Resources/Public/Css/Extensions/videoshariff.css
 
   ## CSS fuer EXT:news
-  news = EXT:jwsitepackage12/Resources/Public/Css/Extensions/news.css
+  news = EXT:jwsitepackage13/Resources/Public/Css/Extensions/news.css
 
   ## CSS für Styleguide
-  styleguide = EXT:jwsitepackage12/Resources/Public/Css/Modules/styleguidemodules.css
+  styleguide = EXT:jwsitepackage13/Resources/Public/Css/Modules/styleguidemodules.css
   styleguide.if.value = pagets__styleguide
   styleguide.if.equals.data = pagelayout
 }
 
 ###################### Javascript im Header ######################
 page.includeJSLibs {
-  jquery = EXT:jwsitepackage12/Resources/Public/JavaScript/Lib/jquery-3.6.3.min.js
+  jquery = EXT:jwsitepackage13/Resources/Public/JavaScript/Lib/jquery-3.6.3.min.js
   jquery {
     forceOnTop = 1
     disableCompression = 1
@@ -131,34 +131,34 @@ page.includeJSLibs {
 ###################### JavaScript im Footer ######################
 
 page.includeJSFooter {
-  smartMenu = EXT:jwsitepackage12/Resources/Public/JavaScript/Smartmenu/jquery.smartmenus.min.js
+  smartMenu = EXT:jwsitepackage13/Resources/Public/JavaScript/Smartmenu/jquery.smartmenus.min.js
   smartMenu.disableCompression = 1
-  #smartMenuHotkey = EXT:jwsitepackage12/Resources/Public/JavaScript/Smartmenu/jquery.smartmenus.keyboard.min.js
+  #smartMenuHotkey = EXT:jwsitepackage13/Resources/Public/JavaScript/Smartmenu/jquery.smartmenus.keyboard.min.js
   #smartMenuHotkey.disableCompression = 1
 
   ## menu with "more" option
-  initMoreSmartMenu = EXT:jwsitepackage12/Resources/Public/JavaScript/Smartmenu/initMoreSmartMenu.js
+  initMoreSmartMenu = EXT:jwsitepackage13/Resources/Public/JavaScript/Smartmenu/initMoreSmartMenu.js
   initMoreSmartMenu {
-    if.isFalse = {$jwsitepackage12.menuType}
+    if.isFalse = {$jwsitepackage13.menuType}
     if.value = standard
-    if.equals = {$jwsitepackage12.menuTheme}
+    if.equals = {$jwsitepackage13.menuTheme}
   }
 
-  initSmartMenu = EXT:jwsitepackage12/Resources/Public/JavaScript/Smartmenu/initSmartMenu.js
+  initSmartMenu = EXT:jwsitepackage13/Resources/Public/JavaScript/Smartmenu/initSmartMenu.js
 
-  fancyBox = EXT:jwsitepackage12/Resources/Public/JavaScript/jquery.fancybox.min.js
+  fancyBox = EXT:jwsitepackage13/Resources/Public/JavaScript/jquery.fancybox.min.js
   fancyBox.disableCompression = 1
 
-  contentCollapse = EXT:jwsitepackage12/Resources/Public/JavaScript/contentCollapse.js
+  contentCollapse = EXT:jwsitepackage13/Resources/Public/JavaScript/contentCollapse.js
 
   ## JavaScript fuer Klaro nur laden, wenn benoetigt
-  klaro = EXT:jwsitepackage12/Resources/Public/JavaScript/Klaro/klaro.js
+  klaro = EXT:jwsitepackage13/Resources/Public/JavaScript/Klaro/klaro.js
   klaro.if.value = 1
-  klaro.if.equals = {$jwsitepackage12CCM.showKlaro}
+  klaro.if.equals = {$jwsitepackage13CCM.showKlaro}
 
-  custom = EXT:jwsitepackage12/Resources/Public/JavaScript/custom.js
+  custom = EXT:jwsitepackage13/Resources/Public/JavaScript/custom.js
 
-  fadeIn = EXT:jwsitepackage12/Resources/Public/JavaScript/fadeInContent.js
+  fadeIn = EXT:jwsitepackage13/Resources/Public/JavaScript/fadeInContent.js
   fadeIn.if.value = 1
-  fadeIn.if.equals = {$jwsitepackage12.fadeInContent}
+  fadeIn.if.equals = {$jwsitepackage13.fadeInContent}
 }

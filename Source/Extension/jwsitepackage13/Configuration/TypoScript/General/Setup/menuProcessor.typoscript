@@ -32,7 +32,7 @@ page.10.dataProcessing {
   40 {
     levels = 1
     special = directory
-    special.value = {$jwsitepackage12.metaMenuUid}
+    special.value = {$jwsitepackage13.metaMenuUid}
     as = menuServiceFooter
   }
 
@@ -41,7 +41,7 @@ page.10.dataProcessing {
   50 {
     as = rootline
     includeNotInMenu = 1
-    excludeUidList = {$jwsitepackage12.newsDetailPid}
+    excludeUidList = {$jwsitepackage13.newsDetailPid}
     entryLevel = 1
     special = rootline
     special.range = 0|-1

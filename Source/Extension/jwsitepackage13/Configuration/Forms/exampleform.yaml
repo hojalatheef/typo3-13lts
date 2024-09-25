@@ -5,4 +5,4 @@ TYPO3:
         allowSaveToExtensionPaths: true
         allowDeleteFromExtensionPaths: true
         allowedExtensionPaths:
-          10: EXT:jwsitepackage12/Resources/Private/Forms/
+          10: EXT:jwsitepackage13/Resources/Private/Forms/

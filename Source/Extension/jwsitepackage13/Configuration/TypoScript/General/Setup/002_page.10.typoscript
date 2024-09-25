@@ -1,28 +1,28 @@
 page.10 = FLUIDTEMPLATE
 page.10 {
-  partialRootPath = EXT:jwsitepackage12/Resources/Private/Page/Partials
-  layoutRootPath = EXT:jwsitepackage12/Resources/Private/Page/Layouts
+  partialRootPath = EXT:jwsitepackage13/Resources/Private/Page/Partials
+  layoutRootPath = EXT:jwsitepackage13/Resources/Private/Page/Layouts
 
   file.stdWrap.cObject = CASE
   file.stdWrap.cObject {
     key.data = pagelayout
     pagets__1colhero = TEXT
-    pagets__1colhero.value = EXT:jwsitepackage12/Resources/Private/Page/Templates/OnecolHero.html
+    pagets__1colhero.value = EXT:jwsitepackage13/Resources/Private/Page/Templates/OnecolHero.html
     pagets__1col = TEXT
-    pagets__1col.value = EXT:jwsitepackage12/Resources/Private/Page/Templates/Onecol.html
+    pagets__1col.value = EXT:jwsitepackage13/Resources/Private/Page/Templates/Onecol.html
     pagets__styleguide = TEXT
-    pagets__styleguide.value = EXT:jwsitepackage12/Resources/Private/Page/Templates/Styleguide.html
+    pagets__styleguide.value = EXT:jwsitepackage13/Resources/Private/Page/Templates/Styleguide.html
 
     default < .pagets__1colhero
 
     ## Layout Options of V11, deprecated, only for updated projects
     ## Layout Varianten in Templates
     #pagets__standard = TEXT
-    #pagets__standard.value = EXT:jwsitepackage12/Resources/Private/Page/Templates/Standard.html
+    #pagets__standard.value = EXT:jwsitepackage13/Resources/Private/Page/Templates/Standard.html
     #pagets__2col = TEXT
-    #pagets__2col.value = EXT:jwsitepackage12/Resources/Private/Page/Templates/Twocol.html
+    #pagets__2col.value = EXT:jwsitepackage13/Resources/Private/Page/Templates/Twocol.html
     #pagets__3col = TEXT
-    #pagets__3col.value = EXT:jwsitepackage12/Resources/Private/Page/Templates/Threecol.html
+    #pagets__3col.value = EXT:jwsitepackage13/Resources/Private/Page/Templates/Threecol.html
   }
 
   variables {
@@ -51,7 +51,7 @@ page.10 {
     ## Footer
     content10 < styles.content.get
     content10.select.where = colPos = 10
-    content10.select.pidInList = {$jwsitepackage12.footerContentUid}
+    content10.select.pidInList = {$jwsitepackage13.footerContentUid}
     content11 < .content10
     content11.select.where = colPos = 11
     content12 < .content10
@@ -59,41 +59,41 @@ page.10 {
 
     ## Navigation parameter
     menuType = TEXT
-    menuType.value = {$jwsitepackage12.menuType}
+    menuType.value = {$jwsitepackage13.menuType}
     menuTheme = TEXT
-    menuTheme.value = {$jwsitepackage12.menuTheme}
+    menuTheme.value = {$jwsitepackage13.menuTheme}
     ## Sprachparameter
     showLang = TEXT
-    showLang.value = {$jwsitepackage12.showLang}
+    showLang.value = {$jwsitepackage13.showLang}
     ## Footer Column Layout
     footerBackendLayout = TEXT
-    footerBackendLayout.data = DB:pages:{$jwsitepackage12.footerContentUid}:backend_layout
+    footerBackendLayout.data = DB:pages:{$jwsitepackage13.footerContentUid}:backend_layout
   }
   settings {
-    showRootline = {$jwsitepackage12.showRootline}
-    showSearch = {$jwsitepackage12.showSearch}
+    showRootline = {$jwsitepackage13.showRootline}
+    showSearch = {$jwsitepackage13.showSearch}
 
-    logoFile = {$jwsitepackage12.logoFile}
-    logoAltText = {$jwsitepackage12.companyName}
-    logoLinkParameter = {$jwsitepackage12.rootId}
-    logoLinkTitle = {$jwsitepackage12.companyName}
-    logoHeight = {$jwsitepackage12.logoHeight}
-    headerFixed = {$jwsitepackage12.headerFixed}
-    imgMaxWidth = {$jwsitepackage12.imgMaxWidth}
+    logoFile = {$jwsitepackage13.logoFile}
+    logoAltText = {$jwsitepackage13.companyName}
+    logoLinkParameter = {$jwsitepackage13.rootId}
+    logoLinkTitle = {$jwsitepackage13.companyName}
+    logoHeight = {$jwsitepackage13.logoHeight}
+    headerFixed = {$jwsitepackage13.headerFixed}
+    imgMaxWidth = {$jwsitepackage13.imgMaxWidth}
 
-    useRss = {$jwsitepackage12.useRss}
+    useRss = {$jwsitepackage13.useRss}
 
     ## Klaro Consent Manager
-    showKlaro = {$jwsitepackage12CCM.showKlaro}
-    mustConsent = {$jwsitepackage12CCM.mustConsent}
-    privacyPolicy = {$jwsitepackage12CCM.privacyPolicyUid}
-    useMatomo = {$jwsitepackage12CCM.matomoUrl}
-    useGA = {$jwsitepackage12CCM.gaTrackingId}
-    gaPath = {$jwsitepackage12CCM.gaPath}
-    gaDomain = {$jwsitepackage12CCM.gaDomain}
-    fbp = {$jwsitepackage12CCM.fbp}
-    useTwitter = {$jwsitepackage12CCM.useTwitter}
-    externalMedia = {$jwsitepackage12CCM.externalMedia}
+    showKlaro = {$jwsitepackage13CCM.showKlaro}
+    mustConsent = {$jwsitepackage13CCM.mustConsent}
+    privacyPolicy = {$jwsitepackage13CCM.privacyPolicyUid}
+    useMatomo = {$jwsitepackage13CCM.matomoUrl}
+    useGA = {$jwsitepackage13CCM.gaTrackingId}
+    gaPath = {$jwsitepackage13CCM.gaPath}
+    gaDomain = {$jwsitepackage13CCM.gaDomain}
+    fbp = {$jwsitepackage13CCM.fbp}
+    useTwitter = {$jwsitepackage13CCM.useTwitter}
+    externalMedia = {$jwsitepackage13CCM.externalMedia}
   }
 }
 

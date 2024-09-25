@@ -1,18 +1,18 @@
-plugin.tx_indexedsearch.settings.targetPid = {$jwsitepackage12.searchformPid}
-plugin.tx_indexedsearch.settings.rootPidList = {$jwsitepackage12.rootId}
-plugin.tx_indexedsearch.view.partialRootPaths.100 = EXT:jwsitepackage12/Resources/Private/Extensions/IndexedSearch/Partials/
+plugin.tx_indexedsearch.settings.targetPid = {$jwsitepackage13.searchformPid}
+plugin.tx_indexedsearch.settings.rootPidList = {$jwsitepackage13.rootId}
+plugin.tx_indexedsearch.view.partialRootPaths.100 = EXT:jwsitepackage13/Resources/Private/Extensions/IndexedSearch/Partials/
 
 ## Suchformular aus dem Content Element holen
 lib.search = RECORDS
 lib.search {
   ##Uid des Suche Plugins auf Suchergebnisseite
-  source = {$jwsitepackage12.searchformUid}
+  source = {$jwsitepackage13.searchformUid}
   dontCheckPid = 1
   tables = tt_content
 }
 
 ## Suchformular auf Suchergebnisseite ausblenden
-[page["uid"] == {$jwsitepackage12.searchformPid}]
+[page["uid"] == {$jwsitepackage13.searchformPid}]
   lib.search >
   lib.search = TEXT
   lib.search.value >

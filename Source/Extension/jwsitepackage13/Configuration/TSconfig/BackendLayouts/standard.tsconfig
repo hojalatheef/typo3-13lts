@@ -1,7 +1,7 @@
 mod.web_layout.BackendLayouts {
   standard {
-    title = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:belayout-standard
-    icon = EXT:jwsitepackage12/Resources/Public/Icons/Backendlayouts/standard.png
+    title = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:belayout-standard
+    icon = EXT:jwsitepackage13/Resources/Public/Icons/Backendlayouts/standard.png
     config {
       backend_layout {
         colCount = 3
@@ -10,7 +10,7 @@ mod.web_layout.BackendLayouts {
           1 {
             columns {
               1 {
-                name = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:col-content-headermedia
+                name = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:col-content-headermedia
                 colspan = 3
                 colPos = 5
               }
@@ -19,7 +19,7 @@ mod.web_layout.BackendLayouts {
           2 {
             columns {
               1 {
-                name = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:col-content-top
+                name = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:col-content-top
                 colspan = 3
                 colPos = 1
               }
@@ -29,13 +29,13 @@ mod.web_layout.BackendLayouts {
           3 {
             columns {
               1 {
-                name = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:col-content-main
+                name = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:col-content-main
                 colspan = 2
                 colPos = 0
               }
 
               2 {
-                name = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:col-aside
+                name = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:col-aside
                 colPos = 2
               }
             }
@@ -44,7 +44,7 @@ mod.web_layout.BackendLayouts {
           4 {
             columns {
               1 {
-                name = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:col-content-bottom
+                name = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:col-content-bottom
                 colspan = 3
                 colPos = 3
               }

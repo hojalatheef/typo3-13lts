@@ -24,12 +24,12 @@ call_user_func(static function (): void {
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
     ';
     $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
-        'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:ctype.heroimage.title',
+        'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:ctype.heroimage.title',
         'heroimage',
-        'ext-jwsitepackage12-hero',
+        'ext-jwsitepackage13-hero',
         'default',
     ];
-    $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['heroimage'] = 'ext-jwsitepackage12-hero';
+    $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['heroimage'] = 'ext-jwsitepackage13-hero';
 
     $GLOBALS['TCA']['tt_content']['types']['heroimage']['columnsOverrides']['assets']['config']['overrideChildTca']['columns']['crop']['config'] = [
         'cropVariants' => [
@@ -43,19 +43,19 @@ call_user_func(static function (): void {
                 'disabled' => true,
             ],
             'hero' => [
-                'title' => 'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:cropVariantDefault',
+                'title' => 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:cropVariantDefault',
                 'selectedRatio' => 'NaN',
                 'allowedAspectRatios' => [
                     '16:9' => [
-                        'title' => 'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:cropVariant16to9',
+                        'title' => 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:cropVariant16to9',
                         'value' => 16 / 9,
                     ],
                     '3:1' => [
-                        'title' => 'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:cropVariant3to1',
+                        'title' => 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:cropVariant3to1',
                         'value' => 3 / 1,
                     ],
                     'NaN' => [
-                        'title' => 'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:cropVariantFree',
+                        'title' => 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:cropVariantFree',
                         'value' => 0.0,
                     ],
                 ],
@@ -63,15 +63,15 @@ call_user_func(static function (): void {
         ],
     ];
     $GLOBALS['TCA']['tt_content']['types']['heroimage']['columnsOverrides']['assets']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']['heroTablet'] = $GLOBALS['TCA']['tt_content']['types']['heroimage']['columnsOverrides']['assets']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']['hero'];
-    $GLOBALS['TCA']['tt_content']['types']['heroimage']['columnsOverrides']['assets']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']['heroTablet']['title'] = 'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:cropVariantTablet';
+    $GLOBALS['TCA']['tt_content']['types']['heroimage']['columnsOverrides']['assets']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']['heroTablet']['title'] = 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:cropVariantTablet';
 
     $GLOBALS['TCA']['tt_content']['types']['heroimage']['columnsOverrides']['assets']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']['heroSmartphone'] = $GLOBALS['TCA']['tt_content']['types']['heroimage']['columnsOverrides']['assets']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']['hero'];
-    $GLOBALS['TCA']['tt_content']['types']['heroimage']['columnsOverrides']['assets']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']['heroSmartphone']['title'] = 'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:cropVariantSmartphone';
+    $GLOBALS['TCA']['tt_content']['types']['heroimage']['columnsOverrides']['assets']['config']['overrideChildTca']['columns']['crop']['config']['cropVariants']['heroSmartphone']['title'] = 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:cropVariantSmartphone';
 
     $temporaryColumn = [
-        'tx_jwsitepackage12_imagesizes' => [
+        'tx_jwsitepackage13_imagesizes' => [
             'exclude' => 0,
-            'label' => 'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang_db.xlf:jwsitepackage12.imagesizes',
+            'label' => 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang_db.xlf:jwsitepackage13.imagesizes',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -91,7 +91,7 @@ call_user_func(static function (): void {
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
         'tt_content',
         'mediaAdjustments',
-        'tx_jwsitepackage12_imagesizes',
+        'tx_jwsitepackage13_imagesizes',
         'after:imageborder'
     );
 
@@ -99,17 +99,17 @@ call_user_func(static function (): void {
         (
         new \B13\Container\Tca\ContainerConfiguration(
             'cols_2',
-            'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:ctype.col-2.title',
-            'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:ctype.col-2.desc',
+            'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:ctype.col-2.title',
+            'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:ctype.col-2.desc',
             [
                 [
                     [
-                        'name' => 'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:colpos-201',
+                        'name' => 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:colpos-201',
                         'colPos' => 201,
                         'disallowed' => ['CType' => 'cols_2, cols_3, cols_4, heroimage'],
                     ],
                     [
-                        'name' => 'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:colpos-202',
+                        'name' => 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:colpos-202',
                         'colPos' => 202,
                         'disallowed' => ['CType' => 'cols_2, cols_3, cols_4, heroimage'],
                     ],
@@ -126,22 +126,22 @@ call_user_func(static function (): void {
         (
         new \B13\Container\Tca\ContainerConfiguration(
             'cols_3',
-            'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:ctype.col-3.title',
-            'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:ctype.col-3.desc',
+            'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:ctype.col-3.title',
+            'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:ctype.col-3.desc',
             [
                 [
                     [
-                        'name' => 'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:colpos-301',
+                        'name' => 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:colpos-301',
                         'colPos' => 301,
                         'disallowed' => ['CType' => 'cols_2, cols_3, cols_4, heroimage'],
                     ],
                     [
-                        'name' => 'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:colpos-302',
+                        'name' => 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:colpos-302',
                         'colPos' => 302,
                         'disallowed' => ['CType' => 'cols_2, cols_3, cols_4, heroimage'],
                     ],
                     [
-                        'name' => 'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:colpos-303',
+                        'name' => 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:colpos-303',
                         'colPos' => 303,
                         'disallowed' => ['CType' => 'cols_2, cols_3, cols_4, heroimage'],
                     ],
@@ -158,27 +158,27 @@ call_user_func(static function (): void {
         (
         new \B13\Container\Tca\ContainerConfiguration(
             'cols_4',
-            'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:ctype.col-4.title',
-            'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:ctype.col-4.desc',
+            'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:ctype.col-4.title',
+            'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:ctype.col-4.desc',
             [
                 [
                     [
-                        'name' => 'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:colpos-401',
+                        'name' => 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:colpos-401',
                         'colPos' => 401,
                         'disallowed' => ['CType' => 'cols_2, cols_3, cols_4, heroimage'],
                     ],
                     [
-                        'name' => 'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:colpos-402',
+                        'name' => 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:colpos-402',
                         'colPos' => 402,
                         'disallowed' => ['CType' => 'cols_2, cols_3, cols_4, heroimage'],
                     ],
                     [
-                        'name' => 'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:colpos-403',
+                        'name' => 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:colpos-403',
                         'colPos' => 403,
                         'disallowed' => ['CType' => 'cols_2, cols_3, cols_4, heroimage'],
                     ],
                     [
-                        'name' => 'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:colpos-404',
+                        'name' => 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:colpos-404',
                         'colPos' => 404,
                         'disallowed' => ['CType' => 'cols_2, cols_3, cols_4, heroimage'],
                     ],

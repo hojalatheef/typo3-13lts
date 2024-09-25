@@ -1,144 +1,144 @@
 ## Konstanten des Musterprojekts
-# customcategory=jwsitepackage12=LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.customcategory
-# customcategory=jwsitepackage12CCM=LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.customcategoryCCM
-# customsubcategory=layout=LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.customsubcategory.layout
-# customsubcategory=meta=LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.customsubcategory.meta
-# customsubcategory=menu=LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.customsubcategory.menu
-# customsubcategory=content=LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.customsubcategory.content
-# customsubcategory=basic=LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.customsubcategory.basic
-# customsubcategory=cookies=LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.customsubcategory.cookies
-# customsubcategory=tracking=LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.customsubcategory.tracking
-# customsubcategory=seo=LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.customsubcategory.seo
-# customsubcategory=rss=LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.customsubcategory.rss
-# customsubcategory=klaro=LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.customsubcategory.klaro
+# customcategory=jwsitepackage13=LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.customcategory
+# customcategory=jwsitepackage13CCM=LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.customcategoryCCM
+# customsubcategory=layout=LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.customsubcategory.layout
+# customsubcategory=meta=LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.customsubcategory.meta
+# customsubcategory=menu=LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.customsubcategory.menu
+# customsubcategory=content=LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.customsubcategory.content
+# customsubcategory=basic=LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.customsubcategory.basic
+# customsubcategory=cookies=LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.customsubcategory.cookies
+# customsubcategory=tracking=LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.customsubcategory.tracking
+# customsubcategory=seo=LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.customsubcategory.seo
+# customsubcategory=rss=LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.customsubcategory.rss
+# customsubcategory=klaro=LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.customsubcategory.klaro
 
-jwsitepackage12 {
-  # cat = jwsitepackage12/menu/a; type = boolean; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.showLang
+jwsitepackage13 {
+  # cat = jwsitepackage13/menu/a; type = boolean; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.showLang
   showLang = 1
 
-  # cat = jwsitepackage12/menu/b; type = options [Horizontale Navigation (Standard)=0,Vertikale Navigation=1, Horizontale und vertikale Navigation=2]; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.menuType
+  # cat = jwsitepackage13/menu/b; type = options [Horizontale Navigation (Standard)=0,Vertikale Navigation=1, Horizontale und vertikale Navigation=2]; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.menuType
   menuType = 0
 
-  # cat = jwsitepackage12/menu/d; type = options [Standard=standard,Megamenu=megamenu]; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.menuTheme
+  # cat = jwsitepackage13/menu/d; type = options [Standard=standard,Megamenu=megamenu]; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.menuTheme
   menuTheme = standard
 
-  # cat = jwsitepackage12/menu/e; type = boolean; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.showRootline
+  # cat = jwsitepackage13/menu/e; type = boolean; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.showRootline
   showRootline = 1
 
-  # cat = jwsitepackage12/menu/f; type = boolean; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.showSearch
+  # cat = jwsitepackage13/menu/f; type = boolean; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.showSearch
   showSearch = 1
 
-  # cat = jwsitepackage12/meta/a; type = int+; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.metaMenuUid
+  # cat = jwsitepackage13/meta/a; type = int+; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.metaMenuUid
   metaMenuUid = 2
 
-  # cat = jwsitepackage12/content/a; type = int+; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.rootId
+  # cat = jwsitepackage13/content/a; type = int+; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.rootId
   rootId = 1
 
-  # cat = jwsitepackage12/content/b; type = string; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.newsStartingPoints
+  # cat = jwsitepackage13/content/b; type = string; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.newsStartingPoints
   newsStartingPoints = 20
 
-  # cat = jwsitepackage12/content/c; type = string; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.newsDetailPid
+  # cat = jwsitepackage13/content/c; type = string; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.newsDetailPid
   newsDetailPid = 4
 
-  # cat = jwsitepackage12/content/d; type = string; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.newsListPid
+  # cat = jwsitepackage13/content/d; type = string; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.newsListPid
   newsListPid = 3
 
-  # cat = jwsitepackage12/content/e; type = string; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.searchResultId
+  # cat = jwsitepackage13/content/e; type = string; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.searchResultId
   searchformPid = 19
 
-  # cat = jwsitepackage12/content/f; type = string; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.searchFormId
+  # cat = jwsitepackage13/content/f; type = string; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.searchFormId
   searchformUid = 39
 
-  # cat = jwsitepackage12/content/g; type = int+; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.footerContentUid
+  # cat = jwsitepackage13/content/g; type = int+; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.footerContentUid
   footerContentUid = 17
 
-  # cat = jwsitepackage12/layout/a; type = string; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.companyname
+  # cat = jwsitepackage13/layout/a; type = string; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.companyname
   companyName = Musterfirma
 
-  # cat = jwsitepackage12/layout/b; type = string; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.logo
-  logoFile = EXT:jwsitepackage12/Resources/Public/Images/jweilandnet.svg
+  # cat = jwsitepackage13/layout/b; type = string; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.logo
+  logoFile = EXT:jwsitepackage13/Resources/Public/Images/jweilandnet.svg
 
-  # cat = jwsitepackage12/layout/c; type = string; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.logoHeight
+  # cat = jwsitepackage13/layout/c; type = string; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.logoHeight
   logoHeight = 81
 
-  # cat = jwsitepackage12/layout/d; type = string; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.iconSquare
-  iconSquare = EXT:jwsitepackage12/Resources/Public/Icons/appicon-square.png
+  # cat = jwsitepackage13/layout/d; type = string; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.iconSquare
+  iconSquare = EXT:jwsitepackage13/Resources/Public/Icons/appicon-square.png
 
-  # cat = jwsitepackage12/layout/e; type = string; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.iconWide
-  iconWide = EXT:jwsitepackage12/Resources/Public/Icons/appicon-wide.png
+  # cat = jwsitepackage13/layout/e; type = string; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.iconWide
+  iconWide = EXT:jwsitepackage13/Resources/Public/Icons/appicon-wide.png
 
-  # cat = jwsitepackage12/layout/f; type = boolean; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.headerFixed
+  # cat = jwsitepackage13/layout/f; type = boolean; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.headerFixed
   headerFixed = 1
 
-  # cat = jwsitepackage12/layout/g; type = boolean; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.fadeInContent
+  # cat = jwsitepackage13/layout/g; type = boolean; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.fadeInContent
   fadeInContent = 1
 
-  # cat = jwsitepackage12/layout/h; type = string; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.heroTextMaxLength
+  # cat = jwsitepackage13/layout/h; type = string; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.heroTextMaxLength
   heroTextMaxLength = 120
 
-  # cat = jwsitepackage12/basic/b; type = boolean; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.compressCss
+  # cat = jwsitepackage13/basic/b; type = boolean; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.compressCss
   compressCss = 1
 
-  # cat = jwsitepackage12/basic/c; type = boolean; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.concatenateCss
+  # cat = jwsitepackage13/basic/c; type = boolean; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.concatenateCss
   concatenateCss = 1
 
-  # cat = jwsitepackage12/basic/d; type = boolean; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.compressJs
+  # cat = jwsitepackage13/basic/d; type = boolean; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.compressJs
   compressJs = 1
 
-  # cat = jwsitepackage12/basic/e; type = boolean; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.concatenateJs
+  # cat = jwsitepackage13/basic/e; type = boolean; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.concatenateJs
   concatenateJs = 1
 
-  # cat = jwsitepackage12/seo/a; type = boolean; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.pageTitleFirst
+  # cat = jwsitepackage13/seo/a; type = boolean; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.pageTitleFirst
   pageTitleFirst = 1
 
-  # cat = jwsitepackage12/rss/a; type = boolean; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.useRss
+  # cat = jwsitepackage13/rss/a; type = boolean; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.useRss
   useRss = 1
 
-  # cat = jwsitepackage12/rss/b; type = string; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.rssTitle
+  # cat = jwsitepackage13/rss/b; type = string; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.rssTitle
   rssTitle = Titel des RSS Feeds
 
-  # cat = jwsitepackage12/rss/c; type = string; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.rssDescription
+  # cat = jwsitepackage13/rss/c; type = string; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.rssDescription
   rssDescription = Beschreibung des RSS Feeds
 
-  # cat = jwsitepackage12/rss/d; type = string; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.rssLink
+  # cat = jwsitepackage13/rss/d; type = string; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.rssLink
   rssLink = http(s)://name-der-domain.de
 
-  # cat = jwsitepackage12/rss/e; type = boolean; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.rssIcon
+  # cat = jwsitepackage13/rss/e; type = boolean; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.rssIcon
   rssIcon = 1
 
 }
 
-jwsitepackage12CCM {
-  # cat = jwsitepackage12CCM/klaro/a; type = boolean; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.showKlaro
+jwsitepackage13CCM {
+  # cat = jwsitepackage13CCM/klaro/a; type = boolean; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.showKlaro
   showKlaro = 1
 
-  # cat = jwsitepackage12CCM/klaro/b; type = boolean; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.mustConsent
+  # cat = jwsitepackage13CCM/klaro/b; type = boolean; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.mustConsent
   mustConsent = 1
 
-  # cat = jwsitepackage12CCM/klaro/c; type = int+; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.privacyPolicyUid
+  # cat = jwsitepackage13CCM/klaro/c; type = int+; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.privacyPolicyUid
   privacyPolicyUid = 62
 
-  # cat = jwsitepackage12CCM/klaro/d; type = string; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.matomourl
+  # cat = jwsitepackage13CCM/klaro/d; type = string; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.matomourl
   matomoUrl =
 
-  # cat = jwsitepackage12CCM/klaro/e; type = int+; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.matomoSiteId
+  # cat = jwsitepackage13CCM/klaro/e; type = int+; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.matomoSiteId
   matomoSiteId = 1
 
-  # cat = jwsitepackage12CCM/klaro/f; type = string; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.gaTrackingId
+  # cat = jwsitepackage13CCM/klaro/f; type = string; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.gaTrackingId
   gaTrackingId =
 
-  # cat = jwsitepackage12CCM/klaro/g; type = string; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.gaPath
+  # cat = jwsitepackage13CCM/klaro/g; type = string; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.gaPath
   gaPath = /
 
-  # cat = jwsitepackage12CCM/klaro/h; type = string; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.gaDomain
+  # cat = jwsitepackage13CCM/klaro/h; type = string; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.gaDomain
   gaDomain = domain.tld
 
-  # cat = jwsitepackage12CCM/klaro/i; type = string; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.fbp
+  # cat = jwsitepackage13CCM/klaro/i; type = string; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.fbp
   fbp =
 
-  # cat = jwsitepackage12CCM/klaro/j; type = boolean; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.useTwitter
+  # cat = jwsitepackage13CCM/klaro/j; type = boolean; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.useTwitter
   useTwitter =
 
-  # cat = jwsitepackage12CCM/klaro/k; type = boolean; label = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:jwsitepackage12.externalMedia
+  # cat = jwsitepackage13CCM/klaro/k; type = boolean; label = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:jwsitepackage13.externalMedia
   externalMedia = 1
 }

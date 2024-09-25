@@ -17,7 +17,6 @@ services:
   dashboard.widget.jwspinfo:
     class: 'TYPO3\CMS\Dashboard\Widgets\CtaWidget'
     arguments:
-      $view: '@dashboard.views.widget'
       $buttonProvider: '@dashboard.buttons.jwspinfo'
       $options:
         text: 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:widgets.jwspinfo.longdesc'

@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 return [
-    'ext-jwsitepackage12-hero' => [
+    'ext-jwsitepackage13-hero' => [
         'provider' => \TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
-        'source' => 'EXT:jwsitepackage12/Resources/Public/Icons/hero.svg',
+        'source' => 'EXT:jwsitepackage13/Resources/Public/Icons/hero.svg',
     ],
 ];

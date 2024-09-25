@@ -5,7 +5,7 @@
 ## Linkhandler for news records
 config.recordLinks.tx_news {
   typolink {
-    parameter = {$jwsitepackage12.newsDetailPid}
+    parameter = {$jwsitepackage13.newsDetailPid}
     additionalParams.data = field:uid
     additionalParams.wrap = &tx_news_pi1[news]=|
     useCacheHash = 1

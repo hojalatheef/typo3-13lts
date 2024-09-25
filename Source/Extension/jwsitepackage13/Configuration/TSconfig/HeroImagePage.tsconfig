@@ -13,12 +13,12 @@ TCEFORM {
       types {
         heroimage {
           altLabels {
-            0 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.heroimage.layout.0
+            0 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:tt_content.heroimage.layout.0
           }
           addItems {
-            400 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.layout.400
-            401 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.layout.401
-            402 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.layout.402
+            400 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:tt_content.layout.400
+            401 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:tt_content.layout.401
+            402 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:tt_content.layout.402
           }
         }
       }
@@ -29,11 +29,11 @@ TCEFORM {
         heroimage {
           removeItems = indent,indent-left,indent-right,none,ruler-before,ruler-after,collapsemobile,collapse
           altLabels {
-            default = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.frameclass.heroimage.default
+            default = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:tt_content.frameclass.heroimage.default
           }
           addItems {
-            center = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.frameclass.center
-            right = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.frameclass.right
+            center = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:tt_content.frameclass.center
+            right = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:tt_content.frameclass.right
           }
         }
       }
@@ -60,9 +60,9 @@ mod {
 mod.wizards.newContentElement.wizardItems.common {
   elements {
     heroimage {
-      iconIdentifier = ext-jwsitepackage12-hero
-      title = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:ctype.heroimage.title
-      description = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:ctype.heroimage.decription
+      iconIdentifier = ext-jwsitepackage13-hero
+      title = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:ctype.heroimage.title
+      description = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:ctype.heroimage.decription
       tt_content_defValues {
         CType = heroimage
       }

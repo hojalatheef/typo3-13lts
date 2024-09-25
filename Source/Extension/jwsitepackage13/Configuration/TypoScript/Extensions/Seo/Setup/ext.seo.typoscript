@@ -9,9 +9,9 @@ plugin.tx_seo {
                    sortField = sorting
                    lastModifiedField = tstamp
                    #additionalWhere = AND (no_index = 0 OR no_follow = 0)
-                   pid = {$jwsitepackage12.newsStartingPoints}
+                   pid = {$jwsitepackage13.newsStartingPoints}
                    url {
-                      pageId = {$jwsitepackage12.newsDetailPid}
+                      pageId = {$jwsitepackage13.newsDetailPid}
                       fieldToParameterMap {
                          uid = tx_news_pi1[news]
                       }

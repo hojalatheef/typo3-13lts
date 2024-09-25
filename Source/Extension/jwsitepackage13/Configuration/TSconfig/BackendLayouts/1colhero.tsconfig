@@ -1,7 +1,7 @@
 mod.web_layout.BackendLayouts {
   1colhero {
-    title = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:belayout-1colhero
-    icon = EXT:jwsitepackage12/Resources/Public/Icons/Backendlayouts/onecolhero.png
+    title = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:belayout-1colhero
+    icon = EXT:jwsitepackage13/Resources/Public/Icons/Backendlayouts/onecolhero.png
     config {
       backend_layout {
         colCount = 1
@@ -10,7 +10,7 @@ mod.web_layout.BackendLayouts {
           1 {
             columns {
               1 {
-                name = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:col-content-headermedia
+                name = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:col-content-headermedia
                 colPos = 5
                 allowed {
                   CType = image,textmedia,heroimage
@@ -21,7 +21,7 @@ mod.web_layout.BackendLayouts {
           2 {
             columns {
               1 {
-                name = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:col-content-main
+                name = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:col-content-main
                 colPos = 0
                 disallowed {
                   CType = heroimage

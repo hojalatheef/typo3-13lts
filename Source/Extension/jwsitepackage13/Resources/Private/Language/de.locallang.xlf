@@ -1,254 +1,254 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file source-language="en" target-language="de" datatype="plaintext" original="EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf" date="2021-09-24T08:23:01Z" product-name="jwsitepackage12">
+	<file source-language="en" target-language="de" datatype="plaintext" original="EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf" date="2021-09-24T08:23:01Z" product-name="jwsitepackage13">
 		<header/>
 		<body>
-			<trans-unit id="jwsitepackage12.companyname" resname="jwsitepackage12.companyname">
+			<trans-unit id="jwsitepackage13.companyname" resname="jwsitepackage13.companyname">
 				<source>Company Name: Name used in the copyright info, f.e. in the footer</source>
 				<target>Firmenname: Der Name wird fuer die Copyright-Info genutzt, z.B. im Footer</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.compressCss" resname="jwsitepackage12.compressCss">
+			<trans-unit id="jwsitepackage13.compressCss" resname="jwsitepackage13.compressCss">
 				<source>Compress CSS:Activate compression/minification of CSS files</source>
 				<target>Compress CSS: Komprimierung/Minifizierung von CSS-Dateien aktivieren</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.compressJs" resname="jwsitepackage12.compressJs">
+			<trans-unit id="jwsitepackage13.compressJs" resname="jwsitepackage13.compressJs">
 				<source>Compress JavaScript: Activate compression/minification of JavaScript files</source>
 				<target>Compress JavaScript: Komprimierung/Minifizierung von JavaScript-Dateien aktivieren</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.concatenateCss" resname="jwsitepackage12.concatenateCss">
+			<trans-unit id="jwsitepackage13.concatenateCss" resname="jwsitepackage13.concatenateCss">
 				<source>Concatenate CSS: Activate concatenation of multiple CSS files to one single file</source>
 				<target>Concatenate CSS: Zusammenfassung mehrerer CSS-Dateien zu einer einzelnen aktivieren</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.concatenateJs" resname="jwsitepackage12.concatenateJs">
+			<trans-unit id="jwsitepackage13.concatenateJs" resname="jwsitepackage13.concatenateJs">
 				<source>Concatenate JavaScript: Activate concatenation of multiple JavaScript files to one single file</source>
 				<target>Concatenate JavaScript: Zusammenfassung mehrerer JavaScript-Dateien zu einer einzelnen aktivieren
 				</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.usePrism" resname="jwsitepackage12.usePrism">
+			<trans-unit id="jwsitepackage13.usePrism" resname="jwsitepackage13.usePrism">
 				<source>use Prism to layout code snippets on website</source>
 				<target>Code Schnipsel auf der Webseite optisch hervorgehoben ausgeben</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.logo" resname="jwsitepackage12.logo">
+			<trans-unit id="jwsitepackage13.logo" resname="jwsitepackage13.logo">
 				<source>Logo: Path to an image file used as logo in the header of the website, f.e. fileadmin/images/my_bgr.jpg, or EXT:myext/Resources/Public/Images/my_bgr.jpg
 				</source>
 				<target>Logo: Pfad zu einer Bilddatei, die als Logo im Kopfbereich der Seite genutzt wird, z.B. fileadmin/images/my_bgr.jpg, oder EXT:myext/Resources/Public/Images/my_bgr.jpg
 				</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.logoHeight" resname="jwsitepackage12.logoHeight">
+			<trans-unit id="jwsitepackage13.logoHeight" resname="jwsitepackage13.logoHeight">
 				<source>Logo Height: Rendered height of file in px. Visual height is defined in css</source>
 				<target>Höhe der Logodatei im Header: Gerenderte Höhe der Datei in px. Visuelle Höhe ist in CSS definiert</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.headerFixed" resname="jwsitepackage12.headerFixed">
+			<trans-unit id="jwsitepackage13.headerFixed" resname="jwsitepackage13.headerFixed">
 				<source>Fixed Header: Header stays visible when scrolling.</source>
 				<target>Fester Headerbereich: Kopfbereich bleibt sichtbar beim Scrollen.</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.fadeInContent" resname="jwsitepackage12.fadeInContent">
+			<trans-unit id="jwsitepackage13.fadeInContent" resname="jwsitepackage13.fadeInContent">
 				<source>Fade in Content Elements: Content elements get visible when scrolling.</source>
 				<target>Einblenden der Inhaltselemente: Die Inhaltselemente werden beim Scrollen sichtbar.</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.heroTextMaxLength" resname="jwsitepackage12.heroTextMaxLength">
+			<trans-unit id="jwsitepackage13.heroTextMaxLength" resname="jwsitepackage13.heroTextMaxLength">
 				<source>Maximum amount of characters for bodytext on hero image</source>
 				<target>Maximale Buchstabenanzahl für Text auf Heroimage</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.metaId" resname="jwsitepackage12.metaId">
+			<trans-unit id="jwsitepackage13.metaId" resname="jwsitepackage13.metaId">
 				<source>Meta ID:ID of the starting page of the meta navigation</source>
 				<target>Meta ID:ID der Ausgangsseite der Meta-Navigation</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.rootId" resname="jwsitepackage12.rootId">
+			<trans-unit id="jwsitepackage13.rootId" resname="jwsitepackage13.rootId">
 				<source>Root ID:ID of the root page</source>
 				<target>Root ID:ID der Root-Seite</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.searchResultId" resname="jwsitepackage12.searchResultId">
+			<trans-unit id="jwsitepackage13.searchResultId" resname="jwsitepackage13.searchResultId">
 				<source>Search Result ID:ID of the page for search results</source>
 				<target>Search Result ID:ID der Seite mit den Suchergebnissen</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.searchFormId" resname="jwsitepackage12.searchFormId">
+			<trans-unit id="jwsitepackage13.searchFormId" resname="jwsitepackage13.searchFormId">
 				<source>Search Form ID:ID of the search form content element</source>
 				<target>Search Form ID:ID des Inhaltselements des Such-Formulars</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.matomourl" resname="jwsitepackage12.matomourl">
+			<trans-unit id="jwsitepackage13.matomourl" resname="jwsitepackage13.matomourl">
 				<source>Address of the Matomo installation:Insert the URL of your Matomo installation (f.e. matomo.domain.com or domain.com/matomo, without http or https and without trailing slash!)
 				</source>
 				<target>Adresse der Matomo-Installation:Fügen Sie die URL Ihrer Matomo-Installation ein (z.B. matomo.domain.de oder domain.de/matomo, ohne http oder https und ohne abschließenden Schrägstrich!)
 				</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.matomoSiteId" resname="jwsitepackage12.matomoSiteId">
+			<trans-unit id="jwsitepackage13.matomoSiteId" resname="jwsitepackage13.matomoSiteId">
 				<source>ID of the website:Insert the ID of the website you want to monitor. You can find it in the Matomo settings (Administration -&gt; Websites -&gt; Manage).
 				</source>
 				<target>ID der Website:Fügen Sie die ID der zu überwachenden Website ein. Sie finden diese in den Einstellungen von Matomo (Administration -&gt; Websites -&gt; verwalten)
 				</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.pageTitleFirst" resname="jwsitepackage12.pageTitleFirst">
+			<trans-unit id="jwsitepackage13.pageTitleFirst" resname="jwsitepackage13.pageTitleFirst">
 				<source>Print the page title first in title-Tag:TYPO3 by default prints a title tag in the format “website:page title”. If pageTitleFirst is set then the page title will be printed IN FRONT OF the template title. So it will look like “page title: website”.
 				</source>
 				<target>					Ausgabe des Seitentitels zuerst im Titel-Tag:TYPO3 gibt standardmäßig ein Titel-Tag im Format &quot;Website:Seitentitel&quot; aus. Wenn pageTitleFirst gesetzt ist, wird der Seitentitel VOR dem Template-Titel ausgegeben. Die Ausgabe	wird so aussehen: &quot;Seitentitel: Website&quot;.
 				</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.customsubcategory.klaro" resname="jwsitepackage12.customsubcategory.klaro">
+			<trans-unit id="jwsitepackage13.customsubcategory.klaro" resname="jwsitepackage13.customsubcategory.klaro">
 				<source>Settings for the Klaro consent management tool</source>
 				<target>Einstellungen für das Klaro Consent Management Tool</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.showKlaro" resname="jwsitepackage12.showKlaro">
+			<trans-unit id="jwsitepackage13.showKlaro" resname="jwsitepackage13.showKlaro">
 				<source>Show Consent Manager:Displays a window in which the website visitor can agree or decline the use of cookies</source>
 				<target>Consent Manager anzeigen:Zeigt ein Fenster an, in dem der Besucher der Website der Nutzung von Cookies zustimmen oder diese ablehnen kann</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.mustConsent" resname="jwsitepackage12.mustConsent">
+			<trans-unit id="jwsitepackage13.mustConsent" resname="jwsitepackage13.mustConsent">
 				<source>Visitor action required:If this checkbox is active, the visitor must decide whether to accept or reject cookies before the website can be used. If the checkbox is deactivated, the visitor can use the website even without accepting or rejecting cookies.</source>
 				<target>Besucheraktion erforderlich:Ist diese Checkbox aktiv, muss der Besucher entscheiden, ob er Cookies zustimmt oder sie ablehnt, bevor die Website genutzt werden kann. Ist die Checkbox deaktiviert, kann der Benutzer die Website auch ohne Zustimmung oder Ablehnung nutzen.</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.privacyPolicyUid" resname="jwsitepackage12.privacyPolicyUid">
+			<trans-unit id="jwsitepackage13.privacyPolicyUid" resname="jwsitepackage13.privacyPolicyUid">
 				<source>Privacy page ID:Enter the ID of the privacy page here</source>
 				<target>ID der Datenschutzseite:Hier die ID der Seite mit der Datenschutzerklärung eintragen</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.gaTrackingId" resname="jwsitepackage12.gaTrackingId">
+			<trans-unit id="jwsitepackage13.gaTrackingId" resname="jwsitepackage13.gaTrackingId">
 				<source>Tracking ID of Google Analytics:If you use Google Analytics, enter the ID of your property here. (Example: GA4-123456-7)</source>
 				<target>Tracking ID von Google Analytics:Falls Sie Google Analytics verwenden, geben Sie hier die ID Ihrer Property ein. (Beispiel: GA4-123456-7)</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.gaPath" resname="jwsitepackage12.gaPath">
+			<trans-unit id="jwsitepackage13.gaPath" resname="jwsitepackage13.gaPath">
 				<source>Path of the Google Analytics Cookies:Usually the entry / is sufficient here</source>
 				<target>Pfad der Google Analytics Cookies:In der Regel reicht hier die Angabe /</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.gaDomain" resname="jwsitepackage12.gaDomain">
+			<trans-unit id="jwsitepackage13.gaDomain" resname="jwsitepackage13.gaDomain">
 				<source>Domain of this website: To ensure that cookies can be deleted correctly, it is necessary to specify the domain. The domain must be specified in the form 'domain.tld', without www, without http and without /!</source>
 				<target>Domain dieser Website: Damit Cookies auch korrekt wieder gelöscht werden können, ist die Angabe der Domain notwendig. Die Domain muss in der Form 'domain.tld' angegeben werden, ohne www, ohne http und ohne /!</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.fbp" resname="jwsitepackage12.fbp">
+			<trans-unit id="jwsitepackage13.fbp" resname="jwsitepackage13.fbp">
 				<source>Facebook Pixel: If you use the Facebook pixel, enter the pixel ID here (you can find it on https://business.facebook.com/events_manager/pixel).</source>
 				<target>Facebook Pixel: Falls Sie den Facebook-Pixel nutzen, geben Sie hier die Pixel-ID ein (einsehbar unter https://business.facebook.com/events_manager/pixel)</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.useTwitter" resname="jwsitepackage12.useTwitter">
+			<trans-unit id="jwsitepackage13.useTwitter" resname="jwsitepackage13.useTwitter">
 				<source>Twitter: Enable this checkbox if you embed Twitter widgets on your website, for example a timeline.
 					Note: the JavaScript must be adapted according to our documentation, so that it is only executed after the website visitor has given his or her consent!</source>
 				<target>Twitter: Aktivieren sie diese Checkbox, wenn Sie Widgets von Twitter auf Ihrer Website einbetten, zum Beispiel eine Timeline.
 					Beachten: das JavaScript muss entsprechend unserer Dokumentation angepasst werden, damit es erst nach Zustimmung des Website-Besuchers ausgeführt wird!</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.externalMedia" resname="jwsitepackage12.externalMedia">
+			<trans-unit id="jwsitepackage13.externalMedia" resname="jwsitepackage13.externalMedia">
 				<source>Use of external media: Activate this checkbox if you include videos from YouTube or Vimeo. Attention: the extension &quot;video_shariff&quot; should be activated!</source>
 				<target>Nutzung externer Medien: Aktivieren Sie diese Checkbox, wenn Sie Videos von YouTube oder Vimeo einbinden. Achtung: die Extension &quot;video_shariff&quot; sollte unbedingt aktiviert sein!</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.iconSquare" resname="jwsitepackage12.iconSquare">
+			<trans-unit id="jwsitepackage13.iconSquare" resname="jwsitepackage13.iconSquare">
 				<source>App-/FavIcon Square: Path to an image, which is used as Favicon in browsers and as touch icons for smartphones and Tablets. You need 2 variants of this icon to cover all devices, this one has to be square.
 				</source>
 				<target>App-/Favicon Quadratisch: Pfad zu einer Bilddatei, die als Favicon in Browsern und TouchIcon für Smartphones und Tablets genutzt wird. Sie benötigen 2 Varianten des Bildes, um möglichst viele Geräte abzudecken, dieses Bild muss quadratisch sein.
 				</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.iconWide" resname="jwsitepackage12.iconWide">
+			<trans-unit id="jwsitepackage13.iconWide" resname="jwsitepackage13.iconWide">
 				<source>App-/FavIcon Wide: Path to a second image, which is used as Favicon in browsers and as touch icons for smartphones and Tablets. This variant need an aspect ratio of 31:15, for example: width 310px, height 150px.
 				</source>
 				<target>App-/FavIcon Breite: Pfad zu einer zweiten Bilddatei, die als Favicon in Browsern und TouchIcon für Smartphones und Tablets genutzt wird. Diese Variante benötigt ein Seitenverhältnis von 31:15, zum Beispiel: Breite 310 px, Höhe 150 px.
 				</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.showRootline" resname="jwsitepackage12.showRootline">
+			<trans-unit id="jwsitepackage13.showRootline" resname="jwsitepackage13.showRootline">
 				<source>Show rootline: If set, the rootline (breadcrumb) navigation on subpages is shown.</source>
 				<target>Rootline anzeigen: Wenn aktiviert, wird die Brotkrumen (Rootline) Navigation auf Unterseiten
 					angezeigt.
 				</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.showLang" resname="jwsitepackage12.showLang">
+			<trans-unit id="jwsitepackage13.showLang" resname="jwsitepackage13.showLang">
 				<source>Show language menu: Turn on and off the language menu.</source>
 				<target>Sprachmenü anzeigen: Anzeige des Sprachmenüs ein-/ausschalten</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.showSearch" resname="jwsitepackage12.showSearch">
+			<trans-unit id="jwsitepackage13.showSearch" resname="jwsitepackage13.showSearch">
 				<source>Show search box: Turn on and off the search box in the header.</source>
 				<target>Suchfeld anzeigen: Anzeige des Suchfeldes im Kopfbereich ein-/ausschalten</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.menuType" resname="jwsitepackage12.menuType">
+			<trans-unit id="jwsitepackage13.menuType" resname="jwsitepackage13.menuType">
 				<source>Navigation type: Select position (vertical/horizontal) of the main navigation</source>
 				<target>Art der Navigation: Wählen Sie die Position (waagerecht/horizontal) der Navigation aus</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.menuTheme" resname="jwsitepackage12.menuTheme">
+			<trans-unit id="jwsitepackage13.menuTheme" resname="jwsitepackage13.menuTheme">
 				<source>Navigation type: Select the style of the main navigation</source>
 				<target>Typ der Navigation: Wählen Sie den Stil der Navigation aus</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.newsStartingPoints" resname="jwsitepackage12.newsStartingPoints">
+			<trans-unit id="jwsitepackage13.newsStartingPoints" resname="jwsitepackage13.newsStartingPoints">
 				<source>Page IDs news storage: Comma separated list of page IDs with news records (default value, can be overwritten in the news plugins)
 				</source>
 				<target>Page IDs News-Storage: Kommaseparierte Liste von IDs der Seiten, auf der News-Artikel gespeichert sind (Standardwert, kann in den Plugins überschrieben werden)
 				</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.newsDetailPid" resname="jwsitepackage12.newsDetailPid">
+			<trans-unit id="jwsitepackage13.newsDetailPid" resname="jwsitepackage13.newsDetailPid">
 				<source>Page ID news detail page: ID of the page with the news plugin for the detail view (default value, can be overwritten in the news plugins)
 				</source>
 				<target>Page ID News-Detailseite: ID der Seite mit der News-Detailansicht (Standardwert, kann in den Plugins überschrieben werden)
 				</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.newsListPid" resname="jwsitepackage12.newsListPid">
+			<trans-unit id="jwsitepackage13.newsListPid" resname="jwsitepackage13.newsListPid">
 				<source>Page ID news list page: ID of the page with the news plugin for the list view (default value, can be overwritten in the news plugins)
 				</source>
 				<target>Page ID News-Listenseite: ID der Seite mit der News-Listenansicht (Standardwert, kann in den Plugins überschrieben werden)
 				</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.footerContentUid" resname="jwsitepackage12.footerContentUid">
+			<trans-unit id="jwsitepackage13.footerContentUid" resname="jwsitepackage13.footerContentUid">
 				<source>Page ID for footer content: ID of the page, where the content for the footer of the website is stored
 				</source>
 				<target>Page ID Seite Footer Inhalte: ID der Seite, welche die Inhalte für den Footer enthält</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.metaMenuUid" resname="jwsitepackage12.metaMenuUid">
+			<trans-unit id="jwsitepackage13.metaMenuUid" resname="jwsitepackage13.metaMenuUid">
 				<source>Page ID of starting point for meta navigation: ID of the folder, under which the pages for the meta navigation are stored
 				</source>
 				<target>Page ID Ordner Meta-Navigation:ID des Ordners, der die Seiten für die Meta-Navigation enthält</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.customcategory" resname="jwsitepackage12.customcategory">
+			<trans-unit id="jwsitepackage13.customcategory" resname="jwsitepackage13.customcategory">
 				<source>jweiland.net TYPO3 Sitepackage</source>
 				<target>jweiland.net TYPO3 Sitepackage</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.customcategoryCCM" resname="jwsitepackage12.customcategoryCCM">
+			<trans-unit id="jwsitepackage13.customcategoryCCM" resname="jwsitepackage13.customcategoryCCM">
 				<source>jweiland.net Cookie Consent Manager</source>
 				<target>jweiland.net Cookie Consent Manager</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.customsubcategory.layout" resname="jwsitepackage12.customsubcategory.layout">
+			<trans-unit id="jwsitepackage13.customsubcategory.layout" resname="jwsitepackage13.customsubcategory.layout">
 				<source>Layout</source>
 				<target>Layout</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.customsubcategory.meta" resname="jwsitepackage12.customsubcategory.meta">
+			<trans-unit id="jwsitepackage13.customsubcategory.meta" resname="jwsitepackage13.customsubcategory.meta">
 				<source>Settings for meta navigation</source>
 				<target>Angaben zur Meta-Navigation</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.customsubcategory.menu" resname="jwsitepackage12.customsubcategory.menu">
+			<trans-unit id="jwsitepackage13.customsubcategory.menu" resname="jwsitepackage13.customsubcategory.menu">
 				<source>Settings for navigation</source>
 				<target>Einstellungen für Navigation</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.customsubcategory.content" resname="jwsitepackage12.customsubcategory.content">
+			<trans-unit id="jwsitepackage13.customsubcategory.content" resname="jwsitepackage13.customsubcategory.content">
 				<source>Page IDs</source>
 				<target>Seiten-IDs</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.customsubcategory.basic" resname="jwsitepackage12.customsubcategory.basic">
+			<trans-unit id="jwsitepackage13.customsubcategory.basic" resname="jwsitepackage13.customsubcategory.basic">
 				<source>Basic settings</source>
 				<target>Grundeinstellungen</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.customsubcategory.cookies" resname="jwsitepackage12.customsubcategory.cookies">
+			<trans-unit id="jwsitepackage13.customsubcategory.cookies" resname="jwsitepackage13.customsubcategory.cookies">
 				<source>Cookies and privacy</source>
 				<target>Cookies und Datenschutz</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.customsubcategory.tracking" resname="jwsitepackage12.customsubcategory.tracking">
+			<trans-unit id="jwsitepackage13.customsubcategory.tracking" resname="jwsitepackage13.customsubcategory.tracking">
 				<source>Tracking codes</source>
 				<target>Tracking-Codes</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.customsubcategory.seo" resname="jwsitepackage12.customsubcategory.seo">
+			<trans-unit id="jwsitepackage13.customsubcategory.seo" resname="jwsitepackage13.customsubcategory.seo">
 				<source>SEO</source>
 				<target>Suchmaschinenoptimierung (SEO)</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.customsubcategory.rss" resname="jwsitepackage12.customsubcategory.rss">
+			<trans-unit id="jwsitepackage13.customsubcategory.rss" resname="jwsitepackage13.customsubcategory.rss">
 				<source>RSS feed for News</source>
 				<target>RSS Feed für News</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.useRss" resname="jwsitepackage12.useRss">
+			<trans-unit id="jwsitepackage13.useRss" resname="jwsitepackage13.useRss">
 				<source>Output of a RSS feed for news articles</source>
 				<target>Ausgabe eines RSS Feeds für News-Artikel</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.rssTitle" resname="jwsitepackage12.rssTitle">
+			<trans-unit id="jwsitepackage13.rssTitle" resname="jwsitepackage13.rssTitle">
 				<source>Title of the RSS feed</source>
 				<target>Titel des RSS Feeds</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.rssDescription" resname="jwsitepackage12.rssDescription">
+			<trans-unit id="jwsitepackage13.rssDescription" resname="jwsitepackage13.rssDescription">
 				<source>Description of the RSS feed</source>
 				<target>Beschreibung des RSS Feeds</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.rssLink" resname="jwsitepackage12.rssLink">
+			<trans-unit id="jwsitepackage13.rssLink" resname="jwsitepackage13.rssLink">
 				<source>URL of the main domain of the RSS feed</source>
 				<target>URL der Hauptdomain des RSS Feeds</target>
 			</trans-unit>
-			<trans-unit id="jwsitepackage12.rssIcon" resname="jwsitepackage12.rssIcon">
+			<trans-unit id="jwsitepackage13.rssIcon" resname="jwsitepackage13.rssIcon">
 				<source>RSS Icon with Social Media Icons Content Element</source>
 				<target>Ausgabe des RSS Icons mit den Social Media Icons als Inhaltselement</target>
 			</trans-unit>
@@ -301,8 +301,8 @@
 				<target>Information zum Sitepackage öffnen</target>
 			</trans-unit>
 			<trans-unit id="widgets.jwspinfo.title" resname="widgets.jwspinfo.title">
-				<source>Documentation of the TYPO3 V12 JW Sitepackage</source>
-				<target>Dokumentation zum TYPO3 V12 JW Sitepackage</target>
+				<source>Documentation of the TYPO3 V13 JW Sitepackage</source>
+				<target>Dokumentation zum TYPO3 V13 JW Sitepackage</target>
 			</trans-unit>
 			<trans-unit id="widgets.jwspinfo.longdesc" resname="widgets.jwspinfo.longdesc">
 				<source>On our website you will find detailed documentation about the sample project. In several text and video tutorials we show how you can adapt this template to your requirements.</source>

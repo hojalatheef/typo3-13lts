@@ -24,7 +24,7 @@ plugin.tx_indexedsearch {
   }
 
   search {
-    rootPidList = {$jwsitepackage12.rootId}
+    rootPidList = {$jwsitepackage13.rootId}
     exactCount = 0
     defaultFreeIndexUidList >
   }

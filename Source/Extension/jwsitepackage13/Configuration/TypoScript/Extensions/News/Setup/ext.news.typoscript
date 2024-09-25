@@ -21,10 +21,10 @@ plugin.tx_news.settings {
   cssFile = {$plugin.tx_news.settings.cssFile}
   displayDummyIfNoMedia = 0
   #dummyImage = EXT:news/Resources/Public/Images/dummy-preview-image.png
-  startingpoint = {$jwsitepackage12.newsStartingPoints}
+  startingpoint = {$jwsitepackage13.newsStartingPoints}
   recursive = 10
-  listPid = {$jwsitepackage12.newsListPid}
-  #defaultDetailPid = {$jwsitepackage12.newsDetailPid}
+  listPid = {$jwsitepackage13.newsListPid}
+  #defaultDetailPid = {$jwsitepackage13.newsDetailPid}
   # Skip default controller/action to get shorter RealUrl path
   link.skipControllerAndAction = 1
 }
@@ -49,13 +49,13 @@ plugin.tx_news.settings.list {
 plugin.tx_news.settings.detail {
   ## Width of images in detail view
   media.image {
-    maxWidth = {$jwsitepackage12.imgTextMaxWidth}
+    maxWidth = {$jwsitepackage13.imgTextMaxWidth}
   }
 
   showSocialShareButtons = 0
   ## Behaviour of news, if no news-id is given in detail URL
   ## In this case, redirect to the page with the list view
-  errorHandling = redirectToPage,{$jwsitepackage12.newsListPid}
+  errorHandling = redirectToPage,{$jwsitepackage13.newsListPid}
 }
 
 
@@ -110,8 +110,8 @@ pageNewsRSS {
       #categories = 9
       #categoryConjunction = notor
       limit = 30
-      detailPid = {$jwsitepackage12.newsDetailPid}
-      startingpoint = {$jwsitepackage12.newsStartingPoints}
+      detailPid = {$jwsitepackage13.newsDetailPid}
+      startingpoint = {$jwsitepackage13.newsStartingPoints}
       format = xml
     }
   }

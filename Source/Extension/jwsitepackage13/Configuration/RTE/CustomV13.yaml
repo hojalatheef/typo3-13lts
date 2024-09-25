@@ -9,7 +9,7 @@ imports:
 editor:
   config:
     contentsCss:
-      - 'EXT:jwsitepackage12/Resources/Public/Css/RTE/contents.css'
+      - 'EXT:jwsitepackage13/Resources/Public/Css/RTE/contents.css'
     style:
       definitions:
       - { name: "Large Paragraph", element: "p", classes: ['fontsize3'] }

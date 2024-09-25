@@ -55,10 +55,10 @@ config {
 }
 
 ## Check the constants to compress/concatante CSS/JavaScript
-config.compressCss = {$jwsitepackage12.compressCss}
-config.concatenateCss = {$jwsitepackage12.concatenateCss}
-config.compressJs = {$jwsitepackage12.compressJs}
-config.concatenateJs = {$jwsitepackage12.concatenateJs}
+config.compressCss = {$jwsitepackage13.compressCss}
+config.concatenateCss = {$jwsitepackage13.concatenateCss}
+config.compressJs = {$jwsitepackage13.compressJs}
+config.concatenateJs = {$jwsitepackage13.concatenateJs}
 
 ## Always deactivate compression and concatenation in development context
 [applicationContext == "Development"]
@@ -71,4 +71,4 @@ config {
 [END]
 
 ## Order of website-title and page-title
-config.pageTitleFirst = {$jwsitepackage12.pageTitleFirst}
+config.pageTitleFirst = {$jwsitepackage13.pageTitleFirst}

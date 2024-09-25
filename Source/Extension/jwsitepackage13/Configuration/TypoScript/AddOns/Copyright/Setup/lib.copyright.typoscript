@@ -6,6 +6,6 @@ lib.copyright {
   20.strftime = %Y
   30 = TEXT
   30 {
-    value = &nbsp;{$jwsitepackage12.companyName}
+    value = &nbsp;{$jwsitepackage13.companyName}
   }
 }

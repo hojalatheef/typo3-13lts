@@ -1,4 +1,4 @@
-@import "EXT:jwsitepackage12/Configuration/TSconfig/HeroImagePage.tsconfig"
+@import "EXT:jwsitepackage13/Configuration/TSconfig/HeroImagePage.tsconfig"
 TCEMAIN {
   ## assign new pages to group "all BE users", set access rights
   permissions {
@@ -27,12 +27,12 @@ TCEFORM {
     #################### headers #################
     header_layout {
       altLabels {
-        0 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:header1
+        0 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:header1
         1 =
-        2 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:header2
-        3 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:header3
-        4 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:header4
-        5 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:header5
+        2 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:header2
+        3 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:header3
+        4 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:header4
+        5 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:header5
       }
 
       removeItems = 1
@@ -59,26 +59,26 @@ TCEFORM {
       ## ggf. Eintraege entfernen
       removeItems = 1,2,3
       addItems {
-        100 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.layout.100
+        100 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:tt_content.layout.100
       }
 
       ## layout option image gallery
       types {
         textmedia {
           addItems {
-            200 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.layout.200
+            200 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:tt_content.layout.200
           }
         }
 
         textpic {
           addItems {
-            200 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.layout.200
+            200 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:tt_content.layout.200
           }
         }
 
         image {
           addItems {
-            200 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.layout.200
+            200 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:tt_content.layout.200
           }
         }
 
@@ -90,44 +90,44 @@ TCEFORM {
         menu_abstract {
           removeItems = 1,2,3,100
           addItems {
-            251 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.layout.251
+            251 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:tt_content.layout.251
           }
         }
 
         menu_pages {
           removeItems = 1,2,3,100
           addItems {
-            251 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.layout.251
-            261 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.layout.261
+            251 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:tt_content.layout.251
+            261 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:tt_content.layout.261
           }
         }
 
         menu_subpages {
           removeItems = 1,2,3,100
           addItems {
-            251 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.layout.251
-            261 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.layout.261
+            251 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:tt_content.layout.251
+            261 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:tt_content.layout.261
           }
         }
 
         cols_2 {
           removeItems = 1,2,3,100
           addItems {
-            300 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.layout.300
+            300 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:tt_content.layout.300
           }
         }
 
         cols_3 {
           removeItems = 1,2,3,100
           addItems {
-            300 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.layout.300
+            300 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:tt_content.layout.300
           }
         }
 
         cols_4 {
           removeItems = 1,2,3,100
           addItems {
-            300 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.layout.300
+            300 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:tt_content.layout.300
           }
         }
       }
@@ -145,8 +145,8 @@ TCEFORM {
       #removeItems = indent,indent-left,indent-right,none,ruler-before,ruler-after
       ## Content collapsed / toggle content
       addItems {
-        collapsemobile = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.frameclass.collapsemobile
-        collapse = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:tt_content.frameclass.collapse
+        collapsemobile = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:tt_content.frameclass.collapsemobile
+        collapse = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:tt_content.frameclass.collapse
       }
 
       types {
@@ -242,8 +242,8 @@ mod {
 #################### Extension news #################
 ## add an alternative layout for latest news
 tx_news.templateLayouts {
-  1 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:news.template.1
-  2 = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:news.template.2
+  1 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:news.template.1
+  2 = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:news.template.2
 }
 
 TCEMAIN {
@@ -254,7 +254,7 @@ TCEMAIN {
     label = News
     configuration {
       table = tx_news_domain_model_news
-      storagePid = {$jwsitepackage12.newsStartingPoints}
+      storagePid = {$jwsitepackage13.newsStartingPoints}
       hidePageTree = 0
     }
 

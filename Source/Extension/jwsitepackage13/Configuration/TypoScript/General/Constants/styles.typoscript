@@ -1,7 +1,7 @@
 styles.templates {
-  layoutRootPath = EXT:jwsitepackage12/Resources/Private/Extensions/FluidStyledContent/Layouts/
-  partialRootPath = EXT:jwsitepackage12/Resources/Private/Extensions/FluidStyledContent/Partials/
-  templateRootPath = EXT:jwsitepackage12/Resources/Private/Extensions/FluidStyledContent/Templates/
+  layoutRootPath = EXT:jwsitepackage13/Resources/Private/Extensions/FluidStyledContent/Layouts/
+  partialRootPath = EXT:jwsitepackage13/Resources/Private/Extensions/FluidStyledContent/Partials/
+  templateRootPath = EXT:jwsitepackage13/Resources/Private/Extensions/FluidStyledContent/Templates/
 }
 styles.content.defaultHeaderType = 1
 styles.content.textmedia {
@@ -18,7 +18,7 @@ styles.content.textmedia {
 }
 
 ##Image widths depending on column width
-jwsitepackage12 {
+jwsitepackage13 {
   ##max content width
   imgMaxHeaderWidth = 1600
   imgMaxWidth = 1280
@@ -32,7 +32,7 @@ jwsitepackage12 {
   imgTextWidth33 = 400
 }
 ## Media Queries, see also TextMediaSrcSet.html and _variables.scss
-jwsitepackage12 {
+jwsitepackage13 {
   mediaQuerySmallMax = 768
   mediaQueryMediumMin = 769
   mediaQueryMediumMax = 1024

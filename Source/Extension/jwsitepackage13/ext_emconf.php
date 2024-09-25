@@ -1,7 +1,7 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'TYPO3 V12 JW Sitepackage',
+    'title' => 'TYPO3 V13 JW Sitepackage',
     'description' => 'This jweiland.net sitepackage is a template for new TYPO3 projects and can be customized to ones needs.',
     'category' => 'templates',
     'author' => 'Riona Kuthe, Stefan Froemken',

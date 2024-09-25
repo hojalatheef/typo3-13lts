@@ -23,9 +23,9 @@
                                 <f:if condition="{mediaElement.originalResource.properties.copyright}||{mediaElement.originalResource.properties.creator}">
                                     <small role="tooltip" class="tooltip" title="Info">
                                         <span
-                                            data-tooltip="{mediaElement.originalResource.properties.copyright}{f:if(condition: '{mediaElement.originalResource.properties.copyright} && {mediaElement.originalResource.properties.creator}', then: ',')}{f:if(condition: '{mediaElement.originalResource.properties.creator}', then: ' {f:translate(key:\'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:by\')}: {mediaElement.originalResource.properties.creator}')}">&copy;
+                                            data-tooltip="{mediaElement.originalResource.properties.copyright}{f:if(condition: '{mediaElement.originalResource.properties.copyright} && {mediaElement.originalResource.properties.creator}', then: ',')}{f:if(condition: '{mediaElement.originalResource.properties.creator}', then: ' {f:translate(key:\'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:by\')}: {mediaElement.originalResource.properties.creator}')}">&copy;
                                         </span>
-                                        <i class="vhidden">{mediaElement.originalResource.properties.copyright}{f:if(condition:'{mediaElement.originalResource.properties.creator}',then:'{f:translate(key:\'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:by\')}:{mediaElement.originalResource.properties.creator}')}</i>
+                                        <i class="vhidden">{mediaElement.originalResource.properties.copyright}{f:if(condition:'{mediaElement.originalResource.properties.creator}',then:'{f:translate(key:\'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:by\')}:{mediaElement.originalResource.properties.creator}')}</i>
                                     </small>
                                 </f:if>
                             </figure>
@@ -35,7 +35,7 @@
                         </f:if>
                         <f:if condition="{mediaElement.originalResource.type} == 5">
                             <f:image image="{mediaElement}"
-                                     title="{mediaElement.originalResource.title} {f:if(condition: '{mediaElement.originalResource.properties.copyright}', then: 'Copyright: {mediaElement.originalResource.properties.copyright}')} {f:if(condition: '{mediaElement.originalResource.properties.creator}', then: '{f:translate(key:\'LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:by\')}: {mediaElement.originalResource.properties.creator}')}"
+                                     title="{mediaElement.originalResource.title} {f:if(condition: '{mediaElement.originalResource.properties.copyright}', then: 'Copyright: {mediaElement.originalResource.properties.copyright}')} {f:if(condition: '{mediaElement.originalResource.properties.creator}', then: '{f:translate(key:\'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:by\')}: {mediaElement.originalResource.properties.creator}')}"
                                      alt="{mediaElement.originalResource.alternative}"
                                      width="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.list.mediacard.image.maxWidth)}"
                                      height="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else: settings.list.mediacard.image.maxHeight)}"

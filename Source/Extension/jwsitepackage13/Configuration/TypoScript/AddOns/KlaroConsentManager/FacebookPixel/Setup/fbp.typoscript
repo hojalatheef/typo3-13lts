@@ -1,6 +1,6 @@
 ## Facebook Pixel Code
 ## Set the ID of your Facebook Pixel in the Constants Editor on the root page of your website
-["{$jwsitepackage12CCM.fbp}" != ""]
+["{$jwsitepackage13CCM.fbp}" != ""]
 
 page.headerData.1588670504 = TEXT
 page.headerData.1588670504.value (
@@ -16,7 +16,7 @@ page.headerData.1588670504.value (
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '{$jwsitepackage12CCM.fbp}');
+  fbq('init', '{$jwsitepackage13CCM.fbp}');
   fbq('track', 'PageView');
 </script>
 <!-- End Facebook Pixel Code -->

@@ -1,7 +1,7 @@
 mod.web_layout.BackendLayouts {
   styleguide {
-    title = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:belayout-1col
-    icon = EXT:jwsitepackage12/Resources/Public/Icons/Backendlayouts/onecol.png
+    title = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:belayout-1col
+    icon = EXT:jwsitepackage13/Resources/Public/Icons/Backendlayouts/onecol.png
     config {
       backend_layout {
         colCount = 1
@@ -10,7 +10,7 @@ mod.web_layout.BackendLayouts {
           1 {
             columns {
               1 {
-                name = LLL:EXT:jwsitepackage12/Resources/Private/Language/locallang.xlf:col-content-main
+                name = LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:col-content-main
                 colPos = 0
               }
             }
