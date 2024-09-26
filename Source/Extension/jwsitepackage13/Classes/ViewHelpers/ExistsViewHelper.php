@@ -21,7 +21,7 @@ class ExistsViewHelper extends AbstractConditionViewHelper
     /**
      * Initialize arguments
      */
-    public function initializeArguments()
+    public function initializeArguments(): void
     {
         parent::initializeArguments();
         $this->registerArgument('file', 'string', 'Filename which must exist to trigger f:then rendering');
@@ -32,11 +32,11 @@ class ExistsViewHelper extends AbstractConditionViewHelper
      * This method decides if the condition is TRUE or FALSE. It can be overriden in
      * extending viewhelpers to adjust functionality.
      *
-     * @param array $arguments ViewHelper arguments to evaluate the condition for this ViewHelper, allows for
+     * @param array<string,mixed>|null $arguments ViewHelper arguments to evaluate the condition for this ViewHelper, allows for
      *                         flexiblity in overriding this method.
      * @return bool
      */
-    protected static function evaluateCondition($arguments = null)
+    protected static function evaluateCondition(array $arguments = null): bool
     {
         $file = GeneralUtility::getFileAbsFileName($arguments['file']);
         $directory = $arguments['directory'];
