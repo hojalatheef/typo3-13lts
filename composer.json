@@ -35,6 +35,8 @@
 		"typo3/cms-webhooks": "^13.3.0"
 	},
 	"require-dev": {
+		"friendsofphp/php-cs-fixer": "^3.64",
+		"phpstan/phpstan": "^1.12",
 		"roave/security-advisories": "dev-latest"
 	},
 	"repositories": [
