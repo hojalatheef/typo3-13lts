@@ -13,9 +13,9 @@ return (new Config())
     ->setFinder(
         (new Finder())
             ->in(__DIR__ . '/../../Source/Extension/')
-            ->exclude(__DIR__ . '/../../.Build')
-            ->exclude(__DIR__ . '/../../public')
-            ->exclude(__DIR__ . '/../../var')
+            ->exclude(__DIR__ . '/../../.Build/')
+            ->exclude(__DIR__ . '/../../public/')
+            ->exclude(__DIR__ . '/../../var/')
     )
     ->setRiskyAllowed(true)
     ->setRules([
