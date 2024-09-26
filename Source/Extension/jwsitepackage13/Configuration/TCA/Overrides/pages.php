@@ -8,37 +8,37 @@ call_user_func(static function (): void {
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         'jwsitepackage13',
         'Configuration/TSconfig/Page.tsconfig',
-        'General Page TSconfig'
+        'General Page TSconfig',
     );
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         'jwsitepackage13',
         'Configuration/TSconfig/BackendLayouts.tsconfig',
-        'Default Backend Layouts'
+        'Default Backend Layouts',
     );
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         'jwsitepackage13',
         'Configuration/TSconfig/CropVariants.tsconfig',
-        'General Crop Variants'
+        'General Crop Variants',
     );
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         'jwsitepackage13',
         'Configuration/TSconfig/FooterBackendLayout.tsconfig',
-        'Backend Layout Footer'
+        'Backend Layout Footer',
     );
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         'jwsitepackage13',
         'Configuration/TSconfig/StyleguideBackendLayout.tsconfig',
-        'Backend Layout Styleguide'
+        'Backend Layout Styleguide',
     );
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::registerPageTSConfigFile(
         'jwsitepackage13',
         'Configuration/TSconfig/RTE/custom.tsconfig',
-        'RTE: Custom Configuration'
+        'RTE: Custom Configuration',
     );
 
     $temporaryColumns = [
@@ -54,12 +54,12 @@ call_user_func(static function (): void {
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
         'pages',
-        $temporaryColumns
+        $temporaryColumns,
     );
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
         'pages',
         'nav_image',
         '',
-        'after:media'
+        'after:media',
     );
 });

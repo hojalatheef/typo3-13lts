@@ -86,13 +86,13 @@ call_user_func(static function (): void {
     ];
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
         'tt_content',
-        $temporaryColumn
+        $temporaryColumn,
     );
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
         'tt_content',
         'mediaAdjustments',
         'tx_jwsitepackage13_imagesizes',
-        'after:imageborder'
+        'after:imageborder',
     );
 
     \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
@@ -114,12 +114,12 @@ call_user_func(static function (): void {
                         'disallowed' => ['CType' => 'cols_2, cols_3, cols_4, heroimage'],
                     ],
                 ],
-            ]
+            ],
         )
         )
             // set and optional icon configuration
             ->setIcon('EXT:container/Resources/Public/Icons/container-2col.svg')
-            ->setSaveAndCloseInNewContentElementWizard(false)
+            ->setSaveAndCloseInNewContentElementWizard(false),
     );
     $GLOBALS['TCA']['tt_content']['types']['cols_2']['showitem'] = 'sys_language_uid,hidden,CType,header,header_layout,header_position,layout,colPos,tx_container_parent,sectionIndex;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:sectionIndex_formlabel';
     \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
@@ -146,12 +146,12 @@ call_user_func(static function (): void {
                         'disallowed' => ['CType' => 'cols_2, cols_3, cols_4, heroimage'],
                     ],
                 ],
-            ]
+            ],
         )
         )
             // set and optional icon configuration
             ->setIcon('EXT:container/Resources/Public/Icons/container-3col.svg')
-            ->setSaveAndCloseInNewContentElementWizard(false)
+            ->setSaveAndCloseInNewContentElementWizard(false),
     );
     $GLOBALS['TCA']['tt_content']['types']['cols_3']['showitem'] = 'sys_language_uid,hidden,CType,header,header_layout,header_position,layout,colPos,tx_container_parent,sectionIndex;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:sectionIndex_formlabel';
     \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
@@ -183,12 +183,12 @@ call_user_func(static function (): void {
                         'disallowed' => ['CType' => 'cols_2, cols_3, cols_4, heroimage'],
                     ],
                 ],
-            ]
+            ],
         )
         )
             // set and optional icon configuration
             ->setIcon('EXT:container/Resources/Public/Icons/container-4col.svg')
-            ->setSaveAndCloseInNewContentElementWizard(false)
+            ->setSaveAndCloseInNewContentElementWizard(false),
     );
     $GLOBALS['TCA']['tt_content']['types']['cols_4']['showitem'] = 'sys_language_uid,hidden,CType,header,header_layout,header_position,layout,colPos,tx_container_parent,sectionIndex;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:sectionIndex_formlabel';
 });

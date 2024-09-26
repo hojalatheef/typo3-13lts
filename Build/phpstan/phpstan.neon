@@ -7,7 +7,7 @@ parameters:
   treatPhpDocTypesAsCertain: false
 
   paths:
-    - ../../Source/Extension/
+    - ../../Source/Extension/Source/Extension/
 
   tmpDir: ../.Build/.cache/phpstan/
 
