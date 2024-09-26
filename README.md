@@ -119,15 +119,10 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 [license-shield]: https://img.shields.io/github/license/hojalatheef/typo3-13lts.svg?style=for-the-badge
 [license-url]: https://github.com/hojalatheef/typo3-13lts/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[extension-build-shield]: https://poser.pugx.org/jweiland/maps2/v/stable.svg?style=for-the-badge
-[extension-ci-shield]: https://github.com/jweiland-net/maps2/actions/workflows/ci.yml/badge.svg
-[extension-downloads-badge]: https://poser.pugx.org/jweiland/maps2/d/total.svg?style=for-the-badge
-[extension-monthly-downloads]: https://poser.pugx.org/jweiland/maps2/d/monthly?style=for-the-badge
-[extension-ter-url]: https://extensions.typo3.org/extension/maps2/
-[extension-packagist-url]: https://packagist.org/packages/jweiland/maps2/
+[extension-packagist-url]: https://github.dev/hojalatheef/typo3-13lts
 [packagist-logo-stable]: https://img.shields.io/badge/--grey.svg?style=for-the-badge&logo=packagist&logoColor=white
 [TYPO3-13-url]: https://get.typo3.org/version/13
 [TYPO3-shield]: https://img.shields.io/badge/TYPO3-13.3-green.svg?style=for-the-badge&logo=typo3
-[LICENSE_BADGE]: https://img.shields.io/github/license/jweiland-net/maps2?label=license&style=for-the-badge
+[LICENSE_BADGE]: https://img.shields.io/github/license/hojalatheef/typo3-13lts?label=license&style=for-the-badge
 [linkedin-url]: https://www.linkedin.com/company/jweiland-net/mycompany/
 [product-screenshot]: Source/Extension/jwsitepackage13/Resources/Public/Images/screenshot.png
