@@ -1,6 +1,6 @@
 {
-	"name": "typo3/cms-base-distribution",
-	"description": "TYPO3 CMS Base Distribution",
+	"name": "hojalatheef/typo3-13lts",
+	"description": "TYPO3 13 LTS based on Jweiland Muster project templates.",
 	"license": "GPL-2.0-or-later",
 	"type": "project",
 	"require": {
