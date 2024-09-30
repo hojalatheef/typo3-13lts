@@ -24,10 +24,10 @@ call_user_func(static function (): void {
         --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:extended,
     ';
     $GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = [
-        'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:ctype.heroimage.title',
-        'heroimage',
-        'ext-jwsitepackage13-hero',
-        'default',
+        'label' => 'LLL:EXT:jwsitepackage13/Resources/Private/Language/locallang.xlf:ctype.heroimage.title',
+        'value' => 'heroimage',
+        'icon' => 'ext-jwsitepackage13-hero',
+        'group' => 'default',
     ];
     $GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['heroimage'] = 'ext-jwsitepackage13-hero';
 
@@ -76,9 +76,14 @@ call_user_func(static function (): void {
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['Default', '100'],
-                    ['25%', '25'],
-                    ['33.33%', '33'],
+                    [
+                        'label' => 'Default',
+                        'value' => '100',
+                    ],
+                    [
+                        'label' => '25%',
+                        'value' => '25',
+                    ],
                 ],
                 'default' => '100',
             ],
